@@ -1,0 +1,8 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+# Data (re-download via src/download_data.py)
+data/
+# OS/editor
+.DS_Store
