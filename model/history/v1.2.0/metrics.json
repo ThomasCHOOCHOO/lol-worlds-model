@@ -1,0 +1,217 @@
+{
+  "half_life_days": 180,
+  "full": {
+    "n": 3368,
+    "accuracy": 0.6451900237529691,
+    "log_loss": 0.6309860296067882,
+    "roc_auc": 0.6864671843473813,
+    "base_rate": 0.5427553444180523,
+    "calibration": [
+      {
+        "bin": 1,
+        "pred_range": [
+          0.136,
+          0.316
+        ],
+        "mean_pred": 0.245,
+        "actual_rate": 0.245,
+        "n": 318
+      },
+      {
+        "bin": 2,
+        "pred_range": [
+          0.316,
+          0.421
+        ],
+        "mean_pred": 0.335,
+        "actual_rate": 0.335,
+        "n": 275
+      },
+      {
+        "bin": 4,
+        "pred_range": [
+          0.421,
+          0.478
+        ],
+        "mean_pred": 0.434,
+        "actual_rate": 0.434,
+        "n": 576
+      },
+      {
+        "bin": 5,
+        "pred_range": [
+          0.478,
+          0.629
+        ],
+        "mean_pred": 0.498,
+        "actual_rate": 0.498,
+        "n": 500
+      },
+      {
+        "bin": 8,
+        "pred_range": [
+          0.629,
+          0.67
+        ],
+        "mean_pred": 0.629,
+        "actual_rate": 0.629,
+        "n": 773
+      },
+      {
+        "bin": 9,
+        "pred_range": [
+          0.67,
+          0.712
+        ],
+        "mean_pred": 0.679,
+        "actual_rate": 0.679,
+        "n": 580
+      },
+      {
+        "bin": 10,
+        "pred_range": [
+          0.712,
+          0.964
+        ],
+        "mean_pred": 0.806,
+        "actual_rate": 0.806,
+        "n": 346
+      }
+    ],
+    "model_type": "logistic_regression",
+    "model_info": {
+      "C": 0.2,
+      "val_log_loss": 0.6385244375628351,
+      "hgb_val_log_loss": 0.6405498868247763
+    }
+  },
+  "nodraft": {
+    "n": 3368,
+    "accuracy": 0.6431116389548693,
+    "log_loss": 0.6330207518578254,
+    "roc_auc": 0.684867430162835,
+    "base_rate": 0.5427553444180523,
+    "calibration": [
+      {
+        "bin": 1,
+        "pred_range": [
+          0.12,
+          0.294
+        ],
+        "mean_pred": 0.234,
+        "actual_rate": 0.234,
+        "n": 282
+      },
+      {
+        "bin": 2,
+        "pred_range": [
+          0.294,
+          0.41
+        ],
+        "mean_pred": 0.353,
+        "actual_rate": 0.353,
+        "n": 331
+      },
+      {
+        "bin": 4,
+        "pred_range": [
+          0.41,
+          0.544
+        ],
+        "mean_pred": 0.436,
+        "actual_rate": 0.436,
+        "n": 709
+      },
+      {
+        "bin": 5,
+        "pred_range": [
+          0.544,
+          0.573
+        ],
+        "mean_pred": 0.544,
+        "actual_rate": 0.544,
+        "n": 252
+      },
+      {
+        "bin": 6,
+        "pred_range": [
+          0.573,
+          0.619
+        ],
+        "mean_pred": 0.582,
+        "actual_rate": 0.582,
+        "n": 421
+      },
+      {
+        "bin": 7,
+        "pred_range": [
+          0.619,
+          0.651
+        ],
+        "mean_pred": 0.62,
+        "actual_rate": 0.62,
+        "n": 342
+      },
+      {
+        "bin": 8,
+        "pred_range": [
+          0.651,
+          0.692
+        ],
+        "mean_pred": 0.651,
+        "actual_rate": 0.651,
+        "n": 295
+      },
+      {
+        "bin": 9,
+        "pred_range": [
+          0.692,
+          0.71
+        ],
+        "mean_pred": 0.692,
+        "actual_rate": 0.692,
+        "n": 321
+      },
+      {
+        "bin": 10,
+        "pred_range": [
+          0.71,
+          0.952
+        ],
+        "mean_pred": 0.79,
+        "actual_rate": 0.79,
+        "n": 415
+      }
+    ],
+    "model_type": "logistic_regression",
+    "model_info": {
+      "C": 0.2,
+      "val_log_loss": 0.6400336759948941,
+      "pinned": "HGB comparison skipped; phone artifact needs LR"
+    }
+  },
+  "backtests": {
+    "worlds_2025": {
+      "n": 96,
+      "accuracy": 0.5729166666666666,
+      "log_loss": 0.6758597007363768,
+      "roc_auc": 0.603126356925749,
+      "base_rate": 0.5104166666666666,
+      "event_games": 96,
+      "cutoff": "2025-09-25 09:14:03",
+      "model_type": "logistic_regression",
+      "note": "out-of-sample: model fit only on games before the event's first game"
+    },
+    "msi_2026": {
+      "n": 71,
+      "accuracy": 0.6197183098591549,
+      "log_loss": 0.6086554113183062,
+      "roc_auc": 0.6985815602836879,
+      "base_rate": 0.6619718309859155,
+      "event_games": 71,
+      "cutoff": "2026-06-28 03:10:49",
+      "model_type": "logistic_regression",
+      "note": "out-of-sample: model fit only on games before the event's first game"
+    }
+  }
+}

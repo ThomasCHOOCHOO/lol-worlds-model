@@ -1,0 +1,54 @@
+{
+  "10": {
+    "n_train": 26210,
+    "n_cal": 3368,
+    "coef": [
+      0.8661,
+      0.4118,
+      -0.0331
+    ],
+    "intercept": -0.0412,
+    "cal_log_loss": 0.5352,
+    "cal_accuracy": 0.7236,
+    "pregame_log_loss": 0.631
+  },
+  "15": {
+    "n_train": 26209,
+    "n_cal": 3368,
+    "coef": [
+      0.7855,
+      0.2523,
+      0.014
+    ],
+    "intercept": -0.0492,
+    "cal_log_loss": 0.475,
+    "cal_accuracy": 0.7666,
+    "pregame_log_loss": 0.631
+  },
+  "20": {
+    "n_train": 26086,
+    "n_cal": 3353,
+    "coef": [
+      0.6815,
+      0.2055,
+      0.0287
+    ],
+    "intercept": -0.0628,
+    "cal_log_loss": 0.4148,
+    "cal_accuracy": 0.7984,
+    "pregame_log_loss": 0.6324
+  },
+  "25": {
+    "n_train": 23853,
+    "n_cal": 2941,
+    "coef": [
+      0.5963,
+      0.1883,
+      0.0345
+    ],
+    "intercept": -0.0702,
+    "cal_log_loss": 0.3602,
+    "cal_accuracy": 0.8313,
+    "pregame_log_loss": 0.6521
+  }
+}
