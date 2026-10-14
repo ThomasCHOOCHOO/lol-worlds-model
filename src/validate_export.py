@@ -51,7 +51,7 @@ def json_predict(art, blue_tag, red_tag, draft_args, model_key, use_adjusted=Fal
     elo_r = tr["elo" if use_adjusted else "elo_raw"]
     feats = {
         "elo_diff": elo_b - elo_r,
-        "form_diff": tb["form"] - tr["form"],
+        "eg_gold_diff": tb["eg_gold"] - tr["eg_gold"],
         "blue_edge": art["blue_edge"],
     }
     if draft_args is not None:
@@ -142,10 +142,35 @@ def main():
     required = ["model_version", "snapshot_date", "models", "blue_edge", "teams",
                 "team_aliases", "champion_power", "champions",
                 "team_champion_comfort", "calibration_table", "confidence_tiers",
-                "metrics", "backtests"]
+                "metrics", "backtests", "live_models"]
     missing = [k for k in required if k not in art]
     print(f"schema keys: {'OK' if not missing else 'MISSING ' + str(missing)}")
     ok = ok and not missing
+
+    # live bucket models: pure-Python JSON math vs sklearn wrapper
+    import joblib as _joblib
+    live = _joblib.load(os.path.join(BASE, "model", "live_models.joblib"))
+    live_feats = ["pre_logit", "golddiff_k", "killdiff"]
+    worst_live = 0.0
+    rng2 = np.random.default_rng(7)
+    for t in (10, 15, 20, 25):
+        lj = art["live_models"][str(t)]
+        assert lj["features"] == live_feats, f"live {t} feature order"
+        wrapper = live[t]
+        # random states + realistic game states
+        X = np.vstack([
+            rng2.uniform([-3, -8, -10], [3, 8, 10], size=(2000, 3)),
+            np.array([[0.8, 2.5, 3],    # blue slight favorite, ahead
+                      [-0.5, -4.0, -5],  # blue underdog, behind
+                      [0.0, 0.0, 0]]),   # dead even
+        ])
+        sk = np.clip(wrapper.predict_proba(X)[:, 1], 1e-6, 1 - 1e-6)
+        z = X @ np.array(lj["coef"]) + lj["intercept"]
+        mine = np.array([calibrate(sigmoid(v), lj["calibration"]) for v in z])
+        worst_live = max(worst_live, float(np.max(np.abs(sk - mine))))
+    print(f"live bucket JSON vs sklearn wrapper max diff: {worst_live:.2e} "
+          f"({'OK' if worst_live < TOL else 'FAIL'})")
+    ok = ok and worst_live < TOL
 
     print("\nRESULT:", "ALL CHECKS PASSED" if ok else "FAILURES PRESENT")
     return 0 if ok else 1

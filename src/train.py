@@ -6,7 +6,7 @@ Pipeline (all walk-forward, no leakage):
     held-out 2026 tail; the winner is kept, then isotonic-calibrated
     (IsotonicRegression fit on that tail, out-of-bounds clipped).
   * Two models are trained: `full` (all features incl. draft) and
-    `nodraft` (elo_diff, form_diff, blue_edge) for pre-draft predictions.
+    `nodraft` (elo_diff, eg_gold_diff, blue_edge) for pre-draft predictions.
   * Recency weighting: the fit set is weighted with exponential decay
     w = 0.5 ** (age_days / HALF_LIFE_DAYS), t_now = latest data date
     (event cutoff for backtests). Passed as sample_weight to the LR/HGB fit
@@ -43,8 +43,8 @@ BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PROC = os.path.join(BASE, "data", "processed")
 MODEL_DIR = os.path.join(BASE, "model")
 
-FULL_FEATURES = ["elo_diff", "form_diff", "blue_edge", "d_power", "d_comfort", "ban_edge"]
-NODRAFT_FEATURES = ["elo_diff", "form_diff", "blue_edge"]
+FULL_FEATURES = ["elo_diff", "eg_gold_diff", "blue_edge", "d_power", "d_comfort", "ban_edge"]
+NODRAFT_FEATURES = ["elo_diff", "eg_gold_diff", "blue_edge"]
 
 FIT_END = "2026-07-01"
 CAL_END = "2026-10-01"
