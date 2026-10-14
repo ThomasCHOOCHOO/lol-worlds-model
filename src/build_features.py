@@ -4,7 +4,12 @@ Every trailing stat for a game at datetime t uses only games with datetime < t.
 
 Features (blue-side perspective):
   elo_diff   - Elo(blue) - Elo(red); Elo init 1500, K=24, 40% regression to 1500 each new year
-  form_diff  - trailing-20-game win-rate diff, shrunk toward 0.5 with 8 pseudo-games
+  form_diff  - REPLACED by eg_gold_diff in v1.3.0 (kept in snapshots only as the
+               comfort fallback); trailing-20-game win-rate diff, shrunk toward
+               0.5 with 8 pseudo-games
+  eg_gold_diff - trailing-20-game mean gold differential at 15 minutes
+               (own-team perspective), shrunk toward 0 with 8 pseudo-games;
+               blue minus red. Games with null golddiffat15 are skipped.
   blue_edge  - trailing-90-day global blue-side win rate (mild shrinkage, 10 pseudo-games)
   d_power    - sum(champion power over blue's 5 picks) - sum(red's 5);
                champion power is PATCH-AWARE: this champion's win% on the SAME
@@ -27,7 +32,7 @@ columns (those have format issues in 2026 data). Bans come from team rows.
 
 Outputs:
   data/processed/features.csv - one row per game with the features above
-  model/snapshots.joblib          - final Elo/form/champion-power/team-comfort
+  model/snapshots.joblib          - final Elo/form/eg_gold/champion-power/team-comfort
                                    snapshots (as of the latest game date) for predict.py
 """
 import os
@@ -55,7 +60,8 @@ COMFORT_MIN_GAMES = 3
 COMFORT_PSEUDO = 10
 
 COLS = ["gameid", "date", "league", "side", "position", "teamname", "champion",
-        "result", "ban1", "ban2", "ban3", "ban4", "ban5", "patch"]
+        "result", "ban1", "ban2", "ban3", "ban4", "ban5", "patch",
+        "golddiffat15"]
 
 
 def parse_patch(v):
@@ -130,6 +136,9 @@ def main():
             .apply(lambda r: [c for c in r if pd.notna(c)], axis=1))
     side_team = teams.groupby(["gameid", "side"])["teamname"].first()
     side_won = teams.groupby(["gameid", "side"])["result"].first()
+    # golddiffat15 is own-side perspective (blue row = blue-red, red row = red-blue;
+    # verified exact negatives), so no sign flip is needed per team.
+    game_gold = teams.groupby(["gameid", "side"])["golddiffat15"].first()
     game_date = df.groupby("gameid")["date"].first()
     game_league = df.groupby("gameid")["league"].first()
     # one patch per game (mode of row patches; Oracle's data is one patch/game)
@@ -150,6 +159,7 @@ def main():
 
     elo = defaultdict(lambda: ELO_INIT)
     form = defaultdict(deque)          # team -> deque(maxlen=FORM_N) of 1/0
+    eg = defaultdict(deque)            # team -> deque(maxlen=FORM_N) of own-side gold@15 diffs
     blue_hist = Trail()                # global blue-side results, 90d window
     # (champion, patch) -> [wins, total], games strictly before the current
     # game (updated only after feature computation). No time-window eviction:
@@ -161,6 +171,16 @@ def main():
         dq = form[team]
         n = len(dq)
         return (sum(dq) + FORM_PSEUDO * 0.5) / (n + FORM_PSEUDO)
+
+    def eg_gold(team):
+        """Trailing mean own-side gold diff at 15, shrunk toward 0.
+
+        (sum + 8*0) / (n + 8): same pseudo-count convention as form_rate,
+        but the prior is 0 (a margin, not a rate). Null-gold games are never
+        appended, so n <= FORM_N counts only games with gold data."""
+        dq = eg[team]
+        n = len(dq)
+        return sum(dq) / (n + FORM_PSEUDO)
 
     def champ_power(champ, patch):
         """Patch-aware champion strength, strictly walk-forward.
@@ -210,6 +230,7 @@ def main():
 
         eb, er = elo[blue], elo[red]
         fb, fr = form_rate(blue), form_rate(red)
+        egb, egr = eg_gold(blue), eg_gold(red)
         gp = game_patch[gid]
 
         blue_hist.evict(t, CHAMP_WINDOW)
@@ -235,7 +256,7 @@ def main():
         rows.append({
             "gameid": gid, "date": t, "league": game_league[gid],
             "blue": blue, "red": red,
-            "elo_diff": eb - er, "form_diff": fb - fr, "blue_edge": blue_edge,
+            "elo_diff": eb - er, "eg_gold_diff": egb - egr, "blue_edge": blue_edge,
             "d_power": d_power, "d_comfort": d_comfort, "ban_edge": ban_edge,
             "picks_ok": picks_ok, "y": blue_win,
         })
@@ -252,6 +273,19 @@ def main():
         fr_dq.append(1 - blue_win)
         if len(fr_dq) > FORM_N:
             fr_dq.popleft()
+        # own-side gold@15 diffs (skip games with null gold data)
+        gb = game_gold.get((gid, "Blue"), float("nan"))
+        gr = game_gold.get((gid, "Red"), float("nan"))
+        if gb == gb:  # not NaN
+            eg_bq = eg[blue]
+            eg_bq.append(float(gb))
+            if len(eg_bq) > FORM_N:
+                eg_bq.popleft()
+        if gr == gr:  # not NaN
+            eg_rq = eg[red]
+            eg_rq.append(float(gr))
+            if len(eg_rq) > FORM_N:
+                eg_rq.popleft()
         blue_hist.add(t, blue_win)
         if picks_ok:
             for c in bp:
@@ -333,6 +367,7 @@ def main():
         "as_of": str(t_max),
         "elo": dict(elo),
         "form": {team: form_rate(team) for team in set(list(elo.keys()) + list(form.keys()))},
+        "eg_gold": {team: eg_gold(team) for team in set(list(elo.keys()) + list(eg.keys()))},
         "blue_edge": (blue_hist.wins + BLUE_PSEUDO * 0.5) / (blue_hist.total + BLUE_PSEUDO),
         # current-patch table (kept for backward compat: app.py / CLI default)
         "champ_power": champ_power_snap,

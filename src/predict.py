@@ -157,7 +157,7 @@ def draft_features(blue, red, blue_picks, red_picks, blue_bans, red_bans, snaps,
 def predict_game(blue, red, draft, bundle, snaps, champ_power):
     feats = {
         "elo_diff": snaps["elo"].get(blue, 1500.0) - snaps["elo"].get(red, 1500.0),
-        "form_diff": snaps["form"].get(blue, 0.5) - snaps["form"].get(red, 0.5),
+        "eg_gold_diff": snaps["eg_gold"].get(blue, 0.0) - snaps["eg_gold"].get(red, 0.0),
         "blue_edge": snaps["blue_edge"],
     }
     if draft is None:

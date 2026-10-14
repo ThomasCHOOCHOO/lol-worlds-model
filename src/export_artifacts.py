@@ -42,7 +42,7 @@ BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MODEL_DIR = os.path.join(BASE, "model")
 PROC = os.path.join(BASE, "data", "processed")
 
-MODEL_VERSION = "1.2.0"
+MODEL_VERSION = os.environ.get("MODEL_VERSION_OVERRIDE", "1.3.0")
 TIER_RULE = {
     "rule": "margin = |p_calibrated - 0.5|; bin = calibration bin containing p_calibrated",
     "high": {"min_margin": 0.20, "min_bin_n": 100},
@@ -115,12 +115,33 @@ def model_to_json(bundle, key):
     }
 
 
+LIVE_FEATURES = ["pre_logit", "golddiff_k", "killdiff"]
+
+
+def live_to_json(cal_wrapper):
+    """Export one per-bucket live model (no scaler: raw features)."""
+    lr = cal_wrapper.base_model
+    if type(lr).__name__ != "LogisticRegression":
+        raise TypeError("live bucket model must be a LogisticRegression")
+    return {
+        "model_type": type(lr).__name__,
+        "features": list(LIVE_FEATURES),
+        "coef": [float(c) for c in lr.coef_[0]],
+        "intercept": float(lr.intercept_[0]),
+        "calibration": iso_to_json(cal_wrapper.ir),
+    }
+
+
 def main():
     bundle, snaps, champ_power = load_bundle()
     snapshot_date = snaps["as_of"][:10]
 
     full_json = model_to_json(bundle, "full")
     nodraft_json = model_to_json(bundle, "nodraft")
+
+    # ---- live in-game models (per minute bucket; no scaler, raw features) ----
+    live_models = joblib.load(os.path.join(MODEL_DIR, "live_models.joblib"))
+    live_json = {str(t): live_to_json(live_models[t]) for t in (10, 15, 20, 25)}
 
     # ---- roster-adjusted team ratings ----
     adjustments = compute_adjustments()
@@ -133,6 +154,7 @@ def main():
             "elo_raw": round(float(elo), 2),   # pre-adjustment snapshot Elo
             "roster_delta": round(adj_ratings[team] - float(elo), 2),
             "form": round(float(snaps["form"].get(team, 0.5)), 4),
+            "eg_gold": round(float(snaps["eg_gold"].get(team, 0.0)), 1),
             "turnover_2025_2026": rec.get("turnover_2025_2026"),
             "roster_2025": rec.get("roster_2025", []),
             "roster_2026": rec.get("roster_2026", []),
@@ -202,6 +224,7 @@ def main():
         "snapshot_date": snapshot_date,
         "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "models": {"full": full_json, "nodraft": nodraft_json},
+        "live_models": live_json,
         "blue_edge": round(float(snaps["blue_edge"]), 4),
         "teams": teams,
         "team_aliases": ALIASES,
