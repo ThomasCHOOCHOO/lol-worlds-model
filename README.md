@@ -10,7 +10,9 @@ pro matches — built for **Worlds 2026** (Oct 16 – Nov 14), with **draft
 2. **Features** — all walk-forward (a game at time *t* only ever sees games
    before *t*):
    - `elo_diff` — team Elo diff (init 1500, K=24, 40% offseason regression)
-   - `form_diff` — trailing-20-game win-rate diff (shrunk)
+   - `eg_gold_diff` — trailing-20 mean own-side gold diff at 15 min, shrunk
+     toward 0 (replaced win-rate `form_diff` in v1.3.0; strictly more
+     informative than binary W/L)
    - `blue_edge` — trailing-90-day global blue-side win rate (~54%)
    - `d_power` — draft power edge: trailing-90d global champion win% (min 10
      games, empirical-Bayes shrunk), summed over each side's 5 picks
@@ -25,9 +27,9 @@ pro matches — built for **Worlds 2026** (Oct 16 – Nov 14), with **draft
 
 | Evaluation | Accuracy | Log-loss | ROC-AUC |
 |---|---|---|---|
-| 2026 holdout tail (n=3,368) | 64.3% | 0.630 | 0.69 |
-| Worlds 2025 backtest, out-of-sample (n=96) | 56.2% | 0.673 | 0.62 |
-| MSI 2026 backtest, out-of-sample (n=71) | 67.6% | 0.601 | 0.72 |
+| 2026 holdout tail (n=3,368) | 65.1% | 0.627 | 0.70 |
+| Worlds 2025 backtest, out-of-sample (n=96) | 55.2% | 0.680 | 0.60 |
+| MSI 2026 backtest, out-of-sample (n=71) | 62.0% | 0.621 | 0.68 |
 
 Game-level accuracy of ~60–68% is the realistic band for pro LoL. International
 events are the hardest setting (sparse cross-region data). Full calibration
