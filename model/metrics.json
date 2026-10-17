@@ -3,8 +3,8 @@
   "full": {
     "n": 3368,
     "accuracy": 0.6508313539192399,
-    "log_loss": 0.6253315136678497,
-    "roc_auc": 0.6948041291312625,
+    "log_loss": 0.625317857343131,
+    "roc_auc": 0.6947307752422632,
     "base_rate": 0.5427553444180523,
     "calibration": [
       {
@@ -31,61 +31,71 @@
         "bin": 3,
         "pred_range": [
           0.376,
-          0.432
+          0.433
         ],
-        "mean_pred": 0.377,
-        "actual_rate": 0.377,
-        "n": 334
+        "mean_pred": 0.378,
+        "actual_rate": 0.378,
+        "n": 336
       },
       {
         "bin": 4,
         "pred_range": [
-          0.432,
-          0.513
+          0.433,
+          0.519
         ],
         "mean_pred": 0.433,
         "actual_rate": 0.433,
-        "n": 538
+        "n": 536
       },
       {
         "bin": 5,
         "pred_range": [
-          0.513,
-          0.537
+          0.519,
+          0.536
         ],
-        "mean_pred": 0.513,
-        "actual_rate": 0.513,
-        "n": 76
+        "mean_pred": 0.519,
+        "actual_rate": 0.519,
+        "n": 77
       },
       {
         "bin": 6,
         "pred_range": [
-          0.537,
+          0.536,
           0.649
         ],
-        "mean_pred": 0.552,
-        "actual_rate": 0.552,
-        "n": 576
+        "mean_pred": 0.551,
+        "actual_rate": 0.551,
+        "n": 575
       },
       {
         "bin": 7,
         "pred_range": [
           0.649,
-          0.67
+          0.669
         ],
         "mean_pred": 0.654,
         "actual_rate": 0.654,
         "n": 405
       },
       {
+        "bin": 8,
+        "pred_range": [
+          0.669,
+          0.672
+        ],
+        "mean_pred": 0.669,
+        "actual_rate": 0.669,
+        "n": 272
+      },
+      {
         "bin": 9,
         "pred_range": [
-          0.67,
+          0.672,
           0.782
         ],
-        "mean_pred": 0.685,
-        "actual_rate": 0.685,
-        "n": 670
+        "mean_pred": 0.696,
+        "actual_rate": 0.696,
+        "n": 398
       },
       {
         "bin": 10,
@@ -101,15 +111,15 @@
     "model_type": "logistic_regression",
     "model_info": {
       "C": 0.05,
-      "val_log_loss": 0.6332254700933984,
-      "hgb_val_log_loss": 0.6363640428860023
+      "val_log_loss": 0.6332180148849497,
+      "hgb_val_log_loss": 0.636364042897022
     }
   },
   "nodraft": {
     "n": 3368,
     "accuracy": 0.6508313539192399,
-    "log_loss": 0.6270673577332918,
-    "roc_auc": 0.6945995197362813,
+    "log_loss": 0.6270488688766794,
+    "roc_auc": 0.6946403705703487,
     "base_rate": 0.5427553444180523,
     "calibration": [
       {
@@ -146,7 +156,7 @@
         "bin": 5,
         "pred_range": [
           0.474,
-          0.55
+          0.548
         ],
         "mean_pred": 0.483,
         "actual_rate": 0.483,
@@ -155,8 +165,8 @@
       {
         "bin": 6,
         "pred_range": [
-          0.55,
-          0.635
+          0.548,
+          0.634
         ],
         "mean_pred": 0.576,
         "actual_rate": 0.576,
@@ -165,37 +175,37 @@
       {
         "bin": 7,
         "pred_range": [
-          0.635,
+          0.634,
           0.653
         ],
-        "mean_pred": 0.635,
-        "actual_rate": 0.635,
-        "n": 408
+        "mean_pred": 0.634,
+        "actual_rate": 0.634,
+        "n": 407
       },
       {
         "bin": 8,
         "pred_range": [
           0.653,
-          0.696
+          0.695
         ],
-        "mean_pred": 0.663,
-        "actual_rate": 0.663,
-        "n": 243
+        "mean_pred": 0.665,
+        "actual_rate": 0.665,
+        "n": 248
       },
       {
         "bin": 9,
         "pred_range": [
-          0.696,
-          0.752
+          0.695,
+          0.753
         ],
-        "mean_pred": 0.696,
-        "actual_rate": 0.696,
-        "n": 306
+        "mean_pred": 0.695,
+        "actual_rate": 0.695,
+        "n": 302
       },
       {
         "bin": 10,
         "pred_range": [
-          0.752,
+          0.753,
           0.949
         ],
         "mean_pred": 0.789,
@@ -206,7 +216,7 @@
     "model_type": "logistic_regression",
     "model_info": {
       "C": 0.05,
-      "val_log_loss": 0.6343319338679936,
+      "val_log_loss": 0.6343218947158102,
       "pinned": "HGB comparison skipped; phone artifact needs LR"
     }
   },
