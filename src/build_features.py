@@ -4,6 +4,14 @@ Every trailing stat for a game at datetime t uses only games with datetime < t.
 
 Features (blue-side perspective):
   elo_diff   - Elo(blue) - Elo(red); Elo init 1500, K=24, 40% regression to 1500 each new year
+  elo_diff_adj - elo_diff adjusted by region-strength offsets
+               (src/region_offsets.py): elo_diff + off[region_blue] -
+               off[region_red]. Corrects weak-region Elo inflation (LCK
+               +178, LATAM -157, ...). Computed from model/region_offsets.json
+               when present, else equals elo_diff (first run). The
+               region_offsets.py post-fit refresh of this column is
+               authoritative -- it guarantees the offsets match the
+               current features.csv (see that module's docstring).
   form_diff  - REPLACED by eg_gold_diff in v1.3.0 (kept in snapshots only as the
                comfort fallback); trailing-20-game win-rate diff, shrunk toward
                0.5 with 8 pseudo-games
@@ -32,8 +40,10 @@ columns (those have format issues in 2026 data). Bans come from team rows.
 
 Outputs:
   data/processed/features.csv - one row per game with the features above
+                                (including elo_diff_adj)
   model/snapshots.joblib          - final Elo/form/eg_gold/champion-power/team-comfort
-                                   snapshots (as of the latest game date) for predict.py
+                                   snapshots (as of the latest game date) for predict.py,
+                                   plus per-team region + the region offset table
 """
 import os
 from collections import defaultdict, deque
@@ -41,6 +51,10 @@ from datetime import timedelta
 
 import joblib
 import pandas as pd
+
+import sys
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from region_offsets import apply_offsets, load_offsets, load_team_year  # noqa: E402
 
 BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 RAW_DIR = os.path.join(BASE, "data", "raw")
@@ -303,6 +317,18 @@ def main():
             print(f"  ... {i + 1}/{len(game_ids)}")
 
     feat = pd.DataFrame(rows)
+    # region-strength adjustment (src/region_offsets.py): elo_diff_adj =
+    # elo_diff + off[region_blue] - off[region_red]. Uses the current
+    # region_offsets.json when present (previous refresh's fit); the
+    # region_offsets.py post-fit refresh of this column is authoritative.
+    offsets, _team_region = load_offsets()
+    team_year = load_team_year()
+    if offsets and team_year:
+        feat["elo_diff_adj"] = apply_offsets(feat, offsets, team_year)
+    else:
+        feat["elo_diff_adj"] = feat["elo_diff"]
+        print("  no region_offsets.json yet: elo_diff_adj = elo_diff "
+              "(run src/region_offsets.py to fit offsets)")
     feat_path = os.path.join(PROC_DIR, "features.csv")
     feat.to_csv(feat_path, index=False)
     print(f"wrote {feat_path} ({len(feat)} games)")
@@ -363,9 +389,13 @@ def main():
             (tr.wins + COMFORT_PSEUDO * fr) / (tr.total + COMFORT_PSEUDO)
             if tr.total >= COMFORT_MIN_GAMES else fr)
     blue_hist.evict(t_max, CHAMP_WINDOW)
+    # region offsets (auditable copy; canonical file is model/region_offsets.json)
+    _offsets, team_region = load_offsets()
     snapshots = {
         "as_of": str(t_max),
         "elo": dict(elo),
+        "team_region": team_region,
+        "region_offsets": _offsets,
         "form": {team: form_rate(team) for team in set(list(elo.keys()) + list(form.keys()))},
         "eg_gold": {team: eg_gold(team) for team in set(list(elo.keys()) + list(eg.keys()))},
         "blue_edge": (blue_hist.wins + BLUE_PSEUDO * 0.5) / (blue_hist.total + BLUE_PSEUDO),

@@ -1,0 +1,4100 @@
+{
+  "offsets_elo": {
+    "EMEA": 24.1,
+    "LATAM": -156.9,
+    "LCK": 177.9,
+    "LPL": 108.5,
+    "NA": 13.7,
+    "Taiwan": -33.5,
+    "Vietnam": -133.8
+  },
+  "offsets_logit": {
+    "EMEA": 0.1387,
+    "LATAM": -0.903,
+    "LCK": 1.0242,
+    "LPL": 0.6243,
+    "NA": 0.0789,
+    "Taiwan": -0.193,
+    "Vietnam": -0.7702
+  },
+  "intercept": 0.2541,
+  "slope": 0.6497,
+  "fit_date": "2026-10-16",
+  "n_games": 560,
+  "method": "logit(p) = a + b*logit(p_elo) + off[blue] - off[red], ridge lambda=1 on offsets, IRLS; intercept/slope fit but not shipped; offsets constant (no decay)",
+  "lambda": 1.0,
+  "min_games_to_fit": 15,
+  "fitted_regions": [
+    "EMEA",
+    "LATAM",
+    "LCK",
+    "LPL",
+    "NA",
+    "Taiwan",
+    "Vietnam"
+  ],
+  "region_appearances": {
+    "NA": 134,
+    "Taiwan": 77,
+    "LCK": 301,
+    "LATAM": 67,
+    "EMEA": 172,
+    "Vietnam": 64,
+    "LPL": 309,
+    "Japan": 4
+  },
+  "unknown_region_games": 0,
+  "league_to_region": {
+    "LCK": "LCK",
+    "LPL": "LPL",
+    "LEC": "EMEA",
+    "LCS": "NA",
+    "LTA N": "NA",
+    "LTA S": "LATAM",
+    "CBLOL": "LATAM",
+    "CBLOLA": "LATAM",
+    "LLA": "LATAM",
+    "VCS": "Vietnam",
+    "PCS": "Taiwan",
+    "LJL": "Japan",
+    "LCO": "Oceania",
+    "TCL": "Turkiye",
+    "KeSPA Cup": "LCK",
+    "LCKC": "LCK",
+    "LDL": "LPL",
+    "LCP": null
+  },
+  "manual_overrides": {
+    "MVK Esports": "Vietnam",
+    "Team Secret Whales": "Vietnam"
+  },
+  "team_year_regions": {
+    "100 Thieves": {
+      "2024": "NA",
+      "2025": "NA"
+    },
+    "1TAP Dino": {
+      "2025": "Vietnam",
+      "2026": "Vietnam"
+    },
+    "2 Massive": {
+      "2026": "Unknown"
+    },
+    "24/7 Tower Dive": {
+      "2024": "Unknown"
+    },
+    "3BL Esports": {
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "3v Team": {
+      "2026": "Unknown"
+    },
+    "4 Employed e 1 Budino": {
+      "2026": "Unknown"
+    },
+    "4 Swines & A Bum": {
+      "2026": "Unknown"
+    },
+    "42 Gaming": {
+      "2024": "Unknown"
+    },
+    "5M Esports": {
+      "2025": "Unknown"
+    },
+    "6AM": {
+      "2024": "Unknown"
+    },
+    "7REX": {
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "9Gaming Esports": {
+      "2026": "Vietnam"
+    },
+    "9z Globant": {
+      "2026": "Unknown"
+    },
+    "A One Man Army": {
+      "2024": "Unknown",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "A One Man Army Prime": {
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "A One Man Army Prime Academy": {
+      "2025": "Unknown"
+    },
+    "AGALAR": {
+      "2024": "Unknown"
+    },
+    "AIX eSports": {
+      "2024": "Unknown"
+    },
+    "AKA HERO": {
+      "2025": "Unknown"
+    },
+    "ALMO Players": {
+      "2026": "Unknown"
+    },
+    "ATK Esports": {
+      "2024": "Unknown"
+    },
+    "AXIZ CREST": {
+      "2024": "Japan"
+    },
+    "AXIZ CREST Academy": {
+      "2024": "Unknown"
+    },
+    "AaB Esport": {
+      "2025": "Unknown"
+    },
+    "Absolved": {
+      "2026": "Unknown"
+    },
+    "AceGaming Spades": {
+      "2024": "Unknown"
+    },
+    "Actions Per Minute": {
+      "2024": "Unknown",
+      "2025": "Unknown"
+    },
+    "Aegis": {
+      "2024": "Unknown"
+    },
+    "Aeterna Esports": {
+      "2026": "Unknown"
+    },
+    "Ahriro": {
+      "2024": "Unknown"
+    },
+    "Akroma": {
+      "2024": "Unknown"
+    },
+    "All Knights": {
+      "2024": "LATAM"
+    },
+    "All for One Gaming": {
+      "2024": "Unknown",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Alpha7 Esports": {
+      "2025": "Unknown"
+    },
+    "Ancient Ones": {
+      "2026": "Unknown"
+    },
+    "Andromeda Gaming": {
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Andromeda Nebula": {
+      "2024": "Unknown"
+    },
+    "Ankora Gaming": {
+      "2024": "Unknown",
+      "2025": "Unknown"
+    },
+    "Anonymo Esports": {
+      "2024": "Unknown",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Anorthosis Famagusta Esports": {
+      "2024": "Unknown"
+    },
+    "Antic Esports": {
+      "2024": "Oceania"
+    },
+    "Anubis Gaming": {
+      "2024": "Unknown",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Anyone's Legend": {
+      "2024": "LPL",
+      "2025": "LPL",
+      "2026": "LPL"
+    },
+    "Anyone's Legend.Young": {
+      "2024": "LPL",
+      "2025": "Unknown"
+    },
+    "Apex Mission Impossible": {
+      "2024": "Unknown",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Apex Predator": {
+      "2025": "Vietnam"
+    },
+    "Arctic Pandas": {
+      "2026": "Unknown"
+    },
+    "Area of Effect Esports": {
+      "2024": "Unknown"
+    },
+    "Arneb": {
+      "2026": "Japan"
+    },
+    "Ascendance": {
+      "2024": "Unknown"
+    },
+    "Athen Warrior": {
+      "2024": "Unknown"
+    },
+    "Atleta Esport": {
+      "2024": "Unknown"
+    },
+    "Auronin": {
+      "2024": "Unknown"
+    },
+    "Aurora": {
+      "2024": "Unknown",
+      "2025": "Unknown"
+    },
+    "Austrian Force willhaben": {
+      "2024": "Unknown",
+      "2025": "Unknown"
+    },
+    "AvaTrade PixelPenny": {
+      "2024": "Unknown"
+    },
+    "Axolotl": {
+      "2024": "Unknown",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "B2U": {
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "BAAM Esports": {
+      "2024": "Unknown",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "BAU Esports": {
+      "2024": "Unknown"
+    },
+    "BBL Dark Passage": {
+      "2025": "Turkiye"
+    },
+    "BDL Esports": {
+      "2026": "Turkiye"
+    },
+    "BERZLOY": {
+      "2025": "Unknown"
+    },
+    "BGA eQuizers": {
+      "2024": "Unknown"
+    },
+    "BK ROG Esports": {
+      "2024": "Unknown",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "BNK FEARX": {
+      "2024": "LCK",
+      "2025": "LCK",
+      "2026": "LCK"
+    },
+    "BNK FEARX Academy": {
+      "2024": "Unknown",
+      "2025": "Unknown"
+    },
+    "BNK FEARX Youth": {
+      "2024": "LCK",
+      "2025": "LCK",
+      "2026": "LCK"
+    },
+    "BRUTE": {
+      "2024": "Unknown",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "BWE Esports": {
+      "2024": "Unknown",
+      "2025": "Unknown"
+    },
+    "Back2TheGame": {
+      "2024": "Unknown",
+      "2025": "Unknown"
+    },
+    "Bad Day": {
+      "2024": "Unknown"
+    },
+    "Bamboo Juice": {
+      "2025": "Japan",
+      "2026": "Japan"
+    },
+    "Banshee": {
+      "2024": "Unknown"
+    },
+    "Barcz\u0105ca Esports by Yumisu": {
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Barulhinhos": {
+      "2026": "Unknown"
+    },
+    "Bar\u00e7a eSports": {
+      "2024": "Unknown",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Bastu Five": {
+      "2025": "Unknown"
+    },
+    "BeFive": {
+      "2024": "Unknown",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Bees Hum": {
+      "2024": "Unknown"
+    },
+    "Berimbados": {
+      "2025": "Unknown"
+    },
+    "Berlin International Gaming": {
+      "2024": "Unknown",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Beyond Gaming": {
+      "2024": "Taiwan"
+    },
+    "Be\u015fikta\u015f Esports": {
+      "2024": "Turkiye",
+      "2025": "Turkiye"
+    },
+    "Bilibili Gaming": {
+      "2024": "LPL",
+      "2025": "LPL",
+      "2026": "LPL"
+    },
+    "Bilibili Gaming Junior": {
+      "2024": "LPL",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Bitfix RG": {
+      "2024": "Unknown",
+      "2025": "Unknown"
+    },
+    "Black Dog": {
+      "2025": "Japan"
+    },
+    "Black Lion": {
+      "2025": "Unknown"
+    },
+    "Black Rock Esports": {
+      "2024": "Unknown"
+    },
+    "BloomStorm": {
+      "2025": "Japan"
+    },
+    "Blue Otter": {
+      "2024": "Unknown",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "BlueWhites": {
+      "2024": "Unknown"
+    },
+    "Bohemian Guardians": {
+      "2026": "Unknown"
+    },
+    "Bomba Team": {
+      "2026": "Unknown"
+    },
+    "BoostGate Esports": {
+      "2024": "Turkiye",
+      "2025": "Turkiye",
+      "2026": "Turkiye"
+    },
+    "Bootz Gaming": {
+      "2024": "Unknown"
+    },
+    "BraVeLY": {
+      "2025": "Japan"
+    },
+    "Brod and Friends": {
+      "2024": "Unknown"
+    },
+    "Brod n Friends": {
+      "2024": "Unknown",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Bubliki": {
+      "2026": "Unknown"
+    },
+    "Bulldog Esports": {
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Burning Core Toyama": {
+      "2024": "Japan",
+      "2025": "Japan"
+    },
+    "Burning Core Toyama Academy": {
+      "2024": "Unknown"
+    },
+    "Bushido Wildcats": {
+      "2025": "Turkiye",
+      "2026": "Turkiye"
+    },
+    "CAG OSAKA": {
+      "2026": "Japan"
+    },
+    "CCG Esports": {
+      "2024": "Unknown",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "CERBERUS Esports": {
+      "2024": "Vietnam"
+    },
+    "CGN Esports": {
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "CIS Falling Stars": {
+      "2024": "Unknown"
+    },
+    "CITA Kaizen": {
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "CITA Kaizen Academy": {
+      "2026": "Unknown"
+    },
+    "CNG Royal": {
+      "2025": "Unknown"
+    },
+    "CORE 128": {
+      "2024": "Unknown",
+      "2025": "Unknown"
+    },
+    "CTBC Flying Oyster": {
+      "2024": "Taiwan",
+      "2025": "Taiwan",
+      "2026": "Taiwan"
+    },
+    "CTBC Flying Oyster Academy": {
+      "2024": "Unknown",
+      "2025": "Taiwan",
+      "2026": "Taiwan"
+    },
+    "Caldya Esport": {
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Capybara Esports": {
+      "2026": "Unknown"
+    },
+    "Case Esports": {
+      "2024": "Unknown"
+    },
+    "Castle Berry": {
+      "2024": "Unknown"
+    },
+    "Ceuta Guardians": {
+      "2024": "Unknown"
+    },
+    "Chiefs Esports Club": {
+      "2025": "Unknown"
+    },
+    "Chienhsin Bear (\u5065\u884c\u718a)": {
+      "2024": "Unknown"
+    },
+    "Chinese Taipei (National Team)": {
+      "2024": "LCK"
+    },
+    "Cincinnati Fear": {
+      "2024": "Unknown"
+    },
+    "Citadel Gaming": {
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Cloud9": {
+      "2024": "NA",
+      "2025": "NA",
+      "2026": "NA"
+    },
+    "Coinflip to Victory": {
+      "2024": "Unknown"
+    },
+    "Colossal Gaming": {
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Comanchero Gaming": {
+      "2024": "Turkiye"
+    },
+    "Connect Arena Esports": {
+      "2025": "Unknown"
+    },
+    "Contingent Esports": {
+      "2024": "Unknown",
+      "2026": "Unknown"
+    },
+    "Contrata Logo Meu Time": {
+      "2025": "Unknown"
+    },
+    "Conviction": {
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Corinthians Esports": {
+      "2025": "Unknown"
+    },
+    "Coven": {
+      "2024": "Unknown"
+    },
+    "Croatian Flair": {
+      "2026": "Unknown"
+    },
+    "Crusaders": {
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Crvena zvezda Esports": {
+      "2024": "Unknown",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Crystal Rose": {
+      "2026": "Unknown"
+    },
+    "Cuban Raft Raiders": {
+      "2026": "Unknown"
+    },
+    "Cupid Esports": {
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Cusprills": {
+      "2025": "Unknown"
+    },
+    "Cyber Wolves": {
+      "2024": "Unknown"
+    },
+    "C\u00e3es de \u00c1gua": {
+      "2026": "Unknown"
+    },
+    "DCT eSports": {
+      "2025": "Unknown"
+    },
+    "DECOY 21": {
+      "2026": "Unknown"
+    },
+    "DELTALAND": {
+      "2024": "Unknown"
+    },
+    "DIA Ozarox Esports": {
+      "2026": "Turkiye"
+    },
+    "DKB XPERION NXT": {
+      "2024": "Unknown",
+      "2025": "Unknown"
+    },
+    "DKB XPERION NXT RAW": {
+      "2024": "Unknown"
+    },
+    "DMG Esports": {
+      "2024": "Unknown",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "DN SOOPers": {
+      "2024": "LCK",
+      "2025": "LCK",
+      "2026": "LCK"
+    },
+    "DN SOOPers Academy": {
+      "2024": "Unknown",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "DN SOOPers Challengers": {
+      "2024": "LCK",
+      "2025": "LCK",
+      "2026": "LCK"
+    },
+    "DOCISK": {
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "DREN Esports": {
+      "2024": "Unknown"
+    },
+    "DSC3V": {
+      "2024": "Unknown"
+    },
+    "DSYRE": {
+      "2024": "Unknown"
+    },
+    "DUCKIE GETTERS": {
+      "2024": "Unknown"
+    },
+    "Dark Passage": {
+      "2024": "Turkiye",
+      "2026": "Turkiye"
+    },
+    "Dark Roses": {
+      "2025": "Unknown"
+    },
+    "DarkZero Dragonsteel": {
+      "2025": "Unknown"
+    },
+    "Deacoy": {
+      "2026": "Unknown"
+    },
+    "DeathMark E-Sports": {
+      "2026": "Unknown"
+    },
+    "Deep Cross Gaming": {
+      "2024": "Taiwan",
+      "2025": "Taiwan",
+      "2026": "Taiwan"
+    },
+    "Deep Cross Gaming Academy": {
+      "2024": "Unknown"
+    },
+    "Deer Gaming": {
+      "2026": "Unknown"
+    },
+    "Definitely not washed up": {
+      "2026": "Unknown"
+    },
+    "Delta Syndicate": {
+      "2024": "Unknown",
+      "2025": "Unknown"
+    },
+    "Deltan Gaming": {
+      "2025": "Japan"
+    },
+    "DetonatioN FocusMe": {
+      "2024": "Japan",
+      "2025": "Japan",
+      "2026": "Japan"
+    },
+    "DetonatioN FocusMe Academy": {
+      "2024": "Unknown",
+      "2025": "Japan",
+      "2026": "Japan"
+    },
+    "Diamant Esports": {
+      "2024": "Unknown"
+    },
+    "Dignitas": {
+      "2024": "NA",
+      "2025": "NA",
+      "2026": "NA"
+    },
+    "Dire Wolves": {
+      "2024": "Oceania"
+    },
+    "Direct Rising eSports": {
+      "2024": "Unknown"
+    },
+    "Disguised": {
+      "2024": "Unknown",
+      "2025": "NA",
+      "2026": "NA"
+    },
+    "Disruptors": {
+      "2026": "Unknown"
+    },
+    "Diver (Portuguese Team)": {
+      "2025": "Unknown"
+    },
+    "Divernex": {
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Diversion Academy": {
+      "2024": "Unknown"
+    },
+    "Diversion Gaming": {
+      "2024": "Unknown",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Docta Esports": {
+      "2026": "Unknown"
+    },
+    "Dominion Goblins": {
+      "2026": "Unknown"
+    },
+    "Dopamina E-Sport": {
+      "2025": "Unknown"
+    },
+    "Dorado Gaming": {
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Dplus Kia": {
+      "2024": "LCK",
+      "2025": "LCK",
+      "2026": "LCK"
+    },
+    "Dplus Kia Academy": {
+      "2024": "Unknown",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Dplus Kia Challengers": {
+      "2024": "LCK",
+      "2025": "LCK",
+      "2026": "LCK"
+    },
+    "Dragons Esports": {
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Dragonsteel": {
+      "2024": "Unknown"
+    },
+    "Dragoon's Goons": {
+      "2024": "Unknown"
+    },
+    "Dream Esports": {
+      "2026": "Unknown"
+    },
+    "Dream Makers": {
+      "2024": "Unknown",
+      "2025": "Unknown"
+    },
+    "Dream in 24": {
+      "2025": "Japan"
+    },
+    "Dung Dynasty": {
+      "2025": "Unknown"
+    },
+    "Dusty": {
+      "2024": "Unknown"
+    },
+    "Dutch Community Team": {
+      "2024": "Unknown"
+    },
+    "Dynamo Eclot": {
+      "2024": "Unknown",
+      "2025": "Unknown"
+    },
+    "Dynamo Eclot Talents": {
+      "2025": "Unknown"
+    },
+    "Dynasty": {
+      "2024": "Unknown",
+      "2026": "Unknown"
+    },
+    "E WIE EINFACH E-SPORTS": {
+      "2024": "Unknown",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "EDG Youth Team": {
+      "2024": "LPL",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "EDward Gaming": {
+      "2024": "LPL",
+      "2025": "LPL",
+      "2026": "LPL"
+    },
+    "EGN Esports": {
+      "2024": "Unknown"
+    },
+    "EKO Esports": {
+      "2024": "Unknown",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "EKSI EPTA": {
+      "2026": "Unknown"
+    },
+    "ENEMI3S": {
+      "2024": "Unknown"
+    },
+    "EPIC-DUDES": {
+      "2024": "Unknown"
+    },
+    "ESEV Zephyr Ares": {
+      "2024": "Unknown"
+    },
+    "EXILE esports": {
+      "2024": "Unknown",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "EXILE esports Academy": {
+      "2024": "Unknown",
+      "2026": "Unknown"
+    },
+    "EXSAD Gaming": {
+      "2026": "Unknown"
+    },
+    "Easier to Run": {
+      "2024": "Unknown"
+    },
+    "Eclipse Gaming": {
+      "2024": "Unknown"
+    },
+    "Ei Nerd Esports": {
+      "2026": "Unknown"
+    },
+    "Eintracht Frankfurt": {
+      "2024": "Unknown",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Eintracht Spandau": {
+      "2024": "Unknown",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Elegance": {
+      "2026": "Unknown"
+    },
+    "Embrace Whatever Happens": {
+      "2026": "Taiwan"
+    },
+    "Emrys Esports White": {
+      "2024": "Unknown"
+    },
+    "Entropiq": {
+      "2024": "Unknown",
+      "2025": "Unknown"
+    },
+    "Entropy x Teufel": {
+      "2024": "Unknown"
+    },
+    "Epic Avalanche": {
+      "2024": "Unknown",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Epitomy Crash": {
+      "2026": "Unknown"
+    },
+    "Epitomy Esports": {
+      "2026": "Unknown"
+    },
+    "Epitomy Masters": {
+      "2026": "Unknown"
+    },
+    "Epitomy Warriors": {
+      "2026": "Unknown"
+    },
+    "Equinox Core": {
+      "2026": "Taiwan"
+    },
+    "Erfolg Esports": {
+      "2024": "Unknown"
+    },
+    "Esport STUBA": {
+      "2024": "Unknown"
+    },
+    "Esport STUBA Academy": {
+      "2024": "Unknown"
+    },
+    "Esprit Sh\u014dnen": {
+      "2024": "Unknown",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Estral Esports": {
+      "2024": "LATAM",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Eternal Fire": {
+      "2025": "Turkiye"
+    },
+    "Ethereal Enigmas": {
+      "2024": "Unknown",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Eunpyeong Meditech High School": {
+      "2026": "Unknown"
+    },
+    "Europe Saviors Club": {
+      "2024": "Unknown"
+    },
+    "Evil genius": {
+      "2025": "Vietnam"
+    },
+    "Evolve eSports": {
+      "2025": "Unknown"
+    },
+    "FC Schalke 04 Esports": {
+      "2024": "Unknown"
+    },
+    "FENNEL": {
+      "2026": "Japan"
+    },
+    "FLY5": {
+      "2024": "Unknown"
+    },
+    "FN Esports": {
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "FRK": {
+      "2025": "Unknown"
+    },
+    "FURIA": {
+      "2024": "LATAM",
+      "2025": "LATAM",
+      "2026": "LATAM"
+    },
+    "FURIA Youth": {
+      "2024": "LATAM"
+    },
+    "FURY Global": {
+      "2024": "Oceania"
+    },
+    "FUSE": {
+      "2026": "Unknown"
+    },
+    "FUSION (Latin American Team)": {
+      "2025": "Unknown"
+    },
+    "FUT Esports": {
+      "2024": "Turkiye"
+    },
+    "Falke Esports": {
+      "2024": "Unknown",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Fantastic Esports": {
+      "2025": "Unknown"
+    },
+    "Farenvehn": {
+      "2025": "Unknown"
+    },
+    "Fast8": {
+      "2026": "Japan"
+    },
+    "Fear x Starforge": {
+      "2024": "Unknown"
+    },
+    "Fight For Ever": {
+      "2024": "Unknown"
+    },
+    "FlameHard": {
+      "2024": "Unknown",
+      "2025": "Unknown"
+    },
+    "Flamengo Academy": {
+      "2024": "LATAM"
+    },
+    "Flamengo MDL": {
+      "2024": "LATAM",
+      "2025": "Unknown"
+    },
+    "Fluxo": {
+      "2024": "LATAM"
+    },
+    "Fluxo Academy": {
+      "2024": "LATAM"
+    },
+    "Fluxo W7M": {
+      "2025": "LATAM",
+      "2026": "LATAM"
+    },
+    "FlyQuest": {
+      "2024": "NA",
+      "2025": "NA",
+      "2026": "NA"
+    },
+    "FlyQuest NZXT": {
+      "2024": "Unknown"
+    },
+    "Fnatic": {
+      "2024": "EMEA",
+      "2025": "EMEA",
+      "2026": "EMEA"
+    },
+    "Fog Esports": {
+      "2024": "Unknown",
+      "2025": "Unknown"
+    },
+    "Footprint Gaming": {
+      "2025": "Unknown"
+    },
+    "For The Win Esports": {
+      "2025": "Unknown"
+    },
+    "Forsaken": {
+      "2024": "Unknown",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Fortress Esports": {
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Fortune Makers": {
+      "2024": "Unknown"
+    },
+    "Fourth Wall": {
+      "2024": "Unknown"
+    },
+    "Fox Gaming": {
+      "2024": "Unknown",
+      "2025": "Unknown"
+    },
+    "FoxFire": {
+      "2024": "Unknown"
+    },
+    "Foxnyr Esports": {
+      "2024": "Unknown"
+    },
+    "Fractious eSports": {
+      "2025": "Unknown"
+    },
+    "Francesinhas": {
+      "2026": "Unknown"
+    },
+    "Frank Esports": {
+      "2024": "Taiwan",
+      "2025": "Taiwan",
+      "2026": "Taiwan"
+    },
+    "Frank Esports Academy": {
+      "2024": "Unknown"
+    },
+    "French Flair": {
+      "2026": "Unknown"
+    },
+    "Frites Esports Club": {
+      "2026": "Unknown"
+    },
+    "Frontier x Veni": {
+      "2024": "Unknown"
+    },
+    "Fuego": {
+      "2024": "Unknown",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Fukuoka SoftBank HAWKS gaming": {
+      "2024": "Japan",
+      "2025": "Japan",
+      "2026": "Japan"
+    },
+    "FunPlus Phoenix": {
+      "2024": "LPL",
+      "2025": "LPL"
+    },
+    "FunPlus Phoenix Blaze": {
+      "2024": "LPL"
+    },
+    "Furious Gaming": {
+      "2024": "Unknown"
+    },
+    "G2 Esports": {
+      "2024": "EMEA",
+      "2025": "EMEA",
+      "2026": "EMEA"
+    },
+    "G2 Hel": {
+      "2025": "Unknown"
+    },
+    "G2 NORD": {
+      "2026": "Unknown"
+    },
+    "G3V E-sports": {
+      "2026": "Unknown"
+    },
+    "GAM Esports": {
+      "2024": "Vietnam",
+      "2025": "Vietnam",
+      "2026": "Vietnam"
+    },
+    "GD Esports": {
+      "2026": "Unknown"
+    },
+    "GIANTX iTero": {
+      "2024": "Unknown",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "GLORE": {
+      "2024": "Unknown",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "GMBLERS Esports": {
+      "2024": "Unknown",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "GOAL": {
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "GRP Esports": {
+      "2024": "Unknown"
+    },
+    "GTZ Esports": {
+      "2024": "Unknown",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Galakticos": {
+      "2024": "Turkiye"
+    },
+    "Galions": {
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Galions Sharks": {
+      "2026": "Unknown"
+    },
+    "GameWard": {
+      "2024": "Unknown",
+      "2025": "Unknown"
+    },
+    "Gamers404": {
+      "2024": "Unknown"
+    },
+    "Gamespace Mediterranean College Esports": {
+      "2024": "Unknown",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Gaming Barcelona": {
+      "2025": "Unknown"
+    },
+    "Garden Gaming": {
+      "2024": "Unknown"
+    },
+    "Geekay Esports": {
+      "2024": "Unknown",
+      "2025": "Unknown"
+    },
+    "Gen.G": {
+      "2024": "LCK",
+      "2025": "LCK",
+      "2026": "LCK"
+    },
+    "Gen.G Global Academy": {
+      "2024": "LCK",
+      "2025": "LCK",
+      "2026": "LCK"
+    },
+    "Gen.G Scholars": {
+      "2024": "Unknown",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "GenZ Gaming": {
+      "2025": "Vietnam"
+    },
+    "Gentle Hearts Gaming": {
+      "2024": "Unknown"
+    },
+    "Gentle Mates": {
+      "2024": "Unknown",
+      "2025": "Unknown"
+    },
+    "Gera\u00e7\u00e3o Estrutura": {
+      "2024": "Unknown",
+      "2025": "Unknown"
+    },
+    "GiantX": {
+      "2024": "EMEA",
+      "2025": "EMEA",
+      "2026": "EMEA"
+    },
+    "Gity Meavedronu": {
+      "2026": "Unknown"
+    },
+    "GnG Amazigh": {
+      "2024": "Unknown",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Golden Lions": {
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Gravity": {
+      "2024": "Unknown"
+    },
+    "Green Dolphin Gaming": {
+      "2024": "Unknown",
+      "2025": "Unknown"
+    },
+    "Ground Zero Academy": {
+      "2026": "Taiwan"
+    },
+    "Ground Zero Gaming": {
+      "2024": "Oceania",
+      "2025": "Taiwan",
+      "2026": "Taiwan"
+    },
+    "Grow uP eSports": {
+      "2025": "Unknown"
+    },
+    "Guangdong Flying Tigers": {
+      "2024": "Unknown"
+    },
+    "Guasones": {
+      "2024": "Unknown",
+      "2025": "Unknown"
+    },
+    "Guinea Pink": {
+      "2024": "Unknown",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Gwenchana": {
+      "2025": "Unknown"
+    },
+    "H3ARTS": {
+      "2024": "Unknown"
+    },
+    "HANGMEN": {
+      "2026": "Unknown"
+    },
+    "HANJIN BRION": {
+      "2024": "LCK",
+      "2025": "LCK",
+      "2026": "LCK"
+    },
+    "HANJIN BRION Academy": {
+      "2024": "Unknown",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "HANJIN BRION Challengers": {
+      "2024": "LCK",
+      "2025": "LCK",
+      "2026": "LCK"
+    },
+    "HELL PIGS": {
+      "2024": "Taiwan",
+      "2025": "Taiwan"
+    },
+    "HEMLOCK Titans": {
+      "2026": "Unknown"
+    },
+    "HMBLE": {
+      "2026": "Unknown"
+    },
+    "HST": {
+      "2025": "Vietnam"
+    },
+    "HUGE Esport": {
+      "2024": "Unknown"
+    },
+    "HUTECH CHICKEN": {
+      "2025": "Vietnam"
+    },
+    "Hands": {
+      "2025": "Japan"
+    },
+    "Hannover Esports e.V.": {
+      "2025": "Unknown"
+    },
+    "Hanoi Rookies Esports": {
+      "2025": "Vietnam"
+    },
+    "Hanwha Life Esports": {
+      "2024": "LCK",
+      "2025": "LCK",
+      "2026": "LCK"
+    },
+    "Hanwha Life Esports Academy": {
+      "2024": "Unknown",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Hanwha Life Esports Challengers": {
+      "2024": "LCK",
+      "2025": "LCK",
+      "2026": "LCK"
+    },
+    "Hazing Chase": {
+      "2024": "Unknown"
+    },
+    "Heracles Gaming": {
+      "2024": "Unknown"
+    },
+    "Hooligans": {
+      "2026": "Unknown"
+    },
+    "Howl Esports": {
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Human Apex Predator": {
+      "2025": "Unknown"
+    },
+    "Hungkuang Falcon (\u5f18\u5149\u7375\u9df9)": {
+      "2024": "Unknown",
+      "2025": "Taiwan"
+    },
+    "Hurricane of Feathers": {
+      "2024": "Unknown",
+      "2025": "Unknown"
+    },
+    "Huskies Esports": {
+      "2026": "Unknown"
+    },
+    "Hyper Vortex Esports": {
+      "2025": "Vietnam"
+    },
+    "Hyperion (Portuguese Team)": {
+      "2026": "Unknown"
+    },
+    "IME Wolves": {
+      "2024": "Unknown"
+    },
+    "IMU Beyond": {
+      "2024": "Unknown"
+    },
+    "INT Esports": {
+      "2024": "Unknown"
+    },
+    "INTZ": {
+      "2024": "LATAM",
+      "2026": "Unknown"
+    },
+    "INTZ Academy": {
+      "2024": "LATAM"
+    },
+    "ION Global Esports": {
+      "2024": "Oceania"
+    },
+    "ITU Rangers": {
+      "2026": "Turkiye"
+    },
+    "Ici Japon Corp. Esport": {
+      "2024": "Unknown",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Icon Esports": {
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Ilha das Lendas": {
+      "2024": "LATAM"
+    },
+    "Immortals": {
+      "2024": "NA"
+    },
+    "Impunity": {
+      "2024": "Unknown"
+    },
+    "Infernal Wolves": {
+      "2024": "Unknown"
+    },
+    "Inferno Drive Tokyo": {
+      "2026": "Japan"
+    },
+    "Inferno Esports": {
+      "2025": "Unknown"
+    },
+    "Inside Games": {
+      "2024": "Unknown",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Instituto Polit\u00e9cnico de Santar\u00e9m": {
+      "2026": "Unknown"
+    },
+    "International Esports Industry Center": {
+      "2024": "Unknown"
+    },
+    "Invictus Gaming": {
+      "2024": "LPL",
+      "2025": "LPL",
+      "2026": "LPL"
+    },
+    "Invictus Gaming Young": {
+      "2024": "LPL"
+    },
+    "Invokers": {
+      "2026": "Unknown"
+    },
+    "Ionikos Nikaias Esports": {
+      "2024": "Unknown"
+    },
+    "Iron Wolves": {
+      "2024": "Unknown"
+    },
+    "Isurus": {
+      "2024": "LATAM",
+      "2025": "LATAM"
+    },
+    "Isurus Estral": {
+      "2025": "LATAM"
+    },
+    "Izanagi Ignis": {
+      "2024": "Unknown"
+    },
+    "IziDream": {
+      "2024": "Unknown",
+      "2025": "Unknown"
+    },
+    "J Team": {
+      "2024": "Taiwan"
+    },
+    "JD Gaming": {
+      "2024": "LPL",
+      "2025": "LPL",
+      "2026": "LPL"
+    },
+    "JSK Esports": {
+      "2026": "Unknown"
+    },
+    "JY Gaming": {
+      "2025": "Taiwan"
+    },
+    "Janus Panter": {
+      "2024": "Unknown"
+    },
+    "Japan (National Team)": {
+      "2025": "LCK"
+    },
+    "Ji Jie Hao (\u96c6\u7ed3\u53f7)": {
+      "2024": "LPL"
+    },
+    "Joblife": {
+      "2024": "Unknown",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Joker Strike": {
+      "2024": "Unknown"
+    },
+    "Jolly Rogers": {
+      "2025": "Unknown"
+    },
+    "Joy Dream": {
+      "2024": "LPL"
+    },
+    "Juicy Ballers": {
+      "2024": "Unknown"
+    },
+    "J\u00f6rmungang": {
+      "2024": "Unknown",
+      "2025": "Unknown"
+    },
+    "J\u00f6rmungang Academy": {
+      "2024": "Unknown"
+    },
+    "KAOS e-sport": {
+      "2024": "Unknown",
+      "2025": "Unknown"
+    },
+    "KIA.eSuba Academy": {
+      "2024": "Unknown",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "KRC Genk Esports": {
+      "2024": "Unknown"
+    },
+    "KT Rolster": {
+      "2024": "LCK",
+      "2025": "LCK",
+      "2026": "LCK"
+    },
+    "KT Rolster Academy": {
+      "2024": "Unknown",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "KT Rolster Challengers": {
+      "2024": "LCK",
+      "2025": "LCK",
+      "2026": "LCK"
+    },
+    "KaBuM! Academy": {
+      "2024": "LATAM"
+    },
+    "KaBuM! Esports": {
+      "2024": "LATAM"
+    },
+    "KaBuM! Ilha das Lendas": {
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Kaeru Gyuangu": {
+      "2025": "Unknown"
+    },
+    "Kafard Academie": {
+      "2024": "Unknown"
+    },
+    "Kanga Esports": {
+      "2024": "Oceania"
+    },
+    "Karam El Sham": {
+      "2025": "Unknown"
+    },
+    "Karasuno": {
+      "2024": "Unknown"
+    },
+    "Kareha Children": {
+      "2025": "Japan"
+    },
+    "Karmine Corp": {
+      "2024": "EMEA",
+      "2025": "EMEA",
+      "2026": "EMEA"
+    },
+    "Karmine Corp Blue": {
+      "2024": "Unknown",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Karmine Corp Blue Stars": {
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Kaufland Hangry Knights": {
+      "2024": "Unknown",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Kawaii Kiwis": {
+      "2024": "Unknown",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Keypulse Esports": {
+      "2024": "Unknown",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Kiedy\u015b Mia\u0142em Fun": {
+      "2024": "Unknown",
+      "2025": "Unknown"
+    },
+    "Kits Esports": {
+      "2026": "Unknown"
+    },
+    "Kiwoom DRX": {
+      "2024": "LCK",
+      "2025": "LCK",
+      "2026": "LCK"
+    },
+    "Kiwoom DRX Academy": {
+      "2024": "Unknown",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Kiwoom DRX Challengers": {
+      "2024": "LCK",
+      "2025": "LCK",
+      "2026": "LCK"
+    },
+    "Klanik Esport": {
+      "2024": "Unknown"
+    },
+    "Kleyton Rhasta": {
+      "2026": "Unknown"
+    },
+    "Komodo": {
+      "2024": "Unknown"
+    },
+    "KrabbelGruppeAlpha": {
+      "2025": "Unknown"
+    },
+    "Kuma e-Sports": {
+      "2026": "Unknown"
+    },
+    "Kyo eSports": {
+      "2025": "Taiwan"
+    },
+    "L Guide Gaming": {
+      "2026": "Japan"
+    },
+    "LEGACY5": {
+      "2025": "Unknown"
+    },
+    "LGD Gaming": {
+      "2024": "LPL",
+      "2025": "LPL",
+      "2026": "LPL"
+    },
+    "LGD Gaming Young Team": {
+      "2024": "LPL",
+      "2025": "Unknown"
+    },
+    "LNG Academy": {
+      "2024": "LPL",
+      "2025": "Unknown"
+    },
+    "LNG Esports": {
+      "2024": "LPL",
+      "2025": "LPL",
+      "2026": "LPL"
+    },
+    "LODIS": {
+      "2024": "Unknown",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "LOUD": {
+      "2024": "LATAM",
+      "2025": "LATAM",
+      "2026": "LATAM"
+    },
+    "LOUD Academy": {
+      "2024": "LATAM"
+    },
+    "LUA Gaming": {
+      "2024": "Unknown",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "LYON": {
+      "2025": "NA",
+      "2026": "NA"
+    },
+    "LYON Academy": {
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "La Alta Parroquia": {
+      "2024": "Unknown"
+    },
+    "La BOMBAS": {
+      "2026": "Unknown"
+    },
+    "Laffson's gang": {
+      "2024": "Unknown"
+    },
+    "Laranja Mec\u00e2nica Ignis": {
+      "2024": "Unknown"
+    },
+    "Lausanne-Sport Esports": {
+      "2026": "Unknown"
+    },
+    "Lazy In Life": {
+      "2024": "Unknown"
+    },
+    "Le Pouvoir de l'Amiti\u00e9": {
+      "2024": "Unknown"
+    },
+    "Le ZOO Esport": {
+      "2026": "Unknown"
+    },
+    "Lechuga Gaming": {
+      "2025": "Unknown"
+    },
+    "Lenovo Legion Honv\u00e9d": {
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Leviatan": {
+      "2024": "LATAM",
+      "2025": "LATAM",
+      "2026": "LATAM"
+    },
+    "Le\u00f5es Porto Salvo Esports": {
+      "2024": "Unknown",
+      "2025": "Unknown"
+    },
+    "LiT Esports": {
+      "2024": "Unknown"
+    },
+    "Liberty": {
+      "2024": "LATAM"
+    },
+    "Liberty Academy": {
+      "2024": "LATAM"
+    },
+    "Ligre Gaming": {
+      "2025": "Unknown"
+    },
+    "Lille Esport": {
+      "2024": "Unknown",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Lionscreed": {
+      "2024": "Unknown"
+    },
+    "LittleSans": {
+      "2025": "Unknown"
+    },
+    "Los Goccioles": {
+      "2026": "Unknown"
+    },
+    "Los Ratones": {
+      "2025": "Unknown",
+      "2026": "EMEA"
+    },
+    "Lotus": {
+      "2024": "Unknown",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Lotus Knights": {
+      "2024": "Unknown"
+    },
+    "Luminosity Gaming": {
+      "2025": "Unknown"
+    },
+    "Lund Esports Organization": {
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Lundqvist Lightside": {
+      "2024": "Unknown",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Lupus Esports": {
+      "2024": "Unknown",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Lynch Esports": {
+      "2024": "Unknown"
+    },
+    "L\u00d8S": {
+      "2024": "LATAM",
+      "2025": "Unknown",
+      "2026": "LATAM"
+    },
+    "L\u00d8S Academy": {
+      "2024": "LATAM"
+    },
+    "L\u2019art de la Guerre": {
+      "2024": "Unknown"
+    },
+    "MAD Lions KOI": {
+      "2024": "EMEA"
+    },
+    "MAMMOTH": {
+      "2024": "Oceania"
+    },
+    "MAX": {
+      "2024": "LPL"
+    },
+    "MGN Blue Esports": {
+      "2024": "Vietnam"
+    },
+    "MGN Vikings Academy": {
+      "2025": "Vietnam"
+    },
+    "MGN Vikings Esports": {
+      "2024": "Vietnam",
+      "2025": "Vietnam"
+    },
+    "MHSC Esport": {
+      "2024": "Unknown"
+    },
+    "MIBR": {
+      "2024": "Unknown"
+    },
+    "MOUZ NXT": {
+      "2024": "Unknown"
+    },
+    "MVK Esports": {
+      "2026": "Vietnam"
+    },
+    "MVK Esports Academy": {
+      "2026": "Vietnam"
+    },
+    "MY STAR": {
+      "2025": "Unknown"
+    },
+    "Macko Academy": {
+      "2026": "Unknown"
+    },
+    "Macko Esports": {
+      "2024": "Unknown",
+      "2025": "Unknown"
+    },
+    "Macko Invictus": {
+      "2026": "Unknown"
+    },
+    "Maelstrom Esports": {
+      "2024": "Unknown"
+    },
+    "Magaza Esports": {
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Magyar Gamer Sz\u00f6vets\u00e8g": {
+      "2026": "Unknown"
+    },
+    "Malvinas Gaming": {
+      "2024": "Unknown",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Malvinas Gaming EU": {
+      "2024": "Unknown"
+    },
+    "Maryville University": {
+      "2024": "Unknown",
+      "2026": "Unknown"
+    },
+    "Maverix": {
+      "2024": "Unknown"
+    },
+    "Maze Gaming": {
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Meavedron": {
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Melilla Titans": {
+      "2024": "Unknown",
+      "2025": "Unknown"
+    },
+    "Mental Over Tempo": {
+      "2025": "Unknown"
+    },
+    "Meta Gaming": {
+      "2024": "Unknown"
+    },
+    "Metin2 Enjoyers": {
+      "2025": "Unknown"
+    },
+    "MiaoJing (\u5999\u7ade)": {
+      "2024": "LPL"
+    },
+    "Mighty Eagles": {
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Mila Gaming": {
+      "2025": "Vietnam"
+    },
+    "Mind Blue Futures": {
+      "2024": "Unknown"
+    },
+    "Mind Blue eSports": {
+      "2024": "Unknown"
+    },
+    "Mirage Alliance": {
+      "2024": "Unknown"
+    },
+    "Misa Esports": {
+      "2024": "Turkiye",
+      "2025": "Turkiye",
+      "2026": "Turkiye"
+    },
+    "Mi\u00f0gar\u00f0 Esports": {
+      "2026": "Unknown"
+    },
+    "Monta Club": {
+      "2025": "Unknown"
+    },
+    "Movistar KOI": {
+      "2024": "Unknown",
+      "2025": "EMEA",
+      "2026": "EMEA"
+    },
+    "Movistar KOI F\u00e9nix": {
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Movistar R7": {
+      "2024": "LATAM"
+    },
+    "Myth Esports": {
+      "2024": "Unknown",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "M\u00fcnster Esports - Golden Goats": {
+      "2025": "Unknown"
+    },
+    "NASR eSports Turkey": {
+      "2024": "Turkiye"
+    },
+    "NCG Esports": {
+      "2026": "Unknown"
+    },
+    "NEO ZEPHYR": {
+      "2025": "Unknown"
+    },
+    "NGU eSports": {
+      "2025": "Unknown"
+    },
+    "NNO Prime": {
+      "2024": "Unknown"
+    },
+    "NONAME": {
+      "2024": "Unknown"
+    },
+    "NONAMES (Turkish Team)": {
+      "2024": "Unknown"
+    },
+    "NORD Esports": {
+      "2024": "Unknown",
+      "2025": "Unknown"
+    },
+    "NORTHERNGRADE ESPORTS": {
+      "2026": "Unknown"
+    },
+    "NORTHS FURY": {
+      "2025": "Unknown"
+    },
+    "NOVEX": {
+      "2026": "Japan"
+    },
+    "NRG": {
+      "2024": "NA",
+      "2026": "Unknown"
+    },
+    "Nameless (French Team)": {
+      "2024": "Unknown"
+    },
+    "Nativz": {
+      "2024": "Unknown"
+    },
+    "Natus Vincere": {
+      "2025": "EMEA",
+      "2026": "EMEA"
+    },
+    "Near Airport": {
+      "2025": "Unknown"
+    },
+    "Nerd's Gangster's Carecas": {
+      "2026": "Unknown"
+    },
+    "Never Give Up": {
+      "2025": "Vietnam"
+    },
+    "New Meta": {
+      "2026": "Japan"
+    },
+    "Next Level Esports": {
+      "2024": "Unknown"
+    },
+    "NextGeneration Esports": {
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Ng\u1ef1a H\u00ed Esports": {
+      "2026": "Vietnam"
+    },
+    "Nice Try": {
+      "2025": "Unknown"
+    },
+    "Nigel's Last Tiles": {
+      "2024": "Unknown"
+    },
+    "Night Cap": {
+      "2025": "Japan"
+    },
+    "Nightbirds": {
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Nightblood Gaming": {
+      "2024": "Unknown"
+    },
+    "Nigma Galaxy": {
+      "2024": "Unknown",
+      "2025": "Unknown"
+    },
+    "Nine Lives Esports": {
+      "2026": "Unknown"
+    },
+    "Ninjas in Pyjamas": {
+      "2024": "LPL",
+      "2025": "LPL",
+      "2026": "LPL"
+    },
+    "No Barry Berry": {
+      "2025": "Taiwan"
+    },
+    "Nocturne Gale": {
+      "2025": "Unknown"
+    },
+    "Nongshim Esports Academy": {
+      "2024": "LCK",
+      "2025": "LCK",
+      "2026": "LCK"
+    },
+    "Nongshim RedForce": {
+      "2024": "LCK",
+      "2025": "LCK",
+      "2026": "LCK"
+    },
+    "Nongshim RedForce Academy": {
+      "2024": "Unknown",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Nugget enterprises": {
+      "2026": "Unknown"
+    },
+    "ODD Esports": {
+      "2025": "Unknown"
+    },
+    "OGC Esports": {
+      "2024": "Unknown"
+    },
+    "OGC Sigma Esports": {
+      "2024": "Unknown"
+    },
+    "Observant Force": {
+      "2026": "Unknown"
+    },
+    "Obsidian Oath": {
+      "2026": "Unknown"
+    },
+    "Ocean & Kimi Tournament Alliance": {
+      "2026": "Unknown"
+    },
+    "Odivelas Sports Club": {
+      "2024": "Unknown",
+      "2025": "Unknown"
+    },
+    "Oh My God": {
+      "2024": "LPL",
+      "2025": "LPL",
+      "2026": "LPL"
+    },
+    "Oh My God Academy": {
+      "2024": "LPL",
+      "2025": "Unknown"
+    },
+    "Once Upon A Team": {
+      "2024": "Unknown",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "One More Esports": {
+      "2024": "Unknown",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "One Round Specialists": {
+      "2026": "Taiwan"
+    },
+    "One Way Esports": {
+      "2024": "Unknown"
+    },
+    "Onion Team": {
+      "2026": "Unknown"
+    },
+    "Only Heroes Academia": {
+      "2024": "Unknown"
+    },
+    "Only The Family": {
+      "2026": "Unknown"
+    },
+    "Orze\u0142 Barcz\u0105ca Esports": {
+      "2025": "Unknown"
+    },
+    "Osaka": {
+      "2024": "Unknown"
+    },
+    "Otter Side": {
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Ovos Moles eSports": {
+      "2026": "Unknown"
+    },
+    "Oxygen Gaming": {
+      "2024": "Unknown",
+      "2025": "Unknown"
+    },
+    "Ozarox Esports": {
+      "2026": "Turkiye"
+    },
+    "P11 Esports": {
+      "2026": "Unknown"
+    },
+    "PARAGON (British Team)": {
+      "2024": "Unknown"
+    },
+    "PCIFIC Esports": {
+      "2026": "Turkiye"
+    },
+    "PREDIQT": {
+      "2026": "Unknown"
+    },
+    "PRIMATE": {
+      "2024": "Unknown"
+    },
+    "PRINCIPALITY": {
+      "2024": "Unknown",
+      "2025": "Unknown"
+    },
+    "PSG Talon": {
+      "2024": "Taiwan",
+      "2025": "Taiwan"
+    },
+    "PSG Talon Academy": {
+      "2024": "Unknown",
+      "2025": "Taiwan"
+    },
+    "Packmiko E-Sports": {
+      "2024": "Unknown"
+    },
+    "PaiDA Miwan Bao": {
+      "2025": "Taiwan"
+    },
+    "PaiN Gaming Ignis": {
+      "2024": "Unknown"
+    },
+    "Pandinhas": {
+      "2026": "Unknown"
+    },
+    "Panel\u00e3o LHC": {
+      "2026": "Unknown"
+    },
+    "Papara SuperMassive": {
+      "2024": "Turkiye",
+      "2025": "Turkiye"
+    },
+    "Papo Secos": {
+      "2025": "Unknown"
+    },
+    "Paputs Gaming": {
+      "2025": "Unknown"
+    },
+    "Parakeet Gaming": {
+      "2024": "Unknown"
+    },
+    "Paranormal Invaders": {
+      "2024": "Unknown",
+      "2026": "Unknown"
+    },
+    "Partizan Esports": {
+      "2024": "Unknown",
+      "2025": "Unknown"
+    },
+    "Partizan Sangal": {
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Pee N W's": {
+      "2024": "Unknown"
+    },
+    "PepePo": {
+      "2024": "Unknown"
+    },
+    "PepeTinkyWinky": {
+      "2024": "Unknown"
+    },
+    "Periquitos Zangados Gaming": {
+      "2026": "Unknown"
+    },
+    "Permitta eSports": {
+      "2025": "Unknown"
+    },
+    "Pertinax Esports": {
+      "2024": "Unknown"
+    },
+    "Phoenix Esports": {
+      "2024": "Unknown"
+    },
+    "Pirates IDV": {
+      "2024": "Unknown"
+    },
+    "Polar Squad Esports": {
+      "2026": "Unknown"
+    },
+    "Priority": {
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Project Conquerors": {
+      "2024": "Unknown",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Pulse Star": {
+      "2024": "Unknown",
+      "2025": "Unknown"
+    },
+    "Pyramid IV Esports": {
+      "2026": "Unknown"
+    },
+    "P\u00caEK Gaming": {
+      "2024": "Unknown",
+      "2025": "Unknown"
+    },
+    "QT DIG\u221e": {
+      "2024": "Japan",
+      "2025": "Japan"
+    },
+    "R5 Esports": {
+      "2024": "Unknown"
+    },
+    "RA'AD": {
+      "2024": "Unknown"
+    },
+    "RAMPAGE": {
+      "2026": "Unknown"
+    },
+    "RATZ": {
+      "2025": "Unknown"
+    },
+    "RAYN Clocks": {
+      "2025": "Japan",
+      "2026": "Japan"
+    },
+    "RED Academy": {
+      "2024": "LATAM",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "RED Canids": {
+      "2024": "LATAM",
+      "2025": "LATAM",
+      "2026": "LATAM"
+    },
+    "RED OUAT": {
+      "2024": "Unknown"
+    },
+    "REDPack Esports": {
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "REJECT": {
+      "2025": "Japan"
+    },
+    "RIP MAMBERROI": {
+      "2024": "Unknown"
+    },
+    "RLX Esports": {
+      "2026": "Unknown"
+    },
+    "RMD Gaming": {
+      "2026": "Unknown"
+    },
+    "RNL ROAR": {
+      "2024": "Unknown"
+    },
+    "ROSSMANN Centaurs": {
+      "2024": "Unknown",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "RQS Esports": {
+      "2024": "Unknown"
+    },
+    "Radical Pop Gaming": {
+      "2025": "Japan"
+    },
+    "Rage Bait e-Sports": {
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Rainbow Warriors": {
+      "2024": "Vietnam"
+    },
+    "Ramboot Club": {
+      "2024": "Unknown",
+      "2025": "Unknown"
+    },
+    "Rare Atom": {
+      "2024": "LPL"
+    },
+    "Rare Atom Period": {
+      "2024": "LPL"
+    },
+    "Rebels Gaming": {
+      "2024": "Unknown"
+    },
+    "Regem": {
+      "2024": "Unknown"
+    },
+    "Reignfall": {
+      "2026": "Taiwan"
+    },
+    "ReluminateGG": {
+      "2024": "Unknown"
+    },
+    "Repre Gold": {
+      "2024": "Unknown"
+    },
+    "Revolution Victory X": {
+      "2026": "Japan"
+    },
+    "Rich Gang": {
+      "2024": "Unknown",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Rise Gaming": {
+      "2024": "LATAM",
+      "2025": "Unknown"
+    },
+    "Rise Gaming Ignis": {
+      "2024": "Unknown"
+    },
+    "Rising Gaming": {
+      "2026": "Japan"
+    },
+    "RogerSaMa": {
+      "2026": "Taiwan"
+    },
+    "Rogue": {
+      "2024": "EMEA",
+      "2025": "EMEA"
+    },
+    "Role Swappers": {
+      "2026": "Unknown"
+    },
+    "Ronaldo Team": {
+      "2026": "Unknown"
+    },
+    "Royal Club": {
+      "2024": "LPL"
+    },
+    "Royal Never Give Up": {
+      "2024": "LPL",
+      "2025": "LPL"
+    },
+    "Ruddy Corporation": {
+      "2024": "Unknown",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Rugby Club Hav\u00ed\u0159ov": {
+      "2026": "Unknown"
+    },
+    "Rumble Victory eSports": {
+      "2026": "Unknown"
+    },
+    "Ruzeh Esports": {
+      "2024": "Unknown"
+    },
+    "S2G Esports": {
+      "2026": "Turkiye"
+    },
+    "SAMCLAN Esports Club": {
+      "2024": "Unknown"
+    },
+    "SAW": {
+      "2024": "Unknown"
+    },
+    "SDM Tigres": {
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "SINS Esports": {
+      "2024": "Unknown",
+      "2025": "Unknown"
+    },
+    "SK Gaming": {
+      "2024": "EMEA",
+      "2025": "EMEA",
+      "2026": "EMEA"
+    },
+    "SK Gaming Avarosa": {
+      "2025": "Unknown"
+    },
+    "SK Gaming Prime": {
+      "2024": "Unknown"
+    },
+    "SN CyberCore Esports": {
+      "2025": "Vietnam",
+      "2026": "Vietnam"
+    },
+    "SNOOZE Esports": {
+      "2024": "Unknown",
+      "2026": "Unknown"
+    },
+    "SPAXFAMILY": {
+      "2026": "Unknown"
+    },
+    "SPIKE Syndicate": {
+      "2024": "Unknown",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "STAINED": {
+      "2026": "Unknown"
+    },
+    "SU Esports": {
+      "2026": "Turkiye"
+    },
+    "SabOOr T1": {
+      "2026": "Unknown"
+    },
+    "Saigon Secret": {
+      "2025": "Vietnam"
+    },
+    "Saigon Warriors": {
+      "2026": "Vietnam"
+    },
+    "Saving OCE": {
+      "2025": "Unknown"
+    },
+    "Sengoku Gaming Academy": {
+      "2024": "Unknown"
+    },
+    "Senshi eSports": {
+      "2024": "Unknown",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Sentinels": {
+      "2026": "NA"
+    },
+    "Seven Dark": {
+      "2024": "Unknown",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Shadow Keepers Esports": {
+      "2026": "Taiwan"
+    },
+    "Shark Attack": {
+      "2026": "Turkiye"
+    },
+    "Shifters": {
+      "2026": "EMEA"
+    },
+    "Shopify Rebellion": {
+      "2024": "NA",
+      "2025": "NA",
+      "2026": "NA"
+    },
+    "Sicar Esports": {
+      "2025": "Unknown"
+    },
+    "Silent Storm Esports": {
+      "2025": "Vietnam"
+    },
+    "SillySilly Gaming": {
+      "2026": "Taiwan"
+    },
+    "Six Karma": {
+      "2024": "LATAM"
+    },
+    "Skillcamp": {
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Solary": {
+      "2024": "Unknown",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Soul's Heart Esport": {
+      "2025": "Unknown"
+    },
+    "Spartans EU": {
+      "2024": "Unknown",
+      "2026": "Unknown"
+    },
+    "Spectacled Bears": {
+      "2024": "Unknown"
+    },
+    "Spinebusters E-Sport": {
+      "2024": "Unknown"
+    },
+    "Spirit Quartz Gaming": {
+      "2025": "Japan"
+    },
+    "Sponge Gaming": {
+      "2025": "Taiwan",
+      "2026": "Taiwan"
+    },
+    "Sportia Khore": {
+      "2025": "Unknown"
+    },
+    "Stellae Gaming": {
+      "2025": "Unknown"
+    },
+    "StoneHenge Esports": {
+      "2026": "Unknown"
+    },
+    "StoneHenge Esports Academy": {
+      "2026": "Unknown"
+    },
+    "StormMedia Fajnie Mie\u0107 Sk\u0142ad": {
+      "2025": "Unknown"
+    },
+    "Stormbringers": {
+      "2024": "Unknown"
+    },
+    "Str1ve eSports": {
+      "2025": "Unknown"
+    },
+    "StriX (Belgian Team)": {
+      "2024": "Unknown"
+    },
+    "Super Stars": {
+      "2026": "Unknown"
+    },
+    "Supernova": {
+      "2024": "Unknown",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "S\u00f8rby eSport": {
+      "2026": "Unknown"
+    },
+    "T1": {
+      "2024": "LCK",
+      "2025": "LCK",
+      "2026": "LCK"
+    },
+    "T1 Esports Academy": {
+      "2024": "LCK",
+      "2025": "LCK",
+      "2026": "LCK"
+    },
+    "T1 Esports Academy Rookies": {
+      "2024": "Unknown",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "TIGROTS": {
+      "2026": "Unknown"
+    },
+    "TITANS": {
+      "2026": "Unknown"
+    },
+    "TLN Pirates": {
+      "2026": "Unknown"
+    },
+    "TNU Eagle (\u6771\u5357\u98db\u9df9)": {
+      "2024": "Unknown"
+    },
+    "TQ DURPA KASHLQ": {
+      "2026": "Unknown"
+    },
+    "Tan'i eSports": {
+      "2024": "Unknown"
+    },
+    "Tan'i eSports CZ": {
+      "2025": "Unknown"
+    },
+    "Team 7AM": {
+      "2024": "Unknown"
+    },
+    "Team Anomaly Breaker": {
+      "2024": "Unknown"
+    },
+    "Team Aqua ASD": {
+      "2026": "Unknown"
+    },
+    "Team Axelent69": {
+      "2024": "Unknown"
+    },
+    "Team BDS": {
+      "2024": "EMEA",
+      "2025": "EMEA"
+    },
+    "Team BDS Academy": {
+      "2024": "Unknown",
+      "2025": "Unknown"
+    },
+    "Team Blaze 1": {
+      "2025": "Unknown"
+    },
+    "Team Bliss": {
+      "2024": "Oceania"
+    },
+    "Team DX": {
+      "2024": "Unknown"
+    },
+    "Team ESCA Gaming": {
+      "2024": "Unknown"
+    },
+    "Team Evermeet": {
+      "2025": "Unknown"
+    },
+    "Team Flash": {
+      "2024": "Vietnam",
+      "2025": "Vietnam"
+    },
+    "Team GMask": {
+      "2024": "Unknown"
+    },
+    "Team GO": {
+      "2024": "Unknown"
+    },
+    "Team Heretics": {
+      "2024": "EMEA",
+      "2025": "EMEA",
+      "2026": "EMEA"
+    },
+    "Team Heretics Academy": {
+      "2024": "Unknown",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Team High Ground": {
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Team Insidious": {
+      "2024": "Unknown",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Team Legion": {
+      "2024": "Unknown"
+    },
+    "Team Liquid": {
+      "2024": "NA",
+      "2025": "NA",
+      "2026": "NA"
+    },
+    "Team Liquid Challengers": {
+      "2024": "Unknown"
+    },
+    "Team Meliora": {
+      "2024": "Unknown",
+      "2025": "Unknown"
+    },
+    "Team Mentality": {
+      "2024": "Unknown",
+      "2025": "Unknown"
+    },
+    "Team Mythic": {
+      "2024": "Unknown"
+    },
+    "Team Phantasma": {
+      "2024": "Unknown",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Team Phoenix": {
+      "2026": "Turkiye"
+    },
+    "Team Refuse": {
+      "2024": "Unknown",
+      "2025": "Unknown"
+    },
+    "Team Revolta": {
+      "2025": "Unknown"
+    },
+    "Team Secret": {
+      "2024": "Vietnam",
+      "2026": "Vietnam"
+    },
+    "Team Secret Whales": {
+      "2025": "Vietnam",
+      "2026": "Vietnam"
+    },
+    "Team Shrimp": {
+      "2024": "Unknown"
+    },
+    "Team Solid": {
+      "2026": "Unknown"
+    },
+    "Team Solo Chauve": {
+      "2026": "Unknown"
+    },
+    "Team Spawn Peek": {
+      "2026": "Unknown"
+    },
+    "Team Tockers": {
+      "2025": "Unknown"
+    },
+    "Team UNiTY": {
+      "2024": "Unknown",
+      "2025": "Unknown"
+    },
+    "Team Valiant": {
+      "2025": "Unknown"
+    },
+    "Team Vitality": {
+      "2024": "EMEA",
+      "2025": "EMEA",
+      "2026": "EMEA"
+    },
+    "Team WE": {
+      "2024": "LPL",
+      "2025": "LPL",
+      "2026": "LPL"
+    },
+    "Team WE Academy": {
+      "2024": "LPL",
+      "2025": "Unknown"
+    },
+    "Team Whales": {
+      "2024": "Vietnam"
+    },
+    "Team du Sud": {
+      "2024": "Unknown"
+    },
+    "TeamOrangeGaming": {
+      "2024": "Unknown",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "TeamOrangeGaming Academy": {
+      "2025": "Unknown"
+    },
+    "Temper & Friends": {
+      "2025": "Unknown"
+    },
+    "The AstroDucks": {
+      "2026": "Unknown"
+    },
+    "The Bandits": {
+      "2026": "Unknown"
+    },
+    "The Forbidden Five": {
+      "2025": "Turkiye"
+    },
+    "The Gulls Esports": {
+      "2024": "Unknown"
+    },
+    "The New Kings": {
+      "2026": "Unknown"
+    },
+    "The ParadOx Invaders": {
+      "2024": "Unknown",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "The Secret Club": {
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "ThunderTalk Gaming": {
+      "2024": "LPL",
+      "2025": "LPL",
+      "2026": "LPL"
+    },
+    "ThunderTalk Gaming Young": {
+      "2024": "LPL",
+      "2025": "Unknown"
+    },
+    "Tigers eSports": {
+      "2025": "Unknown"
+    },
+    "Tomorrow Esports": {
+      "2024": "Unknown"
+    },
+    "Top 1 Benelux": {
+      "2024": "Unknown"
+    },
+    "Top Esports": {
+      "2024": "LPL",
+      "2025": "LPL",
+      "2026": "LPL"
+    },
+    "Top Esports Challenger": {
+      "2024": "LPL",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Tropa Raizen": {
+      "2024": "LATAM"
+    },
+    "Trupe dos Falange": {
+      "2026": "Unknown"
+    },
+    "Tu Pap\u00e1 Esports": {
+      "2026": "Unknown"
+    },
+    "Tung Tung Bogi": {
+      "2026": "Unknown"
+    },
+    "Twareg Esports": {
+      "2024": "Unknown"
+    },
+    "Twisted Minds": {
+      "2024": "Unknown"
+    },
+    "UB Alma Mater": {
+      "2026": "Unknown"
+    },
+    "UCAM Esports": {
+      "2024": "Unknown",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "UCAM Esports Academy": {
+      "2024": "Unknown"
+    },
+    "UCAM University Esports": {
+      "2024": "Unknown"
+    },
+    "UEC eSports PlusPlus": {
+      "2026": "Japan"
+    },
+    "ULF Esports": {
+      "2025": "Turkiye"
+    },
+    "UP2UMEDIA Cebulaki": {
+      "2026": "Unknown"
+    },
+    "UTeSports": {
+      "2026": "Japan"
+    },
+    "Ukrainian Glory Team": {
+      "2024": "Unknown"
+    },
+    "Ultra Prime": {
+      "2024": "LPL",
+      "2025": "LPL",
+      "2026": "LPL"
+    },
+    "Ultra Prime Academy": {
+      "2024": "LPL"
+    },
+    "Undead Gaming": {
+      "2024": "Unknown"
+    },
+    "Underworld Esports": {
+      "2025": "Unknown"
+    },
+    "UniQ Esports Club": {
+      "2024": "Unknown"
+    },
+    "Unicorns of Love Sexy Edition": {
+      "2024": "Unknown",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Universae Instituto FP": {
+      "2024": "Unknown",
+      "2025": "Unknown"
+    },
+    "University of Mississippi": {
+      "2024": "Unknown",
+      "2026": "Unknown"
+    },
+    "UnlockTan'i": {
+      "2024": "Unknown"
+    },
+    "Uwinks": {
+      "2026": "Japan"
+    },
+    "V3 Esports": {
+      "2024": "Japan",
+      "2025": "Japan",
+      "2026": "Japan"
+    },
+    "V3 Esports Academy": {
+      "2024": "Unknown"
+    },
+    "VARREL YOUTH": {
+      "2025": "Japan",
+      "2026": "Japan"
+    },
+    "VENOM Titans": {
+      "2026": "Unknown"
+    },
+    "VININE": {
+      "2024": "Unknown",
+      "2025": "Unknown"
+    },
+    "Valerion": {
+      "2026": "Unknown"
+    },
+    "Vancouver Impact": {
+      "2025": "Unknown"
+    },
+    "Vantex Esports": {
+      "2026": "Unknown"
+    },
+    "Vasco E-Sports": {
+      "2026": "Unknown"
+    },
+    "VeLocitY (Japanese Team)": {
+      "2025": "Japan"
+    },
+    "VelbeliKaizokudan": {
+      "2025": "Japan",
+      "2026": "Japan"
+    },
+    "Veni Vidi Vici": {
+      "2024": "Unknown",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Venomcrest Esports": {
+      "2024": "Unknown",
+      "2025": "Unknown"
+    },
+    "Venomcrest Serpents": {
+      "2025": "Unknown"
+    },
+    "Venus Gaming": {
+      "2025": "Vietnam"
+    },
+    "Verdant": {
+      "2024": "Unknown",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "VfB eSports": {
+      "2024": "Unknown",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Vietnam (National Team)": {
+      "2024": "LCK",
+      "2025": "LCK"
+    },
+    "Viper Night Raider": {
+      "2026": "Taiwan"
+    },
+    "Vitality Rising Bees": {
+      "2026": "Unknown"
+    },
+    "Vitality.Bee": {
+      "2024": "Unknown",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Vivo Keyd Stars": {
+      "2024": "LATAM",
+      "2025": "LATAM",
+      "2026": "LATAM"
+    },
+    "Vivo Keyd Stars Academy": {
+      "2024": "LATAM",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Vivo Keyd Stars Ignis": {
+      "2024": "Unknown"
+    },
+    "Void Requiem": {
+      "2025": "Unknown"
+    },
+    "Volda E-Sport": {
+      "2026": "Unknown"
+    },
+    "Volticons": {
+      "2026": "Unknown"
+    },
+    "Vortex (Japanese Team)": {
+      "2025": "Japan"
+    },
+    "WANG TOWN": {
+      "2024": "Unknown"
+    },
+    "WAP Esports": {
+      "2024": "Unknown",
+      "2025": "Unknown"
+    },
+    "WLGaming Esports": {
+      "2024": "Unknown",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Waia Snikt": {
+      "2024": "Unknown"
+    },
+    "Washed Gaming": {
+      "2026": "Unknown"
+    },
+    "Way Gaming Esports": {
+      "2026": "Unknown"
+    },
+    "We Can Win": {
+      "2025": "Japan"
+    },
+    "WeSports": {
+      "2024": "Unknown"
+    },
+    "Weibo Gaming": {
+      "2024": "LPL",
+      "2025": "LPL",
+      "2026": "LPL"
+    },
+    "Weibo Gaming Youth Team": {
+      "2024": "LPL",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "West Point Esports": {
+      "2024": "Taiwan",
+      "2025": "Taiwan"
+    },
+    "West Point Esports Academy": {
+      "2024": "Unknown"
+    },
+    "White Dragons": {
+      "2024": "Unknown",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Wild Panthers Esports": {
+      "2024": "Unknown"
+    },
+    "Wildcard Gaming": {
+      "2024": "Unknown"
+    },
+    "Winter (Brazilian Team)": {
+      "2024": "Unknown"
+    },
+    "Winthrop University": {
+      "2024": "Unknown",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Witchcraft": {
+      "2026": "Unknown"
+    },
+    "Wstyd Easta": {
+      "2024": "Unknown"
+    },
+    "XV eSports": {
+      "2024": "LATAM",
+      "2025": "Unknown"
+    },
+    "Xibalb\u00e1 Esports": {
+      "2025": "Unknown"
+    },
+    "Xu Ji Basalt": {
+      "2026": "Taiwan"
+    },
+    "Yang Yang Gaming": {
+      "2025": "Japan",
+      "2026": "Japan"
+    },
+    "Yumeea": {
+      "2026": "Unknown"
+    },
+    "ZEN Esports": {
+      "2026": "Vietnam"
+    },
+    "ZETA": {
+      "2024": "Unknown",
+      "2025": "Unknown"
+    },
+    "ZGDX Gaming": {
+      "2025": "Unknown"
+    },
+    "ZSK": {
+      "2026": "Unknown"
+    },
+    "ZSM": {
+      "2025": "Unknown"
+    },
+    "ZYB Esport": {
+      "2026": "Unknown"
+    },
+    "Zena Esports": {
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "ZennIT": {
+      "2024": "Unknown",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Zennox Gaming": {
+      "2024": "Unknown"
+    },
+    "Zenshi Gaming": {
+      "2025": "Unknown"
+    },
+    "Zephyr Esport": {
+      "2026": "Unknown"
+    },
+    "Zer0 Trein0": {
+      "2025": "Unknown"
+    },
+    "Zerance": {
+      "2024": "Unknown",
+      "2025": "Unknown"
+    },
+    "Zero Tenacity": {
+      "2024": "Unknown",
+      "2025": "Unknown"
+    },
+    "ZeroZone Gaming": {
+      "2024": "Unknown",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Zerolag Esports": {
+      "2024": "Unknown",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "Zeu5 Esports": {
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "aNc Legends": {
+      "2025": "Unknown"
+    },
+    "aNc Outplayed": {
+      "2024": "Unknown"
+    },
+    "devils.one inStreamly": {
+      "2024": "Unknown",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "e-Champ Gaming": {
+      "2025": "Unknown"
+    },
+    "eQuizers": {
+      "2024": "Unknown",
+      "2025": "Unknown"
+    },
+    "eSports Cologne e.V.": {
+      "2024": "Unknown",
+      "2025": "Unknown"
+    },
+    "eSuba": {
+      "2024": "Unknown",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "eWolves Ignis": {
+      "2024": "Unknown"
+    },
+    "emBRAZA! Esports": {
+      "2026": "Unknown"
+    },
+    "grompcord": {
+      "2024": "Unknown"
+    },
+    "htp eSport Akademie Hannover": {
+      "2025": "Unknown"
+    },
+    "inf": {
+      "2024": "LATAM",
+      "2025": "Unknown"
+    },
+    "mCon esports": {
+      "2024": "Unknown",
+      "2025": "Unknown",
+      "2026": "Unknown"
+    },
+    "paiN Gaming": {
+      "2024": "LATAM",
+      "2025": "LATAM",
+      "2026": "LATAM"
+    },
+    "paiN Gaming Academy": {
+      "2024": "LATAM",
+      "2026": "Unknown"
+    },
+    "regnum4games": {
+      "2024": "Unknown",
+      "2025": "Unknown"
+    },
+    "wangting": {
+      "2025": "Taiwan",
+      "2026": "Taiwan"
+    },
+    "\u03a3\u03a4\u0395\u039d\u0391\u03a7\u03a9\u03a1\u0395\u039c\u0395\u039d\u039f\u0399": {
+      "2025": "Unknown"
+    },
+    "\u5c0f\u722c\u866b": {
+      "2026": "Unknown"
+    },
+    "\u6211\u8d85\u5a01": {
+      "2026": "Unknown"
+    }
+  },
+  "team_region": {
+    "100 Thieves": "NA",
+    "1TAP Dino": "Vietnam",
+    "2 Massive": "Unknown",
+    "24/7 Tower Dive": "Unknown",
+    "3BL Esports": "Unknown",
+    "3v Team": "Unknown",
+    "4 Employed e 1 Budino": "Unknown",
+    "4 Swines & A Bum": "Unknown",
+    "42 Gaming": "Unknown",
+    "5M Esports": "Unknown",
+    "6AM": "Unknown",
+    "7REX": "Unknown",
+    "9Gaming Esports": "Vietnam",
+    "9z Globant": "Unknown",
+    "A One Man Army": "Unknown",
+    "A One Man Army Prime": "Unknown",
+    "A One Man Army Prime Academy": "Unknown",
+    "AGALAR": "Unknown",
+    "AIX eSports": "Unknown",
+    "AKA HERO": "Unknown",
+    "ALMO Players": "Unknown",
+    "ATK Esports": "Unknown",
+    "AXIZ CREST": "Japan",
+    "AXIZ CREST Academy": "Unknown",
+    "AaB Esport": "Unknown",
+    "Absolved": "Unknown",
+    "AceGaming Spades": "Unknown",
+    "Actions Per Minute": "Unknown",
+    "Aegis": "Unknown",
+    "Aeterna Esports": "Unknown",
+    "Ahriro": "Unknown",
+    "Akroma": "Unknown",
+    "All Knights": "LATAM",
+    "All for One Gaming": "Unknown",
+    "Alpha7 Esports": "Unknown",
+    "Ancient Ones": "Unknown",
+    "Andromeda Gaming": "Unknown",
+    "Andromeda Nebula": "Unknown",
+    "Ankora Gaming": "Unknown",
+    "Anonymo Esports": "Unknown",
+    "Anorthosis Famagusta Esports": "Unknown",
+    "Antic Esports": "Oceania",
+    "Anubis Gaming": "Unknown",
+    "Anyone's Legend": "LPL",
+    "Anyone's Legend.Young": "Unknown",
+    "Apex Mission Impossible": "Unknown",
+    "Apex Predator": "Vietnam",
+    "Arctic Pandas": "Unknown",
+    "Area of Effect Esports": "Unknown",
+    "Arneb": "Japan",
+    "Ascendance": "Unknown",
+    "Athen Warrior": "Unknown",
+    "Atleta Esport": "Unknown",
+    "Auronin": "Unknown",
+    "Aurora": "Unknown",
+    "Austrian Force willhaben": "Unknown",
+    "AvaTrade PixelPenny": "Unknown",
+    "Axolotl": "Unknown",
+    "B2U": "Unknown",
+    "BAAM Esports": "Unknown",
+    "BAU Esports": "Unknown",
+    "BBL Dark Passage": "Turkiye",
+    "BDL Esports": "Turkiye",
+    "BERZLOY": "Unknown",
+    "BGA eQuizers": "Unknown",
+    "BK ROG Esports": "Unknown",
+    "BNK FEARX": "LCK",
+    "BNK FEARX Academy": "Unknown",
+    "BNK FEARX Youth": "LCK",
+    "BRUTE": "Unknown",
+    "BWE Esports": "Unknown",
+    "Back2TheGame": "Unknown",
+    "Bad Day": "Unknown",
+    "Bamboo Juice": "Japan",
+    "Banshee": "Unknown",
+    "Barcz\u0105ca Esports by Yumisu": "Unknown",
+    "Barulhinhos": "Unknown",
+    "Bar\u00e7a eSports": "Unknown",
+    "Bastu Five": "Unknown",
+    "BeFive": "Unknown",
+    "Bees Hum": "Unknown",
+    "Berimbados": "Unknown",
+    "Berlin International Gaming": "Unknown",
+    "Beyond Gaming": "Taiwan",
+    "Be\u015fikta\u015f Esports": "Turkiye",
+    "Bilibili Gaming": "LPL",
+    "Bilibili Gaming Junior": "Unknown",
+    "Bitfix RG": "Unknown",
+    "Black Dog": "Japan",
+    "Black Lion": "Unknown",
+    "Black Rock Esports": "Unknown",
+    "BloomStorm": "Japan",
+    "Blue Otter": "Unknown",
+    "BlueWhites": "Unknown",
+    "Bohemian Guardians": "Unknown",
+    "Bomba Team": "Unknown",
+    "BoostGate Esports": "Turkiye",
+    "Bootz Gaming": "Unknown",
+    "BraVeLY": "Japan",
+    "Brod and Friends": "Unknown",
+    "Brod n Friends": "Unknown",
+    "Bubliki": "Unknown",
+    "Bulldog Esports": "Unknown",
+    "Burning Core Toyama": "Japan",
+    "Burning Core Toyama Academy": "Unknown",
+    "Bushido Wildcats": "Turkiye",
+    "CAG OSAKA": "Japan",
+    "CCG Esports": "Unknown",
+    "CERBERUS Esports": "Vietnam",
+    "CGN Esports": "Unknown",
+    "CIS Falling Stars": "Unknown",
+    "CITA Kaizen": "Unknown",
+    "CITA Kaizen Academy": "Unknown",
+    "CNG Royal": "Unknown",
+    "CORE 128": "Unknown",
+    "CTBC Flying Oyster": "Taiwan",
+    "CTBC Flying Oyster Academy": "Taiwan",
+    "Caldya Esport": "Unknown",
+    "Capybara Esports": "Unknown",
+    "Case Esports": "Unknown",
+    "Castle Berry": "Unknown",
+    "Ceuta Guardians": "Unknown",
+    "Chiefs Esports Club": "Unknown",
+    "Chienhsin Bear (\u5065\u884c\u718a)": "Unknown",
+    "Chinese Taipei (National Team)": "LCK",
+    "Cincinnati Fear": "Unknown",
+    "Citadel Gaming": "Unknown",
+    "Cloud9": "NA",
+    "Coinflip to Victory": "Unknown",
+    "Colossal Gaming": "Unknown",
+    "Comanchero Gaming": "Turkiye",
+    "Connect Arena Esports": "Unknown",
+    "Contingent Esports": "Unknown",
+    "Contrata Logo Meu Time": "Unknown",
+    "Conviction": "Unknown",
+    "Corinthians Esports": "Unknown",
+    "Coven": "Unknown",
+    "Croatian Flair": "Unknown",
+    "Crusaders": "Unknown",
+    "Crvena zvezda Esports": "Unknown",
+    "Crystal Rose": "Unknown",
+    "Cuban Raft Raiders": "Unknown",
+    "Cupid Esports": "Unknown",
+    "Cusprills": "Unknown",
+    "Cyber Wolves": "Unknown",
+    "C\u00e3es de \u00c1gua": "Unknown",
+    "DCT eSports": "Unknown",
+    "DECOY 21": "Unknown",
+    "DELTALAND": "Unknown",
+    "DIA Ozarox Esports": "Turkiye",
+    "DKB XPERION NXT": "Unknown",
+    "DKB XPERION NXT RAW": "Unknown",
+    "DMG Esports": "Unknown",
+    "DN SOOPers": "LCK",
+    "DN SOOPers Academy": "Unknown",
+    "DN SOOPers Challengers": "LCK",
+    "DOCISK": "Unknown",
+    "DREN Esports": "Unknown",
+    "DSC3V": "Unknown",
+    "DSYRE": "Unknown",
+    "DUCKIE GETTERS": "Unknown",
+    "Dark Passage": "Turkiye",
+    "Dark Roses": "Unknown",
+    "DarkZero Dragonsteel": "Unknown",
+    "Deacoy": "Unknown",
+    "DeathMark E-Sports": "Unknown",
+    "Deep Cross Gaming": "Taiwan",
+    "Deep Cross Gaming Academy": "Unknown",
+    "Deer Gaming": "Unknown",
+    "Definitely not washed up": "Unknown",
+    "Delta Syndicate": "Unknown",
+    "Deltan Gaming": "Japan",
+    "DetonatioN FocusMe": "Japan",
+    "DetonatioN FocusMe Academy": "Japan",
+    "Diamant Esports": "Unknown",
+    "Dignitas": "NA",
+    "Dire Wolves": "Oceania",
+    "Direct Rising eSports": "Unknown",
+    "Disguised": "NA",
+    "Disruptors": "Unknown",
+    "Diver (Portuguese Team)": "Unknown",
+    "Divernex": "Unknown",
+    "Diversion Academy": "Unknown",
+    "Diversion Gaming": "Unknown",
+    "Docta Esports": "Unknown",
+    "Dominion Goblins": "Unknown",
+    "Dopamina E-Sport": "Unknown",
+    "Dorado Gaming": "Unknown",
+    "Dplus Kia": "LCK",
+    "Dplus Kia Academy": "Unknown",
+    "Dplus Kia Challengers": "LCK",
+    "Dragons Esports": "Unknown",
+    "Dragonsteel": "Unknown",
+    "Dragoon's Goons": "Unknown",
+    "Dream Esports": "Unknown",
+    "Dream Makers": "Unknown",
+    "Dream in 24": "Japan",
+    "Dung Dynasty": "Unknown",
+    "Dusty": "Unknown",
+    "Dutch Community Team": "Unknown",
+    "Dynamo Eclot": "Unknown",
+    "Dynamo Eclot Talents": "Unknown",
+    "Dynasty": "Unknown",
+    "E WIE EINFACH E-SPORTS": "Unknown",
+    "EDG Youth Team": "Unknown",
+    "EDward Gaming": "LPL",
+    "EGN Esports": "Unknown",
+    "EKO Esports": "Unknown",
+    "EKSI EPTA": "Unknown",
+    "ENEMI3S": "Unknown",
+    "EPIC-DUDES": "Unknown",
+    "ESEV Zephyr Ares": "Unknown",
+    "EXILE esports": "Unknown",
+    "EXILE esports Academy": "Unknown",
+    "EXSAD Gaming": "Unknown",
+    "Easier to Run": "Unknown",
+    "Eclipse Gaming": "Unknown",
+    "Ei Nerd Esports": "Unknown",
+    "Eintracht Frankfurt": "Unknown",
+    "Eintracht Spandau": "Unknown",
+    "Elegance": "Unknown",
+    "Embrace Whatever Happens": "Taiwan",
+    "Emrys Esports White": "Unknown",
+    "Entropiq": "Unknown",
+    "Entropy x Teufel": "Unknown",
+    "Epic Avalanche": "Unknown",
+    "Epitomy Crash": "Unknown",
+    "Epitomy Esports": "Unknown",
+    "Epitomy Masters": "Unknown",
+    "Epitomy Warriors": "Unknown",
+    "Equinox Core": "Taiwan",
+    "Erfolg Esports": "Unknown",
+    "Esport STUBA": "Unknown",
+    "Esport STUBA Academy": "Unknown",
+    "Esprit Sh\u014dnen": "Unknown",
+    "Estral Esports": "Unknown",
+    "Eternal Fire": "Turkiye",
+    "Ethereal Enigmas": "Unknown",
+    "Eunpyeong Meditech High School": "Unknown",
+    "Europe Saviors Club": "Unknown",
+    "Evil genius": "Vietnam",
+    "Evolve eSports": "Unknown",
+    "FC Schalke 04 Esports": "Unknown",
+    "FENNEL": "Japan",
+    "FLY5": "Unknown",
+    "FN Esports": "Unknown",
+    "FRK": "Unknown",
+    "FURIA": "LATAM",
+    "FURIA Youth": "LATAM",
+    "FURY Global": "Oceania",
+    "FUSE": "Unknown",
+    "FUSION (Latin American Team)": "Unknown",
+    "FUT Esports": "Turkiye",
+    "Falke Esports": "Unknown",
+    "Fantastic Esports": "Unknown",
+    "Farenvehn": "Unknown",
+    "Fast8": "Japan",
+    "Fear x Starforge": "Unknown",
+    "Fight For Ever": "Unknown",
+    "FlameHard": "Unknown",
+    "Flamengo Academy": "LATAM",
+    "Flamengo MDL": "Unknown",
+    "Fluxo": "LATAM",
+    "Fluxo Academy": "LATAM",
+    "Fluxo W7M": "LATAM",
+    "FlyQuest": "NA",
+    "FlyQuest NZXT": "Unknown",
+    "Fnatic": "EMEA",
+    "Fog Esports": "Unknown",
+    "Footprint Gaming": "Unknown",
+    "For The Win Esports": "Unknown",
+    "Forsaken": "Unknown",
+    "Fortress Esports": "Unknown",
+    "Fortune Makers": "Unknown",
+    "Fourth Wall": "Unknown",
+    "Fox Gaming": "Unknown",
+    "FoxFire": "Unknown",
+    "Foxnyr Esports": "Unknown",
+    "Fractious eSports": "Unknown",
+    "Francesinhas": "Unknown",
+    "Frank Esports": "Taiwan",
+    "Frank Esports Academy": "Unknown",
+    "French Flair": "Unknown",
+    "Frites Esports Club": "Unknown",
+    "Frontier x Veni": "Unknown",
+    "Fuego": "Unknown",
+    "Fukuoka SoftBank HAWKS gaming": "Japan",
+    "FunPlus Phoenix": "LPL",
+    "FunPlus Phoenix Blaze": "LPL",
+    "Furious Gaming": "Unknown",
+    "G2 Esports": "EMEA",
+    "G2 Hel": "Unknown",
+    "G2 NORD": "Unknown",
+    "G3V E-sports": "Unknown",
+    "GAM Esports": "Vietnam",
+    "GD Esports": "Unknown",
+    "GIANTX iTero": "Unknown",
+    "GLORE": "Unknown",
+    "GMBLERS Esports": "Unknown",
+    "GOAL": "Unknown",
+    "GRP Esports": "Unknown",
+    "GTZ Esports": "Unknown",
+    "Galakticos": "Turkiye",
+    "Galions": "Unknown",
+    "Galions Sharks": "Unknown",
+    "GameWard": "Unknown",
+    "Gamers404": "Unknown",
+    "Gamespace Mediterranean College Esports": "Unknown",
+    "Gaming Barcelona": "Unknown",
+    "Garden Gaming": "Unknown",
+    "Geekay Esports": "Unknown",
+    "Gen.G": "LCK",
+    "Gen.G Global Academy": "LCK",
+    "Gen.G Scholars": "Unknown",
+    "GenZ Gaming": "Vietnam",
+    "Gentle Hearts Gaming": "Unknown",
+    "Gentle Mates": "Unknown",
+    "Gera\u00e7\u00e3o Estrutura": "Unknown",
+    "GiantX": "EMEA",
+    "Gity Meavedronu": "Unknown",
+    "GnG Amazigh": "Unknown",
+    "Golden Lions": "Unknown",
+    "Gravity": "Unknown",
+    "Green Dolphin Gaming": "Unknown",
+    "Ground Zero Academy": "Taiwan",
+    "Ground Zero Gaming": "Taiwan",
+    "Grow uP eSports": "Unknown",
+    "Guangdong Flying Tigers": "Unknown",
+    "Guasones": "Unknown",
+    "Guinea Pink": "Unknown",
+    "Gwenchana": "Unknown",
+    "H3ARTS": "Unknown",
+    "HANGMEN": "Unknown",
+    "HANJIN BRION": "LCK",
+    "HANJIN BRION Academy": "Unknown",
+    "HANJIN BRION Challengers": "LCK",
+    "HELL PIGS": "Taiwan",
+    "HEMLOCK Titans": "Unknown",
+    "HMBLE": "Unknown",
+    "HST": "Vietnam",
+    "HUGE Esport": "Unknown",
+    "HUTECH CHICKEN": "Vietnam",
+    "Hands": "Japan",
+    "Hannover Esports e.V.": "Unknown",
+    "Hanoi Rookies Esports": "Vietnam",
+    "Hanwha Life Esports": "LCK",
+    "Hanwha Life Esports Academy": "Unknown",
+    "Hanwha Life Esports Challengers": "LCK",
+    "Hazing Chase": "Unknown",
+    "Heracles Gaming": "Unknown",
+    "Hooligans": "Unknown",
+    "Howl Esports": "Unknown",
+    "Human Apex Predator": "Unknown",
+    "Hungkuang Falcon (\u5f18\u5149\u7375\u9df9)": "Taiwan",
+    "Hurricane of Feathers": "Unknown",
+    "Huskies Esports": "Unknown",
+    "Hyper Vortex Esports": "Vietnam",
+    "Hyperion (Portuguese Team)": "Unknown",
+    "IME Wolves": "Unknown",
+    "IMU Beyond": "Unknown",
+    "INT Esports": "Unknown",
+    "INTZ": "Unknown",
+    "INTZ Academy": "LATAM",
+    "ION Global Esports": "Oceania",
+    "ITU Rangers": "Turkiye",
+    "Ici Japon Corp. Esport": "Unknown",
+    "Icon Esports": "Unknown",
+    "Ilha das Lendas": "LATAM",
+    "Immortals": "NA",
+    "Impunity": "Unknown",
+    "Infernal Wolves": "Unknown",
+    "Inferno Drive Tokyo": "Japan",
+    "Inferno Esports": "Unknown",
+    "Inside Games": "Unknown",
+    "Instituto Polit\u00e9cnico de Santar\u00e9m": "Unknown",
+    "International Esports Industry Center": "Unknown",
+    "Invictus Gaming": "LPL",
+    "Invictus Gaming Young": "LPL",
+    "Invokers": "Unknown",
+    "Ionikos Nikaias Esports": "Unknown",
+    "Iron Wolves": "Unknown",
+    "Isurus": "LATAM",
+    "Isurus Estral": "LATAM",
+    "Izanagi Ignis": "Unknown",
+    "IziDream": "Unknown",
+    "J Team": "Taiwan",
+    "JD Gaming": "LPL",
+    "JSK Esports": "Unknown",
+    "JY Gaming": "Taiwan",
+    "Janus Panter": "Unknown",
+    "Japan (National Team)": "LCK",
+    "Ji Jie Hao (\u96c6\u7ed3\u53f7)": "LPL",
+    "Joblife": "Unknown",
+    "Joker Strike": "Unknown",
+    "Jolly Rogers": "Unknown",
+    "Joy Dream": "LPL",
+    "Juicy Ballers": "Unknown",
+    "J\u00f6rmungang": "Unknown",
+    "J\u00f6rmungang Academy": "Unknown",
+    "KAOS e-sport": "Unknown",
+    "KIA.eSuba Academy": "Unknown",
+    "KRC Genk Esports": "Unknown",
+    "KT Rolster": "LCK",
+    "KT Rolster Academy": "Unknown",
+    "KT Rolster Challengers": "LCK",
+    "KaBuM! Academy": "LATAM",
+    "KaBuM! Esports": "LATAM",
+    "KaBuM! Ilha das Lendas": "Unknown",
+    "Kaeru Gyuangu": "Unknown",
+    "Kafard Academie": "Unknown",
+    "Kanga Esports": "Oceania",
+    "Karam El Sham": "Unknown",
+    "Karasuno": "Unknown",
+    "Kareha Children": "Japan",
+    "Karmine Corp": "EMEA",
+    "Karmine Corp Blue": "Unknown",
+    "Karmine Corp Blue Stars": "Unknown",
+    "Kaufland Hangry Knights": "Unknown",
+    "Kawaii Kiwis": "Unknown",
+    "Keypulse Esports": "Unknown",
+    "Kiedy\u015b Mia\u0142em Fun": "Unknown",
+    "Kits Esports": "Unknown",
+    "Kiwoom DRX": "LCK",
+    "Kiwoom DRX Academy": "Unknown",
+    "Kiwoom DRX Challengers": "LCK",
+    "Klanik Esport": "Unknown",
+    "Kleyton Rhasta": "Unknown",
+    "Komodo": "Unknown",
+    "KrabbelGruppeAlpha": "Unknown",
+    "Kuma e-Sports": "Unknown",
+    "Kyo eSports": "Taiwan",
+    "L Guide Gaming": "Japan",
+    "LEGACY5": "Unknown",
+    "LGD Gaming": "LPL",
+    "LGD Gaming Young Team": "Unknown",
+    "LNG Academy": "Unknown",
+    "LNG Esports": "LPL",
+    "LODIS": "Unknown",
+    "LOUD": "LATAM",
+    "LOUD Academy": "LATAM",
+    "LUA Gaming": "Unknown",
+    "LYON": "NA",
+    "LYON Academy": "Unknown",
+    "La Alta Parroquia": "Unknown",
+    "La BOMBAS": "Unknown",
+    "Laffson's gang": "Unknown",
+    "Laranja Mec\u00e2nica Ignis": "Unknown",
+    "Lausanne-Sport Esports": "Unknown",
+    "Lazy In Life": "Unknown",
+    "Le Pouvoir de l'Amiti\u00e9": "Unknown",
+    "Le ZOO Esport": "Unknown",
+    "Lechuga Gaming": "Unknown",
+    "Lenovo Legion Honv\u00e9d": "Unknown",
+    "Leviatan": "LATAM",
+    "Le\u00f5es Porto Salvo Esports": "Unknown",
+    "LiT Esports": "Unknown",
+    "Liberty": "LATAM",
+    "Liberty Academy": "LATAM",
+    "Ligre Gaming": "Unknown",
+    "Lille Esport": "Unknown",
+    "Lionscreed": "Unknown",
+    "LittleSans": "Unknown",
+    "Los Goccioles": "Unknown",
+    "Los Ratones": "EMEA",
+    "Lotus": "Unknown",
+    "Lotus Knights": "Unknown",
+    "Luminosity Gaming": "Unknown",
+    "Lund Esports Organization": "Unknown",
+    "Lundqvist Lightside": "Unknown",
+    "Lupus Esports": "Unknown",
+    "Lynch Esports": "Unknown",
+    "L\u00d8S": "LATAM",
+    "L\u00d8S Academy": "LATAM",
+    "L\u2019art de la Guerre": "Unknown",
+    "MAD Lions KOI": "EMEA",
+    "MAMMOTH": "Oceania",
+    "MAX": "LPL",
+    "MGN Blue Esports": "Vietnam",
+    "MGN Vikings Academy": "Vietnam",
+    "MGN Vikings Esports": "Vietnam",
+    "MHSC Esport": "Unknown",
+    "MIBR": "Unknown",
+    "MOUZ NXT": "Unknown",
+    "MVK Esports": "Vietnam",
+    "MVK Esports Academy": "Vietnam",
+    "MY STAR": "Unknown",
+    "Macko Academy": "Unknown",
+    "Macko Esports": "Unknown",
+    "Macko Invictus": "Unknown",
+    "Maelstrom Esports": "Unknown",
+    "Magaza Esports": "Unknown",
+    "Magyar Gamer Sz\u00f6vets\u00e8g": "Unknown",
+    "Malvinas Gaming": "Unknown",
+    "Malvinas Gaming EU": "Unknown",
+    "Maryville University": "Unknown",
+    "Maverix": "Unknown",
+    "Maze Gaming": "Unknown",
+    "Meavedron": "Unknown",
+    "Melilla Titans": "Unknown",
+    "Mental Over Tempo": "Unknown",
+    "Meta Gaming": "Unknown",
+    "Metin2 Enjoyers": "Unknown",
+    "MiaoJing (\u5999\u7ade)": "LPL",
+    "Mighty Eagles": "Unknown",
+    "Mila Gaming": "Vietnam",
+    "Mind Blue Futures": "Unknown",
+    "Mind Blue eSports": "Unknown",
+    "Mirage Alliance": "Unknown",
+    "Misa Esports": "Turkiye",
+    "Mi\u00f0gar\u00f0 Esports": "Unknown",
+    "Monta Club": "Unknown",
+    "Movistar KOI": "EMEA",
+    "Movistar KOI F\u00e9nix": "Unknown",
+    "Movistar R7": "LATAM",
+    "Myth Esports": "Unknown",
+    "M\u00fcnster Esports - Golden Goats": "Unknown",
+    "NASR eSports Turkey": "Turkiye",
+    "NCG Esports": "Unknown",
+    "NEO ZEPHYR": "Unknown",
+    "NGU eSports": "Unknown",
+    "NNO Prime": "Unknown",
+    "NONAME": "Unknown",
+    "NONAMES (Turkish Team)": "Unknown",
+    "NORD Esports": "Unknown",
+    "NORTHERNGRADE ESPORTS": "Unknown",
+    "NORTHS FURY": "Unknown",
+    "NOVEX": "Japan",
+    "NRG": "Unknown",
+    "Nameless (French Team)": "Unknown",
+    "Nativz": "Unknown",
+    "Natus Vincere": "EMEA",
+    "Near Airport": "Unknown",
+    "Nerd's Gangster's Carecas": "Unknown",
+    "Never Give Up": "Vietnam",
+    "New Meta": "Japan",
+    "Next Level Esports": "Unknown",
+    "NextGeneration Esports": "Unknown",
+    "Ng\u1ef1a H\u00ed Esports": "Vietnam",
+    "Nice Try": "Unknown",
+    "Nigel's Last Tiles": "Unknown",
+    "Night Cap": "Japan",
+    "Nightbirds": "Unknown",
+    "Nightblood Gaming": "Unknown",
+    "Nigma Galaxy": "Unknown",
+    "Nine Lives Esports": "Unknown",
+    "Ninjas in Pyjamas": "LPL",
+    "No Barry Berry": "Taiwan",
+    "Nocturne Gale": "Unknown",
+    "Nongshim Esports Academy": "LCK",
+    "Nongshim RedForce": "LCK",
+    "Nongshim RedForce Academy": "Unknown",
+    "Nugget enterprises": "Unknown",
+    "ODD Esports": "Unknown",
+    "OGC Esports": "Unknown",
+    "OGC Sigma Esports": "Unknown",
+    "Observant Force": "Unknown",
+    "Obsidian Oath": "Unknown",
+    "Ocean & Kimi Tournament Alliance": "Unknown",
+    "Odivelas Sports Club": "Unknown",
+    "Oh My God": "LPL",
+    "Oh My God Academy": "Unknown",
+    "Once Upon A Team": "Unknown",
+    "One More Esports": "Unknown",
+    "One Round Specialists": "Taiwan",
+    "One Way Esports": "Unknown",
+    "Onion Team": "Unknown",
+    "Only Heroes Academia": "Unknown",
+    "Only The Family": "Unknown",
+    "Orze\u0142 Barcz\u0105ca Esports": "Unknown",
+    "Osaka": "Unknown",
+    "Otter Side": "Unknown",
+    "Ovos Moles eSports": "Unknown",
+    "Oxygen Gaming": "Unknown",
+    "Ozarox Esports": "Turkiye",
+    "P11 Esports": "Unknown",
+    "PARAGON (British Team)": "Unknown",
+    "PCIFIC Esports": "Turkiye",
+    "PREDIQT": "Unknown",
+    "PRIMATE": "Unknown",
+    "PRINCIPALITY": "Unknown",
+    "PSG Talon": "Taiwan",
+    "PSG Talon Academy": "Taiwan",
+    "Packmiko E-Sports": "Unknown",
+    "PaiDA Miwan Bao": "Taiwan",
+    "PaiN Gaming Ignis": "Unknown",
+    "Pandinhas": "Unknown",
+    "Panel\u00e3o LHC": "Unknown",
+    "Papara SuperMassive": "Turkiye",
+    "Papo Secos": "Unknown",
+    "Paputs Gaming": "Unknown",
+    "Parakeet Gaming": "Unknown",
+    "Paranormal Invaders": "Unknown",
+    "Partizan Esports": "Unknown",
+    "Partizan Sangal": "Unknown",
+    "Pee N W's": "Unknown",
+    "PepePo": "Unknown",
+    "PepeTinkyWinky": "Unknown",
+    "Periquitos Zangados Gaming": "Unknown",
+    "Permitta eSports": "Unknown",
+    "Pertinax Esports": "Unknown",
+    "Phoenix Esports": "Unknown",
+    "Pirates IDV": "Unknown",
+    "Polar Squad Esports": "Unknown",
+    "Priority": "Unknown",
+    "Project Conquerors": "Unknown",
+    "Pulse Star": "Unknown",
+    "Pyramid IV Esports": "Unknown",
+    "P\u00caEK Gaming": "Unknown",
+    "QT DIG\u221e": "Japan",
+    "R5 Esports": "Unknown",
+    "RA'AD": "Unknown",
+    "RAMPAGE": "Unknown",
+    "RATZ": "Unknown",
+    "RAYN Clocks": "Japan",
+    "RED Academy": "Unknown",
+    "RED Canids": "LATAM",
+    "RED OUAT": "Unknown",
+    "REDPack Esports": "Unknown",
+    "REJECT": "Japan",
+    "RIP MAMBERROI": "Unknown",
+    "RLX Esports": "Unknown",
+    "RMD Gaming": "Unknown",
+    "RNL ROAR": "Unknown",
+    "ROSSMANN Centaurs": "Unknown",
+    "RQS Esports": "Unknown",
+    "Radical Pop Gaming": "Japan",
+    "Rage Bait e-Sports": "Unknown",
+    "Rainbow Warriors": "Vietnam",
+    "Ramboot Club": "Unknown",
+    "Rare Atom": "LPL",
+    "Rare Atom Period": "LPL",
+    "Rebels Gaming": "Unknown",
+    "Regem": "Unknown",
+    "Reignfall": "Taiwan",
+    "ReluminateGG": "Unknown",
+    "Repre Gold": "Unknown",
+    "Revolution Victory X": "Japan",
+    "Rich Gang": "Unknown",
+    "Rise Gaming": "Unknown",
+    "Rise Gaming Ignis": "Unknown",
+    "Rising Gaming": "Japan",
+    "RogerSaMa": "Taiwan",
+    "Rogue": "EMEA",
+    "Role Swappers": "Unknown",
+    "Ronaldo Team": "Unknown",
+    "Royal Club": "LPL",
+    "Royal Never Give Up": "LPL",
+    "Ruddy Corporation": "Unknown",
+    "Rugby Club Hav\u00ed\u0159ov": "Unknown",
+    "Rumble Victory eSports": "Unknown",
+    "Ruzeh Esports": "Unknown",
+    "S2G Esports": "Turkiye",
+    "SAMCLAN Esports Club": "Unknown",
+    "SAW": "Unknown",
+    "SDM Tigres": "Unknown",
+    "SINS Esports": "Unknown",
+    "SK Gaming": "EMEA",
+    "SK Gaming Avarosa": "Unknown",
+    "SK Gaming Prime": "Unknown",
+    "SN CyberCore Esports": "Vietnam",
+    "SNOOZE Esports": "Unknown",
+    "SPAXFAMILY": "Unknown",
+    "SPIKE Syndicate": "Unknown",
+    "STAINED": "Unknown",
+    "SU Esports": "Turkiye",
+    "SabOOr T1": "Unknown",
+    "Saigon Secret": "Vietnam",
+    "Saigon Warriors": "Vietnam",
+    "Saving OCE": "Unknown",
+    "Sengoku Gaming Academy": "Unknown",
+    "Senshi eSports": "Unknown",
+    "Sentinels": "NA",
+    "Seven Dark": "Unknown",
+    "Shadow Keepers Esports": "Taiwan",
+    "Shark Attack": "Turkiye",
+    "Shifters": "EMEA",
+    "Shopify Rebellion": "NA",
+    "Sicar Esports": "Unknown",
+    "Silent Storm Esports": "Vietnam",
+    "SillySilly Gaming": "Taiwan",
+    "Six Karma": "LATAM",
+    "Skillcamp": "Unknown",
+    "Solary": "Unknown",
+    "Soul's Heart Esport": "Unknown",
+    "Spartans EU": "Unknown",
+    "Spectacled Bears": "Unknown",
+    "Spinebusters E-Sport": "Unknown",
+    "Spirit Quartz Gaming": "Japan",
+    "Sponge Gaming": "Taiwan",
+    "Sportia Khore": "Unknown",
+    "Stellae Gaming": "Unknown",
+    "StoneHenge Esports": "Unknown",
+    "StoneHenge Esports Academy": "Unknown",
+    "StormMedia Fajnie Mie\u0107 Sk\u0142ad": "Unknown",
+    "Stormbringers": "Unknown",
+    "Str1ve eSports": "Unknown",
+    "StriX (Belgian Team)": "Unknown",
+    "Super Stars": "Unknown",
+    "Supernova": "Unknown",
+    "S\u00f8rby eSport": "Unknown",
+    "T1": "LCK",
+    "T1 Esports Academy": "LCK",
+    "T1 Esports Academy Rookies": "Unknown",
+    "TIGROTS": "Unknown",
+    "TITANS": "Unknown",
+    "TLN Pirates": "Unknown",
+    "TNU Eagle (\u6771\u5357\u98db\u9df9)": "Unknown",
+    "TQ DURPA KASHLQ": "Unknown",
+    "Tan'i eSports": "Unknown",
+    "Tan'i eSports CZ": "Unknown",
+    "Team 7AM": "Unknown",
+    "Team Anomaly Breaker": "Unknown",
+    "Team Aqua ASD": "Unknown",
+    "Team Axelent69": "Unknown",
+    "Team BDS": "EMEA",
+    "Team BDS Academy": "Unknown",
+    "Team Blaze 1": "Unknown",
+    "Team Bliss": "Oceania",
+    "Team DX": "Unknown",
+    "Team ESCA Gaming": "Unknown",
+    "Team Evermeet": "Unknown",
+    "Team Flash": "Vietnam",
+    "Team GMask": "Unknown",
+    "Team GO": "Unknown",
+    "Team Heretics": "EMEA",
+    "Team Heretics Academy": "Unknown",
+    "Team High Ground": "Unknown",
+    "Team Insidious": "Unknown",
+    "Team Legion": "Unknown",
+    "Team Liquid": "NA",
+    "Team Liquid Challengers": "Unknown",
+    "Team Meliora": "Unknown",
+    "Team Mentality": "Unknown",
+    "Team Mythic": "Unknown",
+    "Team Phantasma": "Unknown",
+    "Team Phoenix": "Turkiye",
+    "Team Refuse": "Unknown",
+    "Team Revolta": "Unknown",
+    "Team Secret": "Vietnam",
+    "Team Secret Whales": "Vietnam",
+    "Team Shrimp": "Unknown",
+    "Team Solid": "Unknown",
+    "Team Solo Chauve": "Unknown",
+    "Team Spawn Peek": "Unknown",
+    "Team Tockers": "Unknown",
+    "Team UNiTY": "Unknown",
+    "Team Valiant": "Unknown",
+    "Team Vitality": "EMEA",
+    "Team WE": "LPL",
+    "Team WE Academy": "Unknown",
+    "Team Whales": "Vietnam",
+    "Team du Sud": "Unknown",
+    "TeamOrangeGaming": "Unknown",
+    "TeamOrangeGaming Academy": "Unknown",
+    "Temper & Friends": "Unknown",
+    "The AstroDucks": "Unknown",
+    "The Bandits": "Unknown",
+    "The Forbidden Five": "Turkiye",
+    "The Gulls Esports": "Unknown",
+    "The New Kings": "Unknown",
+    "The ParadOx Invaders": "Unknown",
+    "The Secret Club": "Unknown",
+    "ThunderTalk Gaming": "LPL",
+    "ThunderTalk Gaming Young": "Unknown",
+    "Tigers eSports": "Unknown",
+    "Tomorrow Esports": "Unknown",
+    "Top 1 Benelux": "Unknown",
+    "Top Esports": "LPL",
+    "Top Esports Challenger": "Unknown",
+    "Tropa Raizen": "LATAM",
+    "Trupe dos Falange": "Unknown",
+    "Tu Pap\u00e1 Esports": "Unknown",
+    "Tung Tung Bogi": "Unknown",
+    "Twareg Esports": "Unknown",
+    "Twisted Minds": "Unknown",
+    "UB Alma Mater": "Unknown",
+    "UCAM Esports": "Unknown",
+    "UCAM Esports Academy": "Unknown",
+    "UCAM University Esports": "Unknown",
+    "UEC eSports PlusPlus": "Japan",
+    "ULF Esports": "Turkiye",
+    "UP2UMEDIA Cebulaki": "Unknown",
+    "UTeSports": "Japan",
+    "Ukrainian Glory Team": "Unknown",
+    "Ultra Prime": "LPL",
+    "Ultra Prime Academy": "LPL",
+    "Undead Gaming": "Unknown",
+    "Underworld Esports": "Unknown",
+    "UniQ Esports Club": "Unknown",
+    "Unicorns of Love Sexy Edition": "Unknown",
+    "Universae Instituto FP": "Unknown",
+    "University of Mississippi": "Unknown",
+    "UnlockTan'i": "Unknown",
+    "Uwinks": "Japan",
+    "V3 Esports": "Japan",
+    "V3 Esports Academy": "Unknown",
+    "VARREL YOUTH": "Japan",
+    "VENOM Titans": "Unknown",
+    "VININE": "Unknown",
+    "Valerion": "Unknown",
+    "Vancouver Impact": "Unknown",
+    "Vantex Esports": "Unknown",
+    "Vasco E-Sports": "Unknown",
+    "VeLocitY (Japanese Team)": "Japan",
+    "VelbeliKaizokudan": "Japan",
+    "Veni Vidi Vici": "Unknown",
+    "Venomcrest Esports": "Unknown",
+    "Venomcrest Serpents": "Unknown",
+    "Venus Gaming": "Vietnam",
+    "Verdant": "Unknown",
+    "VfB eSports": "Unknown",
+    "Vietnam (National Team)": "LCK",
+    "Viper Night Raider": "Taiwan",
+    "Vitality Rising Bees": "Unknown",
+    "Vitality.Bee": "Unknown",
+    "Vivo Keyd Stars": "LATAM",
+    "Vivo Keyd Stars Academy": "Unknown",
+    "Vivo Keyd Stars Ignis": "Unknown",
+    "Void Requiem": "Unknown",
+    "Volda E-Sport": "Unknown",
+    "Volticons": "Unknown",
+    "Vortex (Japanese Team)": "Japan",
+    "WANG TOWN": "Unknown",
+    "WAP Esports": "Unknown",
+    "WLGaming Esports": "Unknown",
+    "Waia Snikt": "Unknown",
+    "Washed Gaming": "Unknown",
+    "Way Gaming Esports": "Unknown",
+    "We Can Win": "Japan",
+    "WeSports": "Unknown",
+    "Weibo Gaming": "LPL",
+    "Weibo Gaming Youth Team": "Unknown",
+    "West Point Esports": "Taiwan",
+    "West Point Esports Academy": "Unknown",
+    "White Dragons": "Unknown",
+    "Wild Panthers Esports": "Unknown",
+    "Wildcard Gaming": "Unknown",
+    "Winter (Brazilian Team)": "Unknown",
+    "Winthrop University": "Unknown",
+    "Witchcraft": "Unknown",
+    "Wstyd Easta": "Unknown",
+    "XV eSports": "Unknown",
+    "Xibalb\u00e1 Esports": "Unknown",
+    "Xu Ji Basalt": "Taiwan",
+    "Yang Yang Gaming": "Japan",
+    "Yumeea": "Unknown",
+    "ZEN Esports": "Vietnam",
+    "ZETA": "Unknown",
+    "ZGDX Gaming": "Unknown",
+    "ZSK": "Unknown",
+    "ZSM": "Unknown",
+    "ZYB Esport": "Unknown",
+    "Zena Esports": "Unknown",
+    "ZennIT": "Unknown",
+    "Zennox Gaming": "Unknown",
+    "Zenshi Gaming": "Unknown",
+    "Zephyr Esport": "Unknown",
+    "Zer0 Trein0": "Unknown",
+    "Zerance": "Unknown",
+    "Zero Tenacity": "Unknown",
+    "ZeroZone Gaming": "Unknown",
+    "Zerolag Esports": "Unknown",
+    "Zeu5 Esports": "Unknown",
+    "aNc Legends": "Unknown",
+    "aNc Outplayed": "Unknown",
+    "devils.one inStreamly": "Unknown",
+    "e-Champ Gaming": "Unknown",
+    "eQuizers": "Unknown",
+    "eSports Cologne e.V.": "Unknown",
+    "eSuba": "Unknown",
+    "eWolves Ignis": "Unknown",
+    "emBRAZA! Esports": "Unknown",
+    "grompcord": "Unknown",
+    "htp eSport Akademie Hannover": "Unknown",
+    "inf": "Unknown",
+    "mCon esports": "Unknown",
+    "paiN Gaming": "LATAM",
+    "paiN Gaming Academy": "Unknown",
+    "regnum4games": "Unknown",
+    "wangting": "Taiwan",
+    "\u03a3\u03a4\u0395\u039d\u0391\u03a7\u03a9\u03a1\u0395\u039c\u0395\u039d\u039f\u0399": "Unknown",
+    "\u5c0f\u722c\u866b": "Unknown",
+    "\u6211\u8d85\u5a01": "Unknown"
+  }
+}

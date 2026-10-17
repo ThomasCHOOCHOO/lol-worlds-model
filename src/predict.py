@@ -27,6 +27,7 @@ import joblib
 import numpy as np
 
 from model_utils import IsotonicCalibrated  # noqa: F401  (needed to unpickle model.joblib)
+from region_offsets import load_offsets
 
 BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MODEL_DIR = os.path.join(BASE, "model")
@@ -93,6 +94,12 @@ def load_bundle():
         for k, v in snaps["team_champ_comfort"].items()
         for t, c in (k.rsplit("||", 1),)
     }
+    # region offsets: snapshots carry them (build_features.py); older
+    # snapshots fall back to model/region_offsets.json (canonical file).
+    if "region_offsets" not in snaps or "team_region" not in snaps:
+        _off, _tr = load_offsets()
+        snaps.setdefault("region_offsets", _off)
+        snaps.setdefault("team_region", _tr)
     return bundle, snaps, champ_power
 
 
@@ -155,8 +162,23 @@ def draft_features(blue, red, blue_picks, red_picks, blue_bans, red_bans, snaps,
 
 
 def predict_game(blue, red, draft, bundle, snaps, champ_power):
+    # region-strength adjustment (src/region_offsets.py): the model trains
+    # on elo_diff_adj; unknown region -> offset 0.
+    elo_diff = snaps["elo"].get(blue, 1500.0) - snaps["elo"].get(red, 1500.0)
+    offsets = snaps.get("region_offsets") or {}
+    team_region = snaps.get("team_region") or {}
+    reg_b = team_region.get(blue)
+    reg_r = team_region.get(red)
+    off_b = offsets.get(reg_b, 0.0) if reg_b else 0.0
+    off_r = offsets.get(reg_r, 0.0) if reg_r else 0.0
     feats = {
-        "elo_diff": snaps["elo"].get(blue, 1500.0) - snaps["elo"].get(red, 1500.0),
+        "elo_diff": elo_diff,
+        "elo_diff_adj": elo_diff + off_b - off_r,
+        "region_adj": off_b - off_r,
+        "off_b": off_b,
+        "off_r": off_r,
+        "region_blue": reg_b,
+        "region_red": reg_r,
         "eg_gold_diff": snaps["eg_gold"].get(blue, 0.0) - snaps["eg_gold"].get(red, 0.0),
         "blue_edge": snaps["blue_edge"],
     }
@@ -201,6 +223,11 @@ def show_prediction(blue_tag, red_tag, best_of, draft_args, bundle, snaps, champ
     lines.append(f"{blue} (blue) vs {red} (red)  [patch {patch_used}]")
     lines.append(f"  Elo: {snaps['elo'].get(blue, 1500):.0f} vs {snaps['elo'].get(red, 1500):.0f} "
                  f"(diff {feats_base['elo_diff']:+.0f})")
+    if feats_base["region_adj"]:
+        lines.append(f"  Region adjustment: {feats_base['region_adj']:+.0f} "
+                     f"({feats_base['region_blue']} {feats_base.get('off_b', 0):+.0f} vs "
+                     f"{feats_base['region_red']} {feats_base.get('off_r', 0):+.0f}) "
+                     f"-> adjusted Elo diff {feats_base['elo_diff_adj']:+.0f}")
     lines.append(f"  Pre-draft:  P({blue} wins game) = {p_base:.1%}")
     if draft is not None:
         p_adj, feats = predict_game(blue, red, draft, bundle, snaps, champ_power)

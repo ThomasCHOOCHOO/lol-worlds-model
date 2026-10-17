@@ -1,0 +1,825 @@
+{
+  "10": {
+    "n_train": 23924,
+    "n_cal": 3300,
+    "n_cal_fit_honest": 2172,
+    "n_honest_eval": 1128,
+    "baseline_shipped_replication": {
+      "log_loss": 0.5324,
+      "accuracy": 0.7203,
+      "auc": 0.8002,
+      "ece": 0.0
+    },
+    "role_gold_corr_train": {
+      "top|jng": 0.182,
+      "top|mid": 0.101,
+      "top|bot": 0.001,
+      "top|sup": 0.069,
+      "jng|mid": 0.261,
+      "jng|bot": 0.163,
+      "jng|sup": 0.221,
+      "mid|bot": 0.102,
+      "mid|sup": 0.168,
+      "bot|sup": 0.355
+    },
+    "role_gold_sd_train": {
+      "top": 0.55,
+      "jng": 0.506,
+      "mid": 0.493,
+      "bot": 0.613,
+      "sup": 0.355
+    },
+    "drop_one_role_honest_logloss": {
+      "top": 0.5685,
+      "jng": 0.5735,
+      "mid": 0.5545,
+      "bot": 0.5797,
+      "sup": 0.5543
+    },
+    "drop_one_role_delta_vs_A": {
+      "top": 0.0083,
+      "jng": 0.0133,
+      "mid": -0.0057,
+      "bot": 0.0195,
+      "sup": -0.0059
+    },
+    "variants": {
+      "baseline_clean": {
+        "features": [
+          "pre_logit",
+          "total_clean",
+          "killdiff"
+        ],
+        "coef": [
+          0.8381,
+          0.8063,
+          -0.0299
+        ],
+        "intercept": -0.0469,
+        "shipped_protocol_cal": {
+          "log_loss": 0.5298,
+          "accuracy": 0.7218,
+          "auc": 0.8026,
+          "ece": 0.0
+        },
+        "honest_eval": {
+          "log_loss": 0.5598,
+          "accuracy": 0.6977,
+          "auc": 0.7894,
+          "ece": 0.0405
+        }
+      },
+      "A_roles": {
+        "features": [
+          "pre_logit",
+          "top_gold",
+          "jng_gold",
+          "mid_gold",
+          "bot_gold",
+          "sup_gold",
+          "killdiff"
+        ],
+        "coef": [
+          0.8392,
+          0.7728,
+          0.7667,
+          0.8998,
+          0.8983,
+          0.5711,
+          -0.0269
+        ],
+        "intercept": -0.046,
+        "shipped_protocol_cal": {
+          "log_loss": 0.5285,
+          "accuracy": 0.7212,
+          "auc": 0.8035,
+          "ece": 0.0
+        },
+        "honest_eval": {
+          "log_loss": 0.5602,
+          "accuracy": 0.6924,
+          "auc": 0.7885,
+          "ece": 0.0473
+        },
+        "paired_vs_baseline_shipped": {
+          "mean_diff": -0.0014,
+          "ci95": [
+            -0.0037,
+            0.0008
+          ]
+        },
+        "paired_vs_baseline_honest": {
+          "mean_diff": 0.0005,
+          "ci95": [
+            -0.0038,
+            0.0049
+          ]
+        },
+        "coef_standardized": {
+          "top": 0.425,
+          "jng": 0.388,
+          "mid": 0.4436,
+          "bot": 0.5507,
+          "sup": 0.2027
+        }
+      },
+      "B_roles_plus_total": {
+        "features": [
+          "pre_logit",
+          "top_gold",
+          "jng_gold",
+          "mid_gold",
+          "bot_gold",
+          "sup_gold",
+          "total_clean",
+          "killdiff"
+        ],
+        "coef": [
+          0.8393,
+          0.1216,
+          0.1156,
+          0.2491,
+          0.2469,
+          -0.0802,
+          0.653,
+          -0.0273
+        ],
+        "intercept": -0.0466,
+        "shipped_protocol_cal": {
+          "log_loss": 0.5285,
+          "accuracy": 0.7215,
+          "auc": 0.8036,
+          "ece": 0.0
+        },
+        "honest_eval": {
+          "log_loss": 0.5599,
+          "accuracy": 0.6924,
+          "auc": 0.788,
+          "ece": 0.0472
+        },
+        "paired_vs_baseline_shipped": {
+          "mean_diff": -0.0014,
+          "ci95": [
+            -0.0036,
+            0.0009
+          ]
+        },
+        "paired_vs_baseline_honest": {
+          "mean_diff": 0.0001,
+          "ci95": [
+            -0.004,
+            0.0045
+          ]
+        }
+      }
+    }
+  },
+  "15": {
+    "n_train": 23923,
+    "n_cal": 3301,
+    "n_cal_fit_honest": 2173,
+    "n_honest_eval": 1128,
+    "baseline_shipped_replication": {
+      "log_loss": 0.4759,
+      "accuracy": 0.7645,
+      "auc": 0.8475,
+      "ece": 0.0
+    },
+    "role_gold_corr_train": {
+      "top|jng": 0.265,
+      "top|mid": 0.2,
+      "top|bot": 0.097,
+      "top|sup": 0.188,
+      "jng|mid": 0.347,
+      "jng|bot": 0.274,
+      "jng|sup": 0.333,
+      "mid|bot": 0.241,
+      "mid|sup": 0.299,
+      "bot|sup": 0.429
+    },
+    "role_gold_sd_train": {
+      "top": 1.035,
+      "jng": 0.851,
+      "mid": 0.917,
+      "bot": 1.138,
+      "sup": 0.559
+    },
+    "drop_one_role_honest_logloss": {
+      "top": 0.4999,
+      "jng": 0.4936,
+      "mid": 0.4912,
+      "bot": 0.5154,
+      "sup": 0.4902
+    },
+    "drop_one_role_delta_vs_A": {
+      "top": 0.0114,
+      "jng": 0.0051,
+      "mid": 0.0027,
+      "bot": 0.0269,
+      "sup": 0.0017
+    },
+    "variants": {
+      "baseline_clean": {
+        "features": [
+          "pre_logit",
+          "total_clean",
+          "killdiff"
+        ],
+        "coef": [
+          0.7386,
+          0.4989,
+          0.015
+        ],
+        "intercept": -0.0561,
+        "shipped_protocol_cal": {
+          "log_loss": 0.4724,
+          "accuracy": 0.7683,
+          "auc": 0.8505,
+          "ece": 0.0
+        },
+        "honest_eval": {
+          "log_loss": 0.4895,
+          "accuracy": 0.7606,
+          "auc": 0.846,
+          "ece": 0.0468
+        }
+      },
+      "A_roles": {
+        "features": [
+          "pre_logit",
+          "top_gold",
+          "jng_gold",
+          "mid_gold",
+          "bot_gold",
+          "sup_gold",
+          "killdiff"
+        ],
+        "coef": [
+          0.7422,
+          0.4424,
+          0.4984,
+          0.5594,
+          0.5785,
+          0.3501,
+          0.0143
+        ],
+        "intercept": -0.0536,
+        "shipped_protocol_cal": {
+          "log_loss": 0.4697,
+          "accuracy": 0.7713,
+          "auc": 0.8527,
+          "ece": 0.0
+        },
+        "honest_eval": {
+          "log_loss": 0.4885,
+          "accuracy": 0.7624,
+          "auc": 0.8467,
+          "ece": 0.0492
+        },
+        "paired_vs_baseline_shipped": {
+          "mean_diff": -0.0027,
+          "ci95": [
+            -0.0053,
+            -0.0001
+          ]
+        },
+        "paired_vs_baseline_honest": {
+          "mean_diff": -0.0009,
+          "ci95": [
+            -0.006,
+            0.0043
+          ]
+        },
+        "coef_standardized": {
+          "top": 0.4579,
+          "jng": 0.4241,
+          "mid": 0.513,
+          "bot": 0.6583,
+          "sup": 0.1957
+        }
+      },
+      "B_roles_plus_total": {
+        "features": [
+          "pre_logit",
+          "top_gold",
+          "jng_gold",
+          "mid_gold",
+          "bot_gold",
+          "sup_gold",
+          "total_clean",
+          "killdiff"
+        ],
+        "coef": [
+          0.7417,
+          0.0385,
+          0.094,
+          0.1548,
+          0.1731,
+          -0.0557,
+          0.4047,
+          0.0143
+        ],
+        "intercept": -0.0539,
+        "shipped_protocol_cal": {
+          "log_loss": 0.4698,
+          "accuracy": 0.771,
+          "auc": 0.8527,
+          "ece": 0.0
+        },
+        "honest_eval": {
+          "log_loss": 0.4886,
+          "accuracy": 0.7615,
+          "auc": 0.8464,
+          "ece": 0.0486
+        },
+        "paired_vs_baseline_shipped": {
+          "mean_diff": -0.0026,
+          "ci95": [
+            -0.0051,
+            0.0001
+          ]
+        },
+        "paired_vs_baseline_honest": {
+          "mean_diff": -0.0008,
+          "ci95": [
+            -0.0058,
+            0.0043
+          ]
+        }
+      }
+    }
+  },
+  "20": {
+    "n_train": 23802,
+    "n_cal": 3285,
+    "n_cal_fit_honest": 2164,
+    "n_honest_eval": 1121,
+    "baseline_shipped_replication": {
+      "log_loss": 0.4139,
+      "accuracy": 0.7963,
+      "auc": 0.8861,
+      "ece": 0.0
+    },
+    "role_gold_corr_train": {
+      "top|jng": 0.346,
+      "top|mid": 0.263,
+      "top|bot": 0.22,
+      "top|sup": 0.311,
+      "jng|mid": 0.425,
+      "jng|bot": 0.392,
+      "jng|sup": 0.454,
+      "mid|bot": 0.337,
+      "mid|sup": 0.41,
+      "bot|sup": 0.448
+    },
+    "role_gold_sd_train": {
+      "top": 1.474,
+      "jng": 1.313,
+      "mid": 1.408,
+      "bot": 1.597,
+      "sup": 0.784
+    },
+    "drop_one_role_honest_logloss": {
+      "top": 0.4353,
+      "jng": 0.4452,
+      "mid": 0.4236,
+      "bot": 0.4705,
+      "sup": 0.4262
+    },
+    "drop_one_role_delta_vs_A": {
+      "top": 0.0111,
+      "jng": 0.021,
+      "mid": -0.0006,
+      "bot": 0.0463,
+      "sup": 0.002
+    },
+    "variants": {
+      "baseline_clean": {
+        "features": [
+          "pre_logit",
+          "total_clean",
+          "killdiff"
+        ],
+        "coef": [
+          0.6094,
+          0.411,
+          0.0283
+        ],
+        "intercept": -0.0748,
+        "shipped_protocol_cal": {
+          "log_loss": 0.4096,
+          "accuracy": 0.7997,
+          "auc": 0.8891,
+          "ece": 0.0
+        },
+        "honest_eval": {
+          "log_loss": 0.4271,
+          "accuracy": 0.7984,
+          "auc": 0.8863,
+          "ece": 0.0305
+        }
+      },
+      "A_roles": {
+        "features": [
+          "pre_logit",
+          "top_gold",
+          "jng_gold",
+          "mid_gold",
+          "bot_gold",
+          "sup_gold",
+          "killdiff"
+        ],
+        "coef": [
+          0.6154,
+          0.3616,
+          0.4027,
+          0.4349,
+          0.5051,
+          0.3135,
+          0.0267
+        ],
+        "intercept": -0.0733,
+        "shipped_protocol_cal": {
+          "log_loss": 0.4062,
+          "accuracy": 0.8055,
+          "auc": 0.8911,
+          "ece": 0.0
+        },
+        "honest_eval": {
+          "log_loss": 0.4242,
+          "accuracy": 0.8073,
+          "auc": 0.8887,
+          "ece": 0.0271
+        },
+        "paired_vs_baseline_shipped": {
+          "mean_diff": -0.0033,
+          "ci95": [
+            -0.0065,
+            -0.0003
+          ]
+        },
+        "paired_vs_baseline_honest": {
+          "mean_diff": -0.0029,
+          "ci95": [
+            -0.0088,
+            0.0032
+          ]
+        },
+        "coef_standardized": {
+          "top": 0.533,
+          "jng": 0.5287,
+          "mid": 0.6123,
+          "bot": 0.8066,
+          "sup": 0.2458
+        }
+      },
+      "B_roles_plus_total": {
+        "features": [
+          "pre_logit",
+          "top_gold",
+          "jng_gold",
+          "mid_gold",
+          "bot_gold",
+          "sup_gold",
+          "total_clean",
+          "killdiff"
+        ],
+        "coef": [
+          0.6144,
+          0.0253,
+          0.0662,
+          0.0982,
+          0.1687,
+          -0.0216,
+          0.3368,
+          0.0266
+        ],
+        "intercept": -0.0736,
+        "shipped_protocol_cal": {
+          "log_loss": 0.4062,
+          "accuracy": 0.8055,
+          "auc": 0.8911,
+          "ece": 0.0
+        },
+        "honest_eval": {
+          "log_loss": 0.4243,
+          "accuracy": 0.8073,
+          "auc": 0.8887,
+          "ece": 0.027
+        },
+        "paired_vs_baseline_shipped": {
+          "mean_diff": -0.0034,
+          "ci95": [
+            -0.0063,
+            -0.0005
+          ]
+        },
+        "paired_vs_baseline_honest": {
+          "mean_diff": -0.0028,
+          "ci95": [
+            -0.0083,
+            0.0029
+          ]
+        }
+      }
+    }
+  },
+  "25": {
+    "n_train": 21708,
+    "n_cal": 2877,
+    "n_cal_fit_honest": 1936,
+    "n_honest_eval": 941,
+    "baseline_shipped_replication": {
+      "log_loss": 0.3609,
+      "accuracy": 0.8296,
+      "auc": 0.9154,
+      "ece": 0.0
+    },
+    "role_gold_corr_train": {
+      "top|jng": 0.356,
+      "top|mid": 0.272,
+      "top|bot": 0.255,
+      "top|sup": 0.376,
+      "jng|mid": 0.43,
+      "jng|bot": 0.418,
+      "jng|sup": 0.509,
+      "mid|bot": 0.356,
+      "mid|sup": 0.466,
+      "bot|sup": 0.475
+    },
+    "role_gold_sd_train": {
+      "top": 1.872,
+      "jng": 1.73,
+      "mid": 1.796,
+      "bot": 2.016,
+      "sup": 1.018
+    },
+    "drop_one_role_honest_logloss": {
+      "top": 0.3909,
+      "jng": 0.4136,
+      "mid": 0.3786,
+      "bot": 0.415,
+      "sup": 0.3814
+    },
+    "drop_one_role_delta_vs_A": {
+      "top": 0.0107,
+      "jng": 0.0334,
+      "mid": -0.0016,
+      "bot": 0.0348,
+      "sup": 0.0012
+    },
+    "variants": {
+      "baseline_clean": {
+        "features": [
+          "pre_logit",
+          "total_clean",
+          "killdiff"
+        ],
+        "coef": [
+          0.4944,
+          0.3788,
+          0.0335
+        ],
+        "intercept": -0.0788,
+        "shipped_protocol_cal": {
+          "log_loss": 0.3545,
+          "accuracy": 0.8342,
+          "auc": 0.9188,
+          "ece": 0.0
+        },
+        "honest_eval": {
+          "log_loss": 0.3806,
+          "accuracy": 0.8151,
+          "auc": 0.9079,
+          "ece": 0.0365
+        }
+      },
+      "A_roles": {
+        "features": [
+          "pre_logit",
+          "top_gold",
+          "jng_gold",
+          "mid_gold",
+          "bot_gold",
+          "sup_gold",
+          "killdiff"
+        ],
+        "coef": [
+          0.4996,
+          0.3419,
+          0.3498,
+          0.4045,
+          0.4614,
+          0.3194,
+          0.0323
+        ],
+        "intercept": -0.0759,
+        "shipped_protocol_cal": {
+          "log_loss": 0.3528,
+          "accuracy": 0.8342,
+          "auc": 0.9196,
+          "ece": 0.0
+        },
+        "honest_eval": {
+          "log_loss": 0.3802,
+          "accuracy": 0.8204,
+          "auc": 0.9111,
+          "ece": 0.0515
+        },
+        "paired_vs_baseline_shipped": {
+          "mean_diff": -0.0017,
+          "ci95": [
+            -0.0049,
+            0.0015
+          ]
+        },
+        "paired_vs_baseline_honest": {
+          "mean_diff": -0.0004,
+          "ci95": [
+            -0.0078,
+            0.0068
+          ]
+        },
+        "coef_standardized": {
+          "top": 0.64,
+          "jng": 0.6052,
+          "mid": 0.7265,
+          "bot": 0.9302,
+          "sup": 0.3251
+        }
+      },
+      "B_roles_plus_total": {
+        "features": [
+          "pre_logit",
+          "top_gold",
+          "jng_gold",
+          "mid_gold",
+          "bot_gold",
+          "sup_gold",
+          "total_clean",
+          "killdiff"
+        ],
+        "coef": [
+          0.4993,
+          0.029,
+          0.0369,
+          0.0916,
+          0.1485,
+          0.007,
+          0.313,
+          0.0322
+        ],
+        "intercept": -0.0768,
+        "shipped_protocol_cal": {
+          "log_loss": 0.3527,
+          "accuracy": 0.8342,
+          "auc": 0.9197,
+          "ece": 0.0
+        },
+        "honest_eval": {
+          "log_loss": 0.3806,
+          "accuracy": 0.8204,
+          "auc": 0.911,
+          "ece": 0.0516
+        },
+        "paired_vs_baseline_shipped": {
+          "mean_diff": -0.0017,
+          "ci95": [
+            -0.005,
+            0.0016
+          ]
+        },
+        "paired_vs_baseline_honest": {
+          "mean_diff": -0.0,
+          "ci95": [
+            -0.0075,
+            0.0078
+          ]
+        }
+      }
+    }
+  },
+  "export_fit": {
+    "10": {
+      "features": [
+        "pre_logit",
+        "top_gold",
+        "jng_gold",
+        "mid_gold",
+        "bot_gold",
+        "sup_gold",
+        "killdiff"
+      ],
+      "coef": [
+        0.852,
+        0.7681,
+        0.7673,
+        0.8925,
+        0.898,
+        0.5639,
+        -0.0259
+      ],
+      "intercept": -0.0413,
+      "n_train": 23924,
+      "n_cal": 3300,
+      "n_excluded_missing_role_gold": 2382,
+      "cal_log_loss": 0.5279,
+      "cal_accuracy": 0.7233,
+      "pregame_log_loss": 0.6228,
+      "honest_split_log_loss": 0.5553,
+      "honest_split_n": 1128,
+      "note": "Variant A, shipped protocol (isotonic fit on the full cal window, graded on the same window -- relative comparison only). honest_split is isotonic Jul-Aug -> eval Sep-Oct, reported only, not exported."
+    },
+    "15": {
+      "features": [
+        "pre_logit",
+        "top_gold",
+        "jng_gold",
+        "mid_gold",
+        "bot_gold",
+        "sup_gold",
+        "killdiff"
+      ],
+      "coef": [
+        0.7543,
+        0.4426,
+        0.4983,
+        0.5564,
+        0.5781,
+        0.3426,
+        0.015
+      ],
+      "intercept": -0.049,
+      "n_train": 23923,
+      "n_cal": 3301,
+      "n_excluded_missing_role_gold": 2381,
+      "cal_log_loss": 0.4685,
+      "cal_accuracy": 0.7692,
+      "pregame_log_loss": 0.6228,
+      "honest_split_log_loss": 0.4888,
+      "honest_split_n": 1128,
+      "note": "Variant A, shipped protocol (isotonic fit on the full cal window, graded on the same window -- relative comparison only). honest_split is isotonic Jul-Aug -> eval Sep-Oct, reported only, not exported."
+    },
+    "20": {
+      "features": [
+        "pre_logit",
+        "top_gold",
+        "jng_gold",
+        "mid_gold",
+        "bot_gold",
+        "sup_gold",
+        "killdiff"
+      ],
+      "coef": [
+        0.6315,
+        0.3605,
+        0.4014,
+        0.4316,
+        0.5039,
+        0.3102,
+        0.0275
+      ],
+      "intercept": -0.0696,
+      "n_train": 23802,
+      "n_cal": 3285,
+      "n_excluded_missing_role_gold": 2380,
+      "cal_log_loss": 0.4056,
+      "cal_accuracy": 0.8058,
+      "pregame_log_loss": 0.6243,
+      "honest_split_log_loss": 0.4181,
+      "honest_split_n": 1121,
+      "note": "Variant A, shipped protocol (isotonic fit on the full cal window, graded on the same window -- relative comparison only). honest_split is isotonic Jul-Aug -> eval Sep-Oct, reported only, not exported."
+    },
+    "25": {
+      "features": [
+        "pre_logit",
+        "top_gold",
+        "jng_gold",
+        "mid_gold",
+        "bot_gold",
+        "sup_gold",
+        "killdiff"
+      ],
+      "coef": [
+        0.5173,
+        0.3411,
+        0.3494,
+        0.4023,
+        0.4604,
+        0.3169,
+        0.0328
+      ],
+      "intercept": -0.0746,
+      "n_train": 21708,
+      "n_cal": 2877,
+      "n_excluded_missing_role_gold": 2235,
+      "cal_log_loss": 0.3519,
+      "cal_accuracy": 0.8335,
+      "pregame_log_loss": 0.6471,
+      "honest_split_log_loss": 0.3813,
+      "honest_split_n": 941,
+      "note": "Variant A, shipped protocol (isotonic fit on the full cal window, graded on the same window -- relative comparison only). honest_split is isotonic Jul-Aug -> eval Sep-Oct, reported only, not exported."
+    }
+  },
+  "export_fit_note": "Fresh fit from src/train_live_role_gold.py against the CURRENT model.joblib (pre_logit from the region-offset model). The per-bucket analysis sections of this file (variants, drop-one, correlations) are the original 2026-10-17 analysis against the pre-region-offset bundle and are preserved untouched; export_fit is the deployable fit. Coefficients should be close to the analysis's Table \u00a73 (small shifts from the region-offset pre_logit)."
+}

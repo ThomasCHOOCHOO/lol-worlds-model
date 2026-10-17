@@ -1,7 +1,9 @@
 """Post-game model refresh: pull the latest Oracle's Elixir 2026 data, and if it
-contains games newer than the current snapshot, rebuild features, retrain
-(same v1.2.0 pipeline), re-export phone_artifacts.json with a patch-bumped
-model_version, validate, and copy the bundle to the iPhone app.
+contains games newer than the current snapshot, rebuild features, refit
+region offsets, retrain (same v1.2.0 pipeline), rebuild the player Elo
+snapshot, retrain the role-gold live variant A, re-export
+phone_artifacts.json with a patch-bumped model_version, validate, and copy
+the bundle to the iPhone app.
 
 Idempotent and safe:
   * If the download fails (Drive quota, network) or no games are newer than
@@ -204,7 +206,17 @@ def main():
 
     steps = [
         ("build_features", ["src/build_features.py"], None),
+        # region_offsets: fit offsets on the fresh features.csv, then
+        # refresh elo_diff_adj. Must run AFTER build_features (it reads
+        # features.csv) and BEFORE train (which trains on elo_diff_adj).
+        ("region_offsets", ["src/region_offsets.py"], None),
         ("train", ["src/train.py"], None),
+        # player snapshot + role-gold live retrain: both read the fresh
+        # raw CSVs (player snapshot) / fresh model.joblib (role-gold
+        # pre_logit) and must run BEFORE export (which embeds their
+        # outputs in the artifact).
+        ("player_ratings", ["src/build_player_ratings.py"], None),
+        ("train_live_role_gold", ["src/train_live_role_gold.py"], None),
         ("export_artifacts", ["src/export_artifacts.py"],
          {"MODEL_VERSION_OVERRIDE": new_version}),
         ("validate_export", ["src/validate_export.py"], None),

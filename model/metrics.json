@@ -2,246 +2,322 @@
   "half_life_days": 180,
   "full": {
     "n": 3368,
-    "accuracy": 0.6508313539192399,
-    "log_loss": 0.625317857343131,
-    "roc_auc": 0.6947307752422632,
+    "accuracy": 0.6511282660332541,
+    "log_loss": 0.6234727084504189,
+    "roc_auc": 0.6969251754809742,
     "base_rate": 0.5427553444180523,
     "calibration": [
       {
         "bin": 1,
         "pred_range": [
-          0.0,
-          0.293
+          0.001,
+          0.312
         ],
-        "mean_pred": 0.153,
-        "actual_rate": 0.153,
-        "n": 137
+        "mean_pred": 0.223,
+        "actual_rate": 0.223,
+        "n": 283
       },
       {
         "bin": 2,
         "pred_range": [
-          0.293,
-          0.376
+          0.312,
+          0.377
         ],
-        "mean_pred": 0.297,
-        "actual_rate": 0.297,
-        "n": 283
+        "mean_pred": 0.322,
+        "actual_rate": 0.322,
+        "n": 202
       },
       {
         "bin": 3,
         "pred_range": [
-          0.376,
-          0.433
+          0.377,
+          0.429
         ],
-        "mean_pred": 0.378,
-        "actual_rate": 0.378,
-        "n": 336
+        "mean_pred": 0.377,
+        "actual_rate": 0.377,
+        "n": 236
       },
       {
         "bin": 4,
         "pred_range": [
-          0.433,
-          0.519
+          0.429,
+          0.526
         ],
-        "mean_pred": 0.433,
-        "actual_rate": 0.433,
-        "n": 536
-      },
-      {
-        "bin": 5,
-        "pred_range": [
-          0.519,
-          0.536
-        ],
-        "mean_pred": 0.519,
-        "actual_rate": 0.519,
-        "n": 77
+        "mean_pred": 0.436,
+        "actual_rate": 0.436,
+        "n": 612
       },
       {
         "bin": 6,
         "pred_range": [
-          0.536,
-          0.649
+          0.526,
+          0.655
         ],
-        "mean_pred": 0.551,
-        "actual_rate": 0.551,
-        "n": 575
+        "mean_pred": 0.53,
+        "actual_rate": 0.53,
+        "n": 521
       },
       {
         "bin": 7,
         "pred_range": [
-          0.649,
-          0.669
+          0.655,
+          0.659
         ],
-        "mean_pred": 0.654,
-        "actual_rate": 0.654,
-        "n": 405
+        "mean_pred": 0.655,
+        "actual_rate": 0.655,
+        "n": 368
       },
       {
         "bin": 8,
         "pred_range": [
-          0.669,
-          0.672
+          0.659,
+          0.664
         ],
-        "mean_pred": 0.669,
-        "actual_rate": 0.669,
-        "n": 272
+        "mean_pred": 0.659,
+        "actual_rate": 0.659,
+        "n": 472
       },
       {
         "bin": 9,
         "pred_range": [
-          0.672,
-          0.782
+          0.664,
+          0.779
         ],
-        "mean_pred": 0.696,
-        "actual_rate": 0.696,
-        "n": 398
+        "mean_pred": 0.71,
+        "actual_rate": 0.71,
+        "n": 310
       },
       {
         "bin": 10,
         "pred_range": [
-          0.782,
-          0.964
+          0.779,
+          0.96
         ],
-        "mean_pred": 0.811,
-        "actual_rate": 0.811,
-        "n": 349
+        "mean_pred": 0.813,
+        "actual_rate": 0.813,
+        "n": 364
       }
     ],
     "model_type": "logistic_regression",
     "model_info": {
       "C": 0.05,
-      "val_log_loss": 0.6332180148849497,
-      "hgb_val_log_loss": 0.636364042897022
+      "val_log_loss": 0.6318035482101899,
+      "hgb_val_log_loss": 0.6334680743256071
+    },
+    "honest_calibration": {
+      "key": "full",
+      "fitted_on": "2026-07-01..2026-08-31",
+      "n_fit": 2226,
+      "n_eval": 1142,
+      "n_steps_coarsened": 13,
+      "n_steps_uncoarsened": 44,
+      "honest_coarsened": {
+        "logloss": 0.6526719168127245,
+        "ece": 0.05845269105268939
+      },
+      "honest_uncoarsened": {
+        "logloss": 0.659329741342836,
+        "ece": 0.06632503517523625
+      },
+      "raw_uncalibrated_on_eval": {
+        "logloss": 0.6483522225555077,
+        "ece": 0.038300325216496865
+      },
+      "shipped_style_in_sample_on_full_tail": {
+        "logloss": 0.6234727084504189,
+        "ece": 8.907363420609007e-07,
+        "n": 3368,
+        "note": "IN-SAMPLE: map graded on the games that built it. Do not quote as calibration quality."
+      }
     }
   },
   "nodraft": {
     "n": 3368,
     "accuracy": 0.6508313539192399,
-    "log_loss": 0.6270488688766794,
-    "roc_auc": 0.6946403705703487,
+    "log_loss": 0.6262019275271279,
+    "roc_auc": 0.69551262468385,
     "base_rate": 0.5427553444180523,
     "calibration": [
       {
         "bin": 1,
         "pred_range": [
-          0.0,
-          0.277
+          0.001,
+          0.354
         ],
-        "mean_pred": 0.223,
-        "actual_rate": 0.223,
-        "n": 300
+        "mean_pred": 0.234,
+        "actual_rate": 0.234,
+        "n": 334
       },
       {
         "bin": 2,
         "pred_range": [
-          0.277,
-          0.403
+          0.354,
+          0.401
         ],
-        "mean_pred": 0.372,
-        "actual_rate": 0.372,
-        "n": 374
+        "mean_pred": 0.356,
+        "actual_rate": 0.356,
+        "n": 208
+      },
+      {
+        "bin": 3,
+        "pred_range": [
+          0.401,
+          0.416
+        ],
+        "mean_pred": 0.401,
+        "actual_rate": 0.401,
+        "n": 252
       },
       {
         "bin": 4,
         "pred_range": [
-          0.407,
-          0.474
+          0.416,
+          0.485
         ],
-        "mean_pred": 0.428,
-        "actual_rate": 0.428,
-        "n": 661
+        "mean_pred": 0.432,
+        "actual_rate": 0.432,
+        "n": 528
       },
       {
         "bin": 5,
         "pred_range": [
-          0.474,
-          0.548
+          0.485,
+          0.595
         ],
-        "mean_pred": 0.483,
-        "actual_rate": 0.483,
-        "n": 176
+        "mean_pred": 0.521,
+        "actual_rate": 0.521,
+        "n": 351
       },
       {
         "bin": 6,
         "pred_range": [
-          0.548,
-          0.634
+          0.595,
+          0.625
         ],
-        "mean_pred": 0.576,
-        "actual_rate": 0.576,
-        "n": 417
+        "mean_pred": 0.595,
+        "actual_rate": 0.595,
+        "n": 232
       },
       {
         "bin": 7,
         "pred_range": [
-          0.634,
-          0.653
+          0.625,
+          0.629
         ],
-        "mean_pred": 0.634,
-        "actual_rate": 0.634,
-        "n": 407
+        "mean_pred": 0.625,
+        "actual_rate": 0.625,
+        "n": 405
       },
       {
         "bin": 8,
         "pred_range": [
-          0.653,
-          0.695
+          0.629,
+          0.708
         ],
-        "mean_pred": 0.665,
-        "actual_rate": 0.665,
-        "n": 248
+        "mean_pred": 0.643,
+        "actual_rate": 0.643,
+        "n": 258
       },
       {
         "bin": 9,
         "pred_range": [
-          0.695,
-          0.753
+          0.708,
+          0.749
         ],
-        "mean_pred": 0.695,
-        "actual_rate": 0.695,
-        "n": 302
+        "mean_pred": 0.714,
+        "actual_rate": 0.714,
+        "n": 336
       },
       {
         "bin": 10,
         "pred_range": [
-          0.753,
-          0.949
+          0.749,
+          0.952
         ],
-        "mean_pred": 0.789,
-        "actual_rate": 0.789,
-        "n": 483
+        "mean_pred": 0.791,
+        "actual_rate": 0.791,
+        "n": 464
       }
     ],
     "model_type": "logistic_regression",
     "model_info": {
       "C": 0.05,
-      "val_log_loss": 0.6343218947158102,
+      "val_log_loss": 0.6331180574248291,
       "pinned": "HGB comparison skipped; phone artifact needs LR"
+    },
+    "honest_calibration": {
+      "key": "nodraft",
+      "fitted_on": "2026-07-01..2026-08-31",
+      "n_fit": 2226,
+      "n_eval": 1142,
+      "n_steps_coarsened": 9,
+      "n_steps_uncoarsened": 38,
+      "honest_coarsened": {
+        "logloss": 0.6480710907540874,
+        "ece": 0.032683196979377556
+      },
+      "honest_uncoarsened": {
+        "logloss": 0.6584033499013702,
+        "ece": 0.06071748481635143
+      },
+      "raw_uncalibrated_on_eval": {
+        "logloss": 0.6465776448905829,
+        "ece": 0.04056193246813355
+      },
+      "shipped_style_in_sample_on_full_tail": {
+        "logloss": 0.6262019275271279,
+        "ece": 8.907363421080947e-07,
+        "n": 3368,
+        "note": "IN-SAMPLE: map graded on the games that built it. Do not quote as calibration quality."
+      }
     }
   },
   "backtests": {
     "worlds_2025": {
       "n": 96,
-      "accuracy": 0.5520833333333334,
-      "log_loss": 0.6802657635228009,
-      "roc_auc": 0.5974815458098133,
+      "accuracy": 0.6666666666666666,
+      "log_loss": 0.6151354325220285,
+      "roc_auc": 0.7173252279635258,
       "base_rate": 0.5104166666666666,
+      "baseline_log_loss": 0.6802657635228009,
+      "baseline_accuracy": 0.5520833333333334,
+      "delta_log_loss": -0.06513033100077237,
+      "offsets_used": {
+        "EMEA": 2.6,
+        "LATAM": -157.3,
+        "LCK": 178.9,
+        "LPL": 106.0,
+        "NA": 7.9,
+        "Taiwan": 9.7,
+        "Vietnam": -147.8
+      },
       "event_games": 96,
       "cutoff": "2025-09-25 09:14:03",
       "model_type": "logistic_regression",
-      "note": "out-of-sample: model fit only on games before the event's first game"
+      "note": "out-of-sample: model fit only on games before the event's first game; offsets fit only on cross-region games before the event"
     },
     "msi_2026": {
       "n": 71,
-      "accuracy": 0.6197183098591549,
-      "log_loss": 0.6214014358903249,
-      "roc_auc": 0.6764184397163121,
+      "accuracy": 0.676056338028169,
+      "log_loss": 0.5777822722443815,
+      "roc_auc": 0.7269503546099291,
       "base_rate": 0.6619718309859155,
+      "baseline_log_loss": 0.6214014358903249,
+      "baseline_accuracy": 0.6197183098591549,
+      "delta_log_loss": -0.043619163645943426,
+      "offsets_used": {
+        "EMEA": 28.5,
+        "LATAM": -154.5,
+        "LCK": 191.3,
+        "LPL": 115.3,
+        "NA": -9.8,
+        "Taiwan": -7.9,
+        "Vietnam": -162.9
+      },
       "event_games": 71,
       "cutoff": "2026-06-28 03:10:49",
       "model_type": "logistic_regression",
-      "note": "out-of-sample: model fit only on games before the event's first game"
+      "note": "out-of-sample: model fit only on games before the event's first game; offsets fit only on cross-region games before the event"
     }
   }
 }
