@@ -45,6 +45,7 @@ Outputs:
                                    snapshots (as of the latest game date) for predict.py,
                                    plus per-team region + the region offset table
 """
+import argparse
 import os
 from collections import defaultdict, deque
 from datetime import timedelta
@@ -129,7 +130,42 @@ def load_games():
     return df
 
 
+def merge_player_features(feat_path):
+    """Merge the player-Elo sidecar (player_features.csv) into features.csv.
+
+    Only runs with --with-player-elo (default OFF). Adds player_elo_diff,
+    per-side player/team Elos, and instability columns. Never touches
+    existing columns; row order is preserved. The sidecar is produced by
+    src/build_player_features.py (player Elo replay + instability)."""
+    pf_path = os.path.join(PROC_DIR, "player_features.csv")
+    if not os.path.exists(pf_path):
+        raise SystemExit(
+            "player_features.csv not found: run src/build_player_features.py "
+            "first (it builds the player Elo replay + instability sidecar)")
+    pf = pd.read_csv(pf_path, usecols=[
+        "gameid", "team_elo_blue", "team_elo_red",
+        "player_elo_blue", "player_elo_red",
+        "player_elo_diff", "instability_blue", "instability_red",
+        "instability_max"])
+    feat = pd.read_csv(feat_path)
+    merged = feat.merge(pf, on="gameid", how="left", validate="one_to_one")
+    missing = merged["player_elo_diff"].isna().sum()
+    if missing:
+        raise SystemExit(f"player_features.csv is missing {missing} games "
+                         "present in features.csv; rebuild it")
+    merged.to_csv(feat_path, index=False)
+    print(f"merged player-Elo sidecar into {feat_path} "
+          f"({len(merged)} games, +{len(pf.columns) - 1} columns)")
+
+
 def main():
+    ap = argparse.ArgumentParser(description="Build walk-forward game features")
+    ap.add_argument("--with-player-elo", action="store_true",
+                    help="also merge the player-Elo + instability sidecar "
+                         "(src/build_player_features.py) into features.csv; "
+                         "default OFF -- the refresh pipeline runs without it")
+    args = ap.parse_args()
+
     os.makedirs(PROC_DIR, exist_ok=True)
     os.makedirs(MODEL_DIR, exist_ok=True)
 
@@ -334,6 +370,8 @@ def main():
     print(f"wrote {feat_path} ({len(feat)} games)")
     print(f"  picks_ok rate: {feat['picks_ok'].mean():.3f}")
     print(f"  blue win rate overall: {feat['y'].mean():.3f}")
+    if args.with_player_elo:
+        merge_player_features(feat_path)
 
     # ---- snapshots for live prediction (as of latest game date) ----
     t_max = feat["date"].max()

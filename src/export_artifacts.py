@@ -38,10 +38,18 @@ writes model/phone_artifacts.json with everything the app needs, no server:
 Versioning: model_version + snapshot_date bump whenever artifacts are
 regenerated (new year, new rosters, retrained model).
 
+--with-player-blend adds a `player_blend` section (tier-conditional
+player/team Elo blend; reports/tier_conditional_blend.md). Default OFF:
+the shipped artifact is unchanged. The section carries the fitted (a, b),
+per-team last/modal lineups + instability, and ratings for the players
+in those lineups only (the full per-(player, role) snapshot stays in the
+model repo at model/player_blend_snapshot.json).
+
 Recomputes holdout predictions with pure-Python JSON math (the same code path
 the phone uses) to derive the calibration table / ECE / accuracy -- this also
 end-to-end validates the exported numbers.
 """
+import argparse
 import json
 import math
 import os
@@ -180,6 +188,13 @@ def live_to_json(cal_wrapper, features=LIVE_FEATURES):
 
 
 def main():
+    ap = argparse.ArgumentParser(description="Export the offline phone artifact")
+    ap.add_argument("--with-player-blend", action="store_true",
+                    help="add the player_blend section (tier-conditional "
+                         "player/team Elo blend); default OFF, shipped "
+                         "artifact unchanged without it")
+    args = ap.parse_args()
+
     bundle, snaps, champ_power = load_bundle()
     snapshot_date = snaps["as_of"][:10]
 
@@ -296,6 +311,39 @@ def main():
             "n": int(m.sum()),
         })
 
+    # ---- player/team Elo blend section (flag-gated; default OFF) ----
+    player_blend = None
+    if args.with_player_blend:
+        with open(os.path.join(MODEL_DIR, "player_blend_snapshot.json")) as f:
+            blend_snap = json.load(f)
+        bundle_blend = joblib.load(os.path.join(MODEL_DIR, "model_blend.joblib"))
+        needed_keys = set()
+        for t, rec in blend_snap["teams"].items():
+            needed_keys.update(rec["last_lineup"])
+            needed_keys.update(rec["modal_lineup"])
+        player_blend = {
+            "note": ("Tier-conditional blend (reports/tier_conditional_blend.md): "
+                     "per-side blended = w*player + (1-w)*team, "
+                     "w = sigmoid(a + b*instability). OFF by default; the "
+                     "shipped models train on team Elo only."),
+            "blend_a": bundle_blend["blend_a"],
+            "blend_b": bundle_blend["blend_b"],
+            "blend_tier_c": bundle_blend.get("blend_tier_c", 0.0),
+            "gate": bundle_blend.get("gate"),
+            "teams": {t: {
+                "team_elo": rec["team_elo"],
+                "player_elo": rec["player_elo"],
+                "league": rec.get("league"),
+                "instability": rec["instability"],
+                "last_lineup": rec["last_lineup"],
+                "modal_lineup": rec["modal_lineup"],
+            } for t, rec in blend_snap["teams"].items()},
+            "players": {k: {"name": v["name"], "role": v["role"],
+                            "rating": v["rating"]}
+                        for k, v in blend_snap["players"].items()
+                        if k in needed_keys},
+        }
+
     with open(os.path.join(MODEL_DIR, "metrics.json")) as f:
         metrics = json.load(f)
     backtests = {
@@ -324,8 +372,7 @@ def main():
             "Swiss games before letting variant A drive Kelly fractions; "
             "if the shadow test comes back <= 0, revert to baseline."),
         "player_gaps": player_gaps,
-        "blue_edge": round(float(snaps["blue_edge"]), 4),
-        "teams": teams,
+        "blue_edge": round(float(snaps["blue_edge"]), 4),        "teams": teams,
         "team_aliases": ALIASES,
         "champion_power": {k: round(float(v), 4) for k, v in champ_power.items()},
         "current_patch": current_patch,
@@ -368,6 +415,11 @@ def main():
             "holdout_period": [bundle["fit_end"], bundle["cal_end"]],
         },
     }
+
+    # Flag-gated: without --with-player-blend the artifact is byte-identical
+    # in shape to before (no player_blend key at all).
+    if player_blend is not None:
+        artifact["player_blend"] = player_blend
 
     # PHONE_ARTIFACTS_OUT overrides the output path (draft exports must
     # never overwrite the shipped phone_artifacts.json).
