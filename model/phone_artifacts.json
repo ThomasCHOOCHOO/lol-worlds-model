@@ -1,7 +1,7 @@
 {
- "model_version": "1.3.3",
+ "model_version": "1.3.4",
  "snapshot_date": "2026-10-16",
- "generated_at": "2026-10-17T02:34:56+00:00",
+ "generated_at": "2026-10-24T16:04:21+00:00",
  "models": {
   "full": {
    "model_type": "LogisticRegression",
@@ -995,8 +995,8 @@
    ]
   },
   "Top Esports": {
-   "elo": 1502.15,
-   "elo_raw": 1595.55,
+   "elo": 1493.6,
+   "elo_raw": 1587.0,
    "roster_delta": -93.4,
    "form": 0.4286,
    "eg_gold": -400.7,
@@ -1039,8 +1039,8 @@
    ]
   },
   "Bilibili Gaming": {
-   "elo": 1740.23,
-   "elo_raw": 1739.93,
+   "elo": 1723.88,
+   "elo_raw": 1723.58,
    "roster_delta": 0.3,
    "form": 0.6429,
    "eg_gold": 1256.2,
@@ -1279,8 +1279,8 @@
    "roster_2026": []
   },
   "G2 Esports": {
-   "elo": 1749.23,
-   "elo_raw": 1749.23,
+   "elo": 1733.45,
+   "elo_raw": 1733.45,
    "roster_delta": 0.0,
    "form": 0.6786,
    "eg_gold": 572.4,
@@ -1339,8 +1339,8 @@
    ]
   },
   "Karmine Corp": {
-   "elo": 1703.71,
-   "elo_raw": 1699.51,
+   "elo": 1734.91,
+   "elo_raw": 1730.71,
    "roster_delta": 4.2,
    "form": 0.5357,
    "eg_gold": 445.0,
@@ -1955,8 +1955,8 @@
    ]
   },
   "Gen.G": {
-   "elo": 1771.44,
-   "elo_raw": 1771.44,
+   "elo": 1777.8,
+   "elo_raw": 1777.8,
    "roster_delta": 0.0,
    "form": 0.6786,
    "eg_gold": 415.9,
@@ -1977,8 +1977,8 @@
    ]
   },
   "T1": {
-   "elo": 1603.06,
-   "elo_raw": 1646.06,
+   "elo": 1618.43,
+   "elo_raw": 1661.43,
    "roster_delta": -43.0,
    "form": 0.4643,
    "eg_gold": -533.3,
@@ -2429,8 +2429,8 @@
    "roster_2026": []
   },
   "Movistar KOI": {
-   "elo": 1608.21,
-   "elo_raw": 1608.21,
+   "elo": 1624.55,
+   "elo_raw": 1624.55,
    "roster_delta": 0.0,
    "form": 0.5714,
    "eg_gold": 414.5,
@@ -2563,8 +2563,8 @@
    ]
   },
   "Dplus Kia": {
-   "elo": 1616.91,
-   "elo_raw": 1636.21,
+   "elo": 1632.68,
+   "elo_raw": 1651.98,
    "roster_delta": -19.3,
    "form": 0.4643,
    "eg_gold": 517.3,
@@ -2639,8 +2639,8 @@
    "roster_2026": []
   },
   "Hanwha Life Esports": {
-   "elo": 1658.08,
-   "elo_raw": 1698.18,
+   "elo": 1666.63,
+   "elo_raw": 1706.73,
    "roster_delta": -40.1,
    "form": 0.5357,
    "eg_gold": 366.8,
@@ -2671,8 +2671,8 @@
    "roster_2026": []
   },
   "CTBC Flying Oyster": {
-   "elo": 1465.13,
-   "elo_raw": 1574.13,
+   "elo": 1481.95,
+   "elo_raw": 1590.95,
    "roster_delta": -109.0,
    "form": 0.5357,
    "eg_gold": -177.2,
@@ -3031,8 +3031,8 @@
    ]
   },
   "L\u00d8S": {
-   "elo": 1768.51,
-   "elo_raw": 1746.21,
+   "elo": 1753.14,
+   "elo_raw": 1730.84,
    "roster_delta": 22.3,
    "form": 0.6786,
    "eg_gold": 411.1,
@@ -3111,8 +3111,8 @@
    ]
   },
   "Team Liquid": {
-   "elo": 1732.12,
-   "elo_raw": 1722.12,
+   "elo": 1715.29,
+   "elo_raw": 1705.29,
    "roster_delta": 10.0,
    "form": 0.6786,
    "eg_gold": 782.4,
@@ -3597,8 +3597,8 @@
    ]
   },
   "Anyone's Legend": {
-   "elo": 1662.57,
-   "elo_raw": 1662.57,
+   "elo": 1652.56,
+   "elo_raw": 1652.56,
    "roster_delta": 0.0,
    "form": 0.5,
    "eg_gold": 289.5,
@@ -4099,8 +4099,8 @@
    ]
   },
   "Invictus Gaming": {
-   "elo": 1539.62,
-   "elo_raw": 1594.32,
+   "elo": 1533.25,
+   "elo_raw": 1587.95,
    "roster_delta": -54.7,
    "form": 0.5714,
    "eg_gold": 1173.9,
@@ -8811,8 +8811,8 @@
    ]
   },
   "Team Secret Whales": {
-   "elo": 1710.89,
-   "elo_raw": 1738.59,
+   "elo": 1696.89,
+   "elo_raw": 1724.59,
    "roster_delta": -27.7,
    "form": 0.7143,
    "eg_gold": 1438.2,
@@ -9315,8 +9315,8 @@
    "roster_2026": []
   },
   "LYON": {
-   "elo": 1712.72,
-   "elo_raw": 1680.22,
+   "elo": 1726.72,
+   "elo_raw": 1694.22,
    "roster_delta": 32.5,
    "form": 0.5714,
    "eg_gold": 586.5,
@@ -12333,8 +12333,8 @@
    ]
   },
   "MVK Esports": {
-   "elo": 1562.16,
-   "elo_raw": 1562.16,
+   "elo": 1540.96,
+   "elo_raw": 1540.96,
    "roster_delta": 0.0,
    "form": 0.3929,
    "eg_gold": -152.7,
