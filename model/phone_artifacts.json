@@ -1,7 +1,7 @@
 {
-  "model_version": "1.3.6",
+  "model_version": "1.3.7",
   "snapshot_date": "2026-10-16",
-  "generated_at": "2026-11-07T06:44:47Z",
+  "generated_at": "2026-11-07T16:31:24Z",
   "models": {
     "full": {
       "model_type": "LogisticRegression",
@@ -995,8 +995,8 @@
       ]
     },
     "Top Esports": {
-      "elo": 1529.54,
-      "elo_raw": 1622.94,
+      "elo": 1526.31,
+      "elo_raw": 1619.71,
       "roster_delta": -93.4,
       "form": 0.4286,
       "eg_gold": -400.7,
@@ -1039,8 +1039,8 @@
       ]
     },
     "Bilibili Gaming": {
-      "elo": 1780.3,
-      "elo_raw": 1780.0,
+      "elo": 1772.77,
+      "elo_raw": 1772.47,
       "roster_delta": 0.3,
       "form": 0.6429,
       "eg_gold": 1256.2,
@@ -1180,7 +1180,7 @@
       "roster_2025": [],
       "roster_2026": []
     },
-    "Beşiktaş Esports": {
+    "Be\u015fikta\u015f Esports": {
       "elo": 1530.71,
       "elo_raw": 1530.71,
       "roster_delta": 0.0,
@@ -1339,8 +1339,8 @@
       ]
     },
     "Karmine Corp": {
-      "elo": 1668.4,
-      "elo_raw": 1664.2,
+      "elo": 1723.74,
+      "elo_raw": 1719.54,
       "roster_delta": 4.2,
       "form": 0.5357,
       "eg_gold": 445.0,
@@ -1955,8 +1955,8 @@
       ]
     },
     "Gen.G": {
-      "elo": 1835.47,
-      "elo_raw": 1835.47,
+      "elo": 1817.8,
+      "elo_raw": 1817.8,
       "roster_delta": 0.0,
       "form": 0.6786,
       "eg_gold": 415.9,
@@ -1977,8 +1977,8 @@
       ]
     },
     "T1": {
-      "elo": 1617.96,
-      "elo_raw": 1660.96,
+      "elo": 1665.59,
+      "elo_raw": 1708.59,
       "roster_delta": -43.0,
       "form": 0.4643,
       "eg_gold": -533.3,
@@ -2018,7 +2018,7 @@
       "roster_2025": [],
       "roster_2026": []
     },
-    "Barça eSports": {
+    "Bar\u00e7a eSports": {
       "elo": 1590.53,
       "elo_raw": 1643.43,
       "roster_delta": -52.9,
@@ -2429,8 +2429,8 @@
       "roster_2026": []
     },
     "Movistar KOI": {
-      "elo": 1668.77,
-      "elo_raw": 1668.77,
+      "elo": 1579.57,
+      "elo_raw": 1579.57,
       "roster_delta": 0.0,
       "form": 0.5714,
       "eg_gold": 414.5,
@@ -2563,8 +2563,8 @@
       ]
     },
     "Dplus Kia": {
-      "elo": 1639.0,
-      "elo_raw": 1658.3,
+      "elo": 1638.24,
+      "elo_raw": 1657.54,
       "roster_delta": -19.3,
       "form": 0.4643,
       "eg_gold": 517.3,
@@ -2639,8 +2639,8 @@
       "roster_2026": []
     },
     "Hanwha Life Esports": {
-      "elo": 1646.53,
-      "elo_raw": 1686.63,
+      "elo": 1645.95,
+      "elo_raw": 1686.05,
       "roster_delta": -40.1,
       "form": 0.5357,
       "eg_gold": 366.8,
@@ -2671,8 +2671,8 @@
       "roster_2026": []
     },
     "CTBC Flying Oyster": {
-      "elo": 1446.84,
-      "elo_raw": 1555.84,
+      "elo": 1447.66,
+      "elo_raw": 1556.66,
       "roster_delta": -109.0,
       "form": 0.5357,
       "eg_gold": -177.2,
@@ -2768,7 +2768,7 @@
       ],
       "roster_2026": []
     },
-    "QT DIG∞": {
+    "QT DIG\u221e": {
       "elo": 1571.12,
       "elo_raw": 1571.12,
       "roster_delta": 0.0,
@@ -3030,9 +3030,9 @@
         "scamber"
       ]
     },
-    "LØS": {
-      "elo": 1727.5,
-      "elo_raw": 1705.2,
+    "L\u00d8S": {
+      "elo": 1753.15,
+      "elo_raw": 1730.85,
       "roster_delta": 22.3,
       "form": 0.6786,
       "eg_gold": 411.1,
@@ -3063,8 +3063,8 @@
       "roster_2026": []
     },
     "FURIA": {
-      "elo": 1589.79,
-      "elo_raw": 1589.79,
+      "elo": 1575.37,
+      "elo_raw": 1575.37,
       "roster_delta": -0.0,
       "form": 0.5357,
       "eg_gold": -275.6,
@@ -3111,8 +3111,8 @@
       ]
     },
     "Team Liquid": {
-      "elo": 1705.94,
-      "elo_raw": 1695.94,
+      "elo": 1714.93,
+      "elo_raw": 1704.93,
       "roster_delta": 10.0,
       "form": 0.6786,
       "eg_gold": 782.4,
@@ -3193,8 +3193,8 @@
       ]
     },
     "Cloud9": {
-      "elo": 1547.09,
-      "elo_raw": 1568.19,
+      "elo": 1529.72,
+      "elo_raw": 1550.82,
       "roster_delta": -21.1,
       "form": 0.3929,
       "eg_gold": 181.4,
@@ -3597,8 +3597,8 @@
       ]
     },
     "Anyone's Legend": {
-      "elo": 1618.12,
-      "elo_raw": 1618.12,
+      "elo": 1619.3,
+      "elo_raw": 1619.3,
       "roster_delta": 0.0,
       "form": 0.5,
       "eg_gold": 289.5,
@@ -3909,7 +3909,7 @@
       "roster_2026": [
         "Hatred",
         "Dolis",
-        "Sïgma",
+        "S\u00efgma",
         "Jamie",
         "Smart"
       ]
@@ -4099,8 +4099,8 @@
       ]
     },
     "Invictus Gaming": {
-      "elo": 1624.91,
-      "elo_raw": 1679.61,
+      "elo": 1606.99,
+      "elo_raw": 1661.69,
       "roster_delta": -54.7,
       "form": 0.5714,
       "eg_gold": 1173.9,
@@ -4246,7 +4246,7 @@
       "eg_gold": 484.7,
       "turnover_2025_2026": 1.0,
       "roster_2025": [
-        "Gaëthan",
+        "Ga\u00ebthan",
         "marlon",
         "Peng",
         "NattyNatt",
@@ -4586,7 +4586,7 @@
         "TheHank"
       ]
     },
-    "Ji Jie Hao (集结号)": {
+    "Ji Jie Hao (\u96c6\u7ed3\u53f7)": {
       "elo": 1486.63,
       "elo_raw": 1486.63,
       "roster_delta": -0.0,
@@ -4952,7 +4952,7 @@
       "roster_2025": [],
       "roster_2026": []
     },
-    "MiaoJing (妙竞)": {
+    "MiaoJing (\u5999\u7ade)": {
       "elo": 1433.88,
       "elo_raw": 1433.88,
       "roster_delta": 0.0,
@@ -5040,7 +5040,7 @@
         "Samkz"
       ]
     },
-    "LØS Academy": {
+    "L\u00d8S Academy": {
       "elo": 1460.08,
       "elo_raw": 1460.08,
       "roster_delta": 0.0,
@@ -5397,7 +5397,7 @@
         "Koczis"
       ],
       "roster_2026": [
-        "Fejkýý",
+        "Fejk\u00fd\u00fd",
         "Kadlicek",
         "Reddy",
         "Koudys",
@@ -5498,7 +5498,7 @@
       "roster_2025": [],
       "roster_2026": []
     },
-    "Hungkuang Falcon (弘光獵鷹)": {
+    "Hungkuang Falcon (\u5f18\u5149\u7375\u9df9)": {
       "elo": 1421.73,
       "elo_raw": 1421.73,
       "roster_delta": 0.0,
@@ -5534,7 +5534,7 @@
       "roster_2025": [],
       "roster_2026": []
     },
-    "TNU Eagle (東南飛鷹)": {
+    "TNU Eagle (\u6771\u5357\u98db\u9df9)": {
       "elo": 1499.7,
       "elo_raw": 1499.7,
       "roster_delta": 0.0,
@@ -5586,7 +5586,7 @@
         "Ravvy"
       ]
     },
-    "Esprit Shōnen": {
+    "Esprit Sh\u014dnen": {
       "elo": 1360.81,
       "elo_raw": 1420.61,
       "roster_delta": -59.8,
@@ -5625,7 +5625,7 @@
       "roster_2026": [
         "Satto",
         "Sukru",
-        "MélyaP",
+        "M\u00e9lyaP",
         "shidolovell",
         "Vespa"
       ]
@@ -5811,7 +5811,7 @@
         "Yoangi"
       ],
       "roster_2026": [
-        "Alén Stark",
+        "Al\u00e9n Stark",
         "Fugu",
         "MetroArcher",
         "Rewound",
@@ -5886,7 +5886,7 @@
       "roster_2025": [],
       "roster_2026": []
     },
-    "Chienhsin Bear (健行熊)": {
+    "Chienhsin Bear (\u5065\u884c\u718a)": {
       "elo": 1524.65,
       "elo_raw": 1524.65,
       "roster_delta": 0.0,
@@ -5896,7 +5896,7 @@
       "roster_2025": [],
       "roster_2026": []
     },
-    "PÊEK Gaming": {
+    "P\u00caEK Gaming": {
       "elo": 1510.07,
       "elo_raw": 1510.07,
       "roster_delta": -0.0,
@@ -6306,7 +6306,7 @@
       "roster_2025": [],
       "roster_2026": []
     },
-    "Laranja Mecânica Ignis": {
+    "Laranja Mec\u00e2nica Ignis": {
       "elo": 1483.62,
       "elo_raw": 1483.62,
       "roster_delta": -0.0,
@@ -6356,7 +6356,7 @@
       "roster_2025": [],
       "roster_2026": []
     },
-    "Geração Estrutura": {
+    "Gera\u00e7\u00e3o Estrutura": {
       "elo": 1469.34,
       "elo_raw": 1469.34,
       "roster_delta": -0.0,
@@ -7102,7 +7102,7 @@
       "roster_2025": [
         "Goliah",
         "Marth",
-        "Ilyxøu",
+        "Ilyx\u00f8u",
         "iwanan",
         "Kikis"
       ],
@@ -7124,7 +7124,7 @@
       "roster_2025": [],
       "roster_2026": []
     },
-    "L’art de la Guerre": {
+    "L\u2019art de la Guerre": {
       "elo": 1491.13,
       "elo_raw": 1491.13,
       "roster_delta": 0.0,
@@ -7234,7 +7234,7 @@
       "roster_2025": [],
       "roster_2026": []
     },
-    "Jörmungang": {
+    "J\u00f6rmungang": {
       "elo": 1486.33,
       "elo_raw": 1486.33,
       "roster_delta": 0.0,
@@ -7318,7 +7318,7 @@
       ],
       "roster_2026": []
     },
-    "Leões Porto Salvo Esports": {
+    "Le\u00f5es Porto Salvo Esports": {
       "elo": 1505.62,
       "elo_raw": 1505.62,
       "roster_delta": -0.0,
@@ -7328,7 +7328,7 @@
       "roster_2025": [
         "BANKAI",
         "Joki37",
-        "Ilyxøu",
+        "Ilyx\u00f8u",
         "Tochas",
         "Royeq"
       ],
@@ -7522,7 +7522,7 @@
       "roster_2025": [],
       "roster_2026": []
     },
-    "Le Pouvoir de l'Amitié": {
+    "Le Pouvoir de l'Amiti\u00e9": {
       "elo": 1487.7,
       "elo_raw": 1487.7,
       "roster_delta": -0.0,
@@ -7764,7 +7764,7 @@
       "roster_2025": [],
       "roster_2026": []
     },
-    "Kiedyś Miałem Fun": {
+    "Kiedy\u015b Mia\u0142em Fun": {
       "elo": 1576.7,
       "elo_raw": 1576.7,
       "roster_delta": 0.0,
@@ -8005,14 +8005,14 @@
       "turnover_2025_2026": 0.2,
       "roster_2025": [
         "Boltox",
-        "Menninkäinen",
-        "Röyhkeä",
+        "Mennink\u00e4inen",
+        "R\u00f6yhke\u00e4",
         "Tatuy",
         "VL"
       ],
       "roster_2026": [
-        "Menninkäinen",
-        "Röyhkeä",
+        "Mennink\u00e4inen",
+        "R\u00f6yhke\u00e4",
         "Tatuy",
         "VL",
         "oivallus"
@@ -8318,7 +8318,7 @@
       "roster_2025": [],
       "roster_2026": []
     },
-    "Jörmungang Academy": {
+    "J\u00f6rmungang Academy": {
       "elo": 1494.69,
       "elo_raw": 1494.69,
       "roster_delta": -0.0,
@@ -8744,7 +8744,7 @@
         "Looki"
       ]
     },
-    "Movistar KOI Fénix": {
+    "Movistar KOI F\u00e9nix": {
       "elo": 1782.49,
       "elo_raw": 1783.69,
       "roster_delta": -1.2,
@@ -9315,8 +9315,8 @@
       "roster_2026": []
     },
     "LYON": {
-      "elo": 1696.15,
-      "elo_raw": 1663.65,
+      "elo": 1710.01,
+      "elo_raw": 1677.51,
       "roster_delta": 32.5,
       "form": 0.5714,
       "eg_gold": 586.5,
@@ -9690,7 +9690,7 @@
       ],
       "roster_2026": []
     },
-    "Lenovo Legion Honvéd": {
+    "Lenovo Legion Honv\u00e9d": {
       "elo": 1501.55,
       "elo_raw": 1477.65,
       "roster_delta": 23.9,
@@ -9772,7 +9772,7 @@
         "pr1me"
       ]
     },
-    "ΣΤΕΝΑΧΩΡΕΜΕΝΟΙ": {
+    "\u03a3\u03a4\u0395\u039d\u0391\u03a7\u03a9\u03a1\u0395\u039c\u0395\u039d\u039f\u0399": {
       "elo": 1484.66,
       "elo_raw": 1484.66,
       "roster_delta": -0.0,
@@ -10490,7 +10490,7 @@
       ],
       "roster_2026": []
     },
-    "Münster Esports - Golden Goats": {
+    "M\u00fcnster Esports - Golden Goats": {
       "elo": 1485.61,
       "elo_raw": 1485.61,
       "roster_delta": 0.0,
@@ -10636,7 +10636,7 @@
         "Shy Carry"
       ]
     },
-    "StormMedia Fajnie Mieć Skład": {
+    "StormMedia Fajnie Mie\u0107 Sk\u0142ad": {
       "elo": 1565.45,
       "elo_raw": 1565.45,
       "roster_delta": -0.0,
@@ -11059,7 +11059,7 @@
         "Nanchuco",
         "Hygon",
         "Pikii",
-        "Alén Stark",
+        "Al\u00e9n Stark",
         "Dextyle"
       ],
       "roster_2026": []
@@ -11448,7 +11448,7 @@
         "Kartso"
       ]
     },
-    "Xibalbá Esports": {
+    "Xibalb\u00e1 Esports": {
       "elo": 1467.48,
       "elo_raw": 1467.48,
       "roster_delta": 0.0,
@@ -11550,7 +11550,7 @@
       ],
       "roster_2026": []
     },
-    "Orzeł Barcząca Esports": {
+    "Orze\u0142 Barcz\u0105ca Esports": {
       "elo": 1487.36,
       "elo_raw": 1487.36,
       "roster_delta": -0.0,
@@ -11626,7 +11626,7 @@
       ],
       "roster_2026": []
     },
-    "Barcząca Esports by Yumisu": {
+    "Barcz\u0105ca Esports by Yumisu": {
       "elo": 1514.58,
       "elo_raw": 1486.08,
       "roster_delta": 28.5,
@@ -11940,7 +11940,7 @@
       "roster_2025": [
         "Icarus",
         "Misanthiel",
-        "Raïto",
+        "Ra\u00efto",
         "Wakz",
         "Xeltop"
       ],
@@ -12333,8 +12333,8 @@
       ]
     },
     "MVK Esports": {
-      "elo": 1540.96,
-      "elo_raw": 1540.96,
+      "elo": 1556.2,
+      "elo_raw": 1556.2,
       "roster_delta": 0.0,
       "form": 0.3929,
       "eg_gold": -152.7,
@@ -12517,7 +12517,7 @@
       "turnover_2025_2026": null,
       "roster_2025": [],
       "roster_2026": [
-        "Cosmïc",
+        "Cosm\u00efc",
         "Delicate",
         "Honda",
         "Owpi",
@@ -12972,7 +12972,7 @@
         "Pauporter"
       ]
     },
-    "Instituto Politécnico de Santarém": {
+    "Instituto Polit\u00e9cnico de Santar\u00e9m": {
       "elo": 1476.29,
       "elo_raw": 1476.29,
       "roster_delta": 0.0,
@@ -13084,7 +13084,7 @@
         "Verdes"
       ]
     },
-    "Cães de Água": {
+    "C\u00e3es de \u00c1gua": {
       "elo": 1506.77,
       "elo_raw": 1506.77,
       "roster_delta": -0.0,
@@ -13292,7 +13292,7 @@
         "Nuna"
       ]
     },
-    "Ngựa Hí Esports": {
+    "Ng\u1ef1a H\u00ed Esports": {
       "elo": 1451.77,
       "elo_raw": 1451.77,
       "roster_delta": 0.0,
@@ -13305,7 +13305,7 @@
         "NtNt",
         "Vin",
         "VietThanh",
-        "Hưng Two"
+        "H\u01b0ng Two"
       ]
     },
     "9Gaming Esports": {
@@ -13420,7 +13420,7 @@
         "Funky"
       ]
     },
-    "Tu Papá Esports": {
+    "Tu Pap\u00e1 Esports": {
       "elo": 1385.4,
       "elo_raw": 1385.4,
       "roster_delta": -0.0,
@@ -13644,7 +13644,7 @@
         "Benny"
       ]
     },
-    "Rugby Club Havířov": {
+    "Rugby Club Hav\u00ed\u0159ov": {
       "elo": 1466.9,
       "elo_raw": 1466.9,
       "roster_delta": 0.0,
@@ -13671,7 +13671,7 @@
       "roster_2026": [
         "Blek",
         "Vorkis",
-        "Młody G",
+        "M\u0142ody G",
         "dylux",
         "safo"
       ]
@@ -14284,7 +14284,7 @@
         "Nireo"
       ]
     },
-    "Sørby eSport": {
+    "S\u00f8rby eSport": {
       "elo": 1435.98,
       "elo_raw": 1435.98,
       "roster_delta": -0.0,
@@ -14508,7 +14508,7 @@
         "Yuros"
       ]
     },
-    "Panelão LHC": {
+    "Panel\u00e3o LHC": {
       "elo": 1475.22,
       "elo_raw": 1475.22,
       "roster_delta": 0.0,
@@ -14620,7 +14620,7 @@
         "Vespa"
       ]
     },
-    "我超威": {
+    "\u6211\u8d85\u5a01": {
       "elo": 1476.26,
       "elo_raw": 1476.26,
       "roster_delta": -0.0,
@@ -14636,7 +14636,7 @@
         "zzdw"
       ]
     },
-    "小爬虫": {
+    "\u5c0f\u722c\u866b": {
       "elo": 1488.02,
       "elo_raw": 1488.02,
       "roster_delta": -0.0,
@@ -14684,7 +14684,7 @@
         "xiaoyueji"
       ]
     },
-    "Miðgarð Esports": {
+    "Mi\u00f0gar\u00f0 Esports": {
       "elo": 1476.83,
       "elo_raw": 1476.83,
       "roster_delta": 0.0,
@@ -14780,7 +14780,7 @@
         "Tigrot"
       ]
     },
-    "Magyar Gamer Szövetsèg": {
+    "Magyar Gamer Sz\u00f6vets\u00e8g": {
       "elo": 1468.98,
       "elo_raw": 1468.98,
       "roster_delta": -0.0,
@@ -14976,9 +14976,9 @@
     "flying oyster": "CTBC Flying Oyster",
     "mvk": "MVK Esports",
     "mvk esports": "MVK Esports",
-    "los": "LØS",
-    "l0s": "LØS",
-    "lØs": "LØS",
+    "los": "L\u00d8S",
+    "l0s": "L\u00d8S",
+    "l\u00d8s": "L\u00d8S",
     "fur": "FURIA",
     "furia": "FURIA"
   },
@@ -18742,7 +18742,7 @@
       "nunu & willump": 0.4643,
       "zed": 0.4643
     },
-    "Beşiktaş Esports": {
+    "Be\u015fikta\u015f Esports": {
       "gwen": 0.5714,
       "xin zhao": 0.5714,
       "sylas": 0.5714,
@@ -23369,7 +23369,7 @@
       "shen": 0.5357,
       "lux": 0.5357
     },
-    "Barça eSports": {
+    "Bar\u00e7a eSports": {
       "k'sante": 0.5884,
       "vi": 0.6143,
       "orianna": 0.5179,
@@ -27653,7 +27653,7 @@
       "cho'gath": 0.4286,
       "sivir": 0.4286
     },
-    "QT DIG∞": {
+    "QT DIG\u221e": {
       "aatrox": 0.5714,
       "xin zhao": 0.5714,
       "orianna": 0.5714,
@@ -29117,7 +29117,7 @@
       "vayne": 0.4286,
       "dr. mundo": 0.4286
     },
-    "LØS": {
+    "L\u00d8S": {
       "udyr": 0.6786,
       "rell": 0.6276,
       "corki": 0.7298,
@@ -37737,7 +37737,7 @@
       "viktor": 0.3929,
       "olaf": 0.3929
     },
-    "Ji Jie Hao (集结号)": {
+    "Ji Jie Hao (\u96c6\u7ed3\u53f7)": {
       "k'sante": 0.5,
       "xin zhao": 0.5,
       "azir": 0.5,
@@ -39642,7 +39642,7 @@
       "zac": 0.5,
       "leona": 0.5
     },
-    "MiaoJing (妙竞)": {
+    "MiaoJing (\u5999\u7ade)": {
       "rumble": 0.2857,
       "sejuani": 0.2857,
       "jayce": 0.2857,
@@ -40132,7 +40132,7 @@
       "akali": 0.4286,
       "dr. mundo": 0.4286
     },
-    "LØS Academy": {
+    "L\u00d8S Academy": {
       "jax": 0.2857,
       "jarvan iv": 0.2857,
       "azir": 0.2857,
@@ -42649,7 +42649,7 @@
       "sylas": 0.4643,
       "hecarim": 0.4643
     },
-    "Hungkuang Falcon (弘光獵鷹)": {
+    "Hungkuang Falcon (\u5f18\u5149\u7375\u9df9)": {
       "darius": 0.2143,
       "jax": 0.2143,
       "hwei": 0.2143,
@@ -42850,7 +42850,7 @@
       "ivern": 0.1429,
       "zeri": 0.1429
     },
-    "TNU Eagle (東南飛鷹)": {
+    "TNU Eagle (\u6771\u5357\u98db\u9df9)": {
       "gwen": 0.5,
       "xin zhao": 0.5,
       "azir": 0.5,
@@ -43129,7 +43129,7 @@
       "mel": 0.3214,
       "ryze": 0.3214
     },
-    "Esprit Shōnen": {
+    "Esprit Sh\u014dnen": {
       "aatrox": 0.2143,
       "maokai": 0.2143,
       "hwei": 0.2143,
@@ -44671,7 +44671,7 @@
       "fiora": 0.4286,
       "alistar": 0.4286
     },
-    "Chienhsin Bear (健行熊)": {
+    "Chienhsin Bear (\u5065\u884c\u718a)": {
       "jax": 0.5714,
       "poppy": 0.5714,
       "azir": 0.5714,
@@ -44741,7 +44741,7 @@
       "sivir": 0.5714,
       "miss fortune": 0.5714
     },
-    "PÊEK Gaming": {
+    "P\u00caEK Gaming": {
       "renekton": 0.3929,
       "vi": 0.3929,
       "taliyah": 0.3929,
@@ -46608,7 +46608,7 @@
       "ziggs": 0.3333,
       "leona": 0.3333
     },
-    "Laranja Mecânica Ignis": {
+    "Laranja Mec\u00e2nica Ignis": {
       "skarner": 0.3333,
       "maokai": 0.3333,
       "veigar": 0.3333,
@@ -46779,7 +46779,7 @@
       "leblanc": 0.5714,
       "aphelios": 0.5714
     },
-    "Geração Estrutura": {
+    "Gera\u00e7\u00e3o Estrutura": {
       "malphite": 0.3529,
       "jax": 0.3529,
       "taliyah": 0.3529,
@@ -50223,7 +50223,7 @@
       "xayah": 0.3846,
       "blitzcrank": 0.3846
     },
-    "L’art de la Guerre": {
+    "L\u2019art de la Guerre": {
       "yone": 0.4286,
       "sejuani": 0.4286,
       "viktor": 0.4286,
@@ -50584,7 +50584,7 @@
       "poppy": 0.5333,
       "azir": 0.5333
     },
-    "Jörmungang": {
+    "J\u00f6rmungang": {
       "renekton": 0.5,
       "ivern": 0.5,
       "taliyah": 0.5,
@@ -50962,7 +50962,7 @@
       "akali": 0.25,
       "aphelios": 0.25
     },
-    "Leões Porto Salvo Esports": {
+    "Le\u00f5es Porto Salvo Esports": {
       "k'sante": 0.4643,
       "brand": 0.4643,
       "yone": 0.4643,
@@ -51692,7 +51692,7 @@
       "jinx": 0.4,
       "alistar": 0.4
     },
-    "Le Pouvoir de l'Amitié": {
+    "Le Pouvoir de l'Amiti\u00e9": {
       "gnar": 0.4286,
       "diana": 0.4286,
       "azir": 0.4286,
@@ -52551,7 +52551,7 @@
       "varus": 0.3333,
       "poppy": 0.3333
     },
-    "Kiedyś Miałem Fun": {
+    "Kiedy\u015b Mia\u0142em Fun": {
       "yone": 0.6429,
       "ivern": 0.6429,
       "ahri": 0.6429,
@@ -54135,7 +54135,7 @@
       "sejuani": 0.3846,
       "pyke": 0.3846
     },
-    "Jörmungang Academy": {
+    "J\u00f6rmungang Academy": {
       "darius": 0.4667,
       "wukong": 0.4667,
       "orianna": 0.4667,
@@ -55502,7 +55502,7 @@
       "cassiopeia": 0.7857,
       "taliyah": 0.7857
     },
-    "Movistar KOI Fénix": {
+    "Movistar KOI F\u00e9nix": {
       "gnar": 0.7037,
       "ivern": 0.5,
       "corki": 0.5714,
@@ -58931,7 +58931,7 @@
       "jhin": 0.4,
       "blitzcrank": 0.4
     },
-    "Lenovo Legion Honvéd": {
+    "Lenovo Legion Honv\u00e9d": {
       "ornn": 0.4643,
       "diana": 0.4643,
       "ambessa": 0.4745,
@@ -59258,7 +59258,7 @@
       "qiyana": 0.5,
       "locke": 0.5
     },
-    "ΣΤΕΝΑΧΩΡΕΜΕΝΟΙ": {
+    "\u03a3\u03a4\u0395\u039d\u0391\u03a7\u03a9\u03a1\u0395\u039c\u0395\u039d\u039f\u0399": {
       "sion": 0.4167,
       "wukong": 0.4167,
       "syndra": 0.4167,
@@ -61709,7 +61709,7 @@
       "lucian": 0.4545,
       "nami": 0.4545
     },
-    "Münster Esports - Golden Goats": {
+    "M\u00fcnster Esports - Golden Goats": {
       "k'sante": 0.4,
       "lillia": 0.4,
       "yone": 0.4,
@@ -62022,7 +62022,7 @@
       "milio": 0.6524,
       "cassiopeia": 0.7704
     },
-    "StormMedia Fajnie Mieć Skład": {
+    "StormMedia Fajnie Mie\u0107 Sk\u0142ad": {
       "warwick": 0.4643,
       "hecarim": 0.4643,
       "hwei": 0.4643,
@@ -64099,7 +64099,7 @@
       "sivir": 0.3929,
       "tryndamere": 0.3929
     },
-    "Xibalbá Esports": {
+    "Xibalb\u00e1 Esports": {
       "gwen": 0.3077,
       "naafiri": 0.3077,
       "ahri": 0.3077,
@@ -64405,7 +64405,7 @@
       "maokai": 0.44,
       "renata glasc": 0.44
     },
-    "Orzeł Barcząca Esports": {
+    "Orze\u0142 Barcz\u0105ca Esports": {
       "ryze": 0.3846,
       "bel'veth": 0.3846,
       "viktor": 0.3846,
@@ -64661,7 +64661,7 @@
       "kai'sa": 0.5833,
       "thresh": 0.5833
     },
-    "Barcząca Esports by Yumisu": {
+    "Barcz\u0105ca Esports by Yumisu": {
       "lee sin": 0.4286,
       "viego": 0.3571,
       "viktor": 0.3988,
@@ -68856,7 +68856,7 @@
       "jhin": 0.25,
       "nautilus": 0.25
     },
-    "Instituto Politécnico de Santarém": {
+    "Instituto Polit\u00e9cnico de Santar\u00e9m": {
       "sion": 0.4,
       "jarvan iv": 0.4,
       "ryze": 0.4,
@@ -69133,7 +69133,7 @@
       "twisted fate": 0.4545,
       "karma": 0.4545
     },
-    "Cães de Água": {
+    "C\u00e3es de \u00c1gua": {
       "galio": 0.5,
       "jarvan iv": 0.5,
       "viktor": 0.5,
@@ -69779,7 +69779,7 @@
       "kalista": 0.5357,
       "lissandra": 0.5357
     },
-    "Ngựa Hí Esports": {
+    "Ng\u1ef1a H\u00ed Esports": {
       "k'sante": 0.3684,
       "vi": 0.3603,
       "aurora": 0.3684,
@@ -70322,7 +70322,7 @@
       "gragas": 0.3929,
       "naafiri": 0.3929
     },
-    "Tu Papá Esports": {
+    "Tu Pap\u00e1 Esports": {
       "rumble": 0.1701,
       "xin zhao": 0.2601,
       "anivia": 0.2381,
@@ -71114,7 +71114,7 @@
       "cho'gath": 0.2857,
       "annie": 0.2857
     },
-    "Rugby Club Havířov": {
+    "Rugby Club Hav\u00ed\u0159ov": {
       "shen": 0.4643,
       "xin zhao": 0.4152,
       "ahri": 0.3319,
@@ -72733,7 +72733,7 @@
       "galio": 0.6071,
       "taliyah": 0.6071
     },
-    "Sørby eSport": {
+    "S\u00f8rby eSport": {
       "rumble": 0.2198,
       "xin zhao": 0.2857,
       "galio": 0.2857,
@@ -73274,7 +73274,7 @@
       "talon": 0.4737,
       "ryze": 0.4737
     },
-    "Panelão LHC": {
+    "Panel\u00e3o LHC": {
       "ornn": 0.4167,
       "qiyana": 0.4167,
       "anivia": 0.4167,
@@ -73517,7 +73517,7 @@
       "ornn": 0.4286,
       "miss fortune": 0.4286
     },
-    "我超威": {
+    "\u6211\u8d85\u5a01": {
       "k'sante": 0.4,
       "lee sin": 0.4,
       "syndra": 0.4,
@@ -73528,7 +73528,7 @@
       "mel": 0.4,
       "rakan": 0.4
     },
-    "小爬虫": {
+    "\u5c0f\u722c\u866b": {
       "rumble": 0.4444,
       "vi": 0.4444,
       "akali": 0.4444,
@@ -73571,7 +73571,7 @@
       "lucian": 0.4444,
       "alistar": 0.4444
     },
-    "Miðgarð Esports": {
+    "Mi\u00f0gar\u00f0 Esports": {
       "gwen": 0.4,
       "lee sin": 0.4,
       "ahri": 0.4,
@@ -73710,7 +73710,7 @@
       "ashe": 0.4667,
       "leona": 0.4667
     },
-    "Magyar Gamer Szövetsèg": {
+    "Magyar Gamer Sz\u00f6vets\u00e8g": {
       "k'sante": 0.4444,
       "vi": 0.4188,
       "syndra": 0.3889,
