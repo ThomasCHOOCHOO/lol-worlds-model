@@ -267,8 +267,8 @@
   },
   "name:BER Berimbau": {
    "name": "BER Berimbau",
-   "rating": 1486.56,
-   "role": "sup"
+   "rating": 1492.94,
+   "role": "bot"
   },
   "name:BER Besnaga": {
    "name": "BER Besnaga",
@@ -751,7 +751,7 @@
    "role": "top"
   },
   "name:DM poshigi8": {
-   "name": "DM poshigi8",
+   "name": "Dragonblood",
    "rating": 1484.8,
    "role": "jng"
   },
@@ -1877,8 +1877,8 @@
   },
   "name:NG Shinluv": {
    "name": "NG Shinluv",
-   "rating": 1403.92,
-   "role": "top"
+   "rating": 1410.57,
+   "role": "mid"
   },
   "name:NG ShizuOo": {
    "name": "NG ShizuOo",
@@ -2012,8 +2012,8 @@
   },
   "name:ORS Liang": {
    "name": "ORS Liang",
-   "rating": 1478.21,
-   "role": "top"
+   "rating": 1488.72,
+   "role": "jng"
   },
   "name:ORS Micinb": {
    "name": "ORS Micinb",
@@ -2137,8 +2137,8 @@
   },
   "name:PAPU Xami": {
    "name": "PAPU Xami",
-   "rating": 1468.57,
-   "role": "sup"
+   "rating": 1478.56,
+   "role": "mid"
   },
   "name:PAPU its me": {
    "name": "PAPU its me",
@@ -2672,8 +2672,8 @@
   },
   "name:STD DarkVentus": {
    "name": "STD DarkVentus",
-   "rating": 1471.53,
-   "role": "top"
+   "rating": 1457.31,
+   "role": "bot"
   },
   "name:STX Driplex": {
    "name": "STX Driplex",
@@ -2682,8 +2682,8 @@
   },
   "name:STX Legendary": {
    "name": "STX Legendary",
-   "rating": 1496.71,
-   "role": "top"
+   "rating": 1496.22,
+   "role": "bot"
   },
   "name:STX spleen": {
    "name": "STX spleen",
@@ -2932,8 +2932,8 @@
   },
   "name:VK Jami": {
    "name": "VK Jami",
-   "rating": 1401.36,
-   "role": "sup"
+   "rating": 1378.76,
+   "role": "jng"
   },
   "name:VK Jmicta": {
    "name": "VK Jmicta",
@@ -3317,7 +3317,7 @@
   },
   "oe:player:0101bf828e44b2630d500590c4ad461": {
    "name": "Gury",
-   "rating": 1535.91,
+   "rating": 1549.8,
    "role": "jng"
   },
   "oe:player:0103d21d116b61eb55fa351242208cf": {
@@ -3567,7 +3567,7 @@
   },
   "oe:player:03daae1844b9ad257324c3eedf41e28": {
    "name": "Kiin",
-   "rating": 1880.5,
+   "rating": 1902.05,
    "role": "top"
   },
   "oe:player:03fb4894c88568133475249f7dda730": {
@@ -3602,7 +3602,7 @@
   },
   "oe:player:043e89cd3b06bc1a0555024d475c9d2": {
    "name": "Hizto",
-   "rating": 1758.88,
+   "rating": 1708.89,
    "role": "jng"
   },
   "oe:player:044e02245f640dee2684205a93127f2": {
@@ -3682,7 +3682,7 @@
   },
   "oe:player:051ca2e31ba25123961b3df95fdef4c": {
    "name": "Delight",
-   "rating": 1803.54,
+   "rating": 1780.98,
    "role": "sup"
   },
   "oe:player:052ad9427bad4cf3f5b46c0cc5552bf": {
@@ -3772,7 +3772,7 @@
   },
   "oe:player:05fafeaf23dc3285558a4e968970b9f": {
    "name": "CoreJJ",
-   "rating": 1751.51,
+   "rating": 1733.03,
    "role": "sup"
   },
   "oe:player:06061bba9bacc0fd18efdf376742d99": {
@@ -4357,7 +4357,7 @@
   },
   "oe:player:0c74b7f78409a4022a2c4c5a5ca3ee1": {
    "name": "369",
-   "rating": 1666.08,
+   "rating": 1689.62,
    "role": "top"
   },
   "oe:player:0c8632961f474ea16cd5260151d4081": {
@@ -4522,12 +4522,12 @@
   },
   "oe:player:0d9b0a3b3a93a8f759c9d8ac8eef97c": {
    "name": "Breathe",
-   "rating": 1544.21,
+   "rating": 1503.78,
    "role": "top"
   },
   "oe:player:0da0eeb199e8fa3ab773cf84f9de9ab": {
    "name": "Tian",
-   "rating": 1593.85,
+   "rating": 1617.39,
    "role": "jng"
   },
   "oe:player:0dbf17e6e36968af9ef211120d77ffe": {
@@ -4562,7 +4562,7 @@
   },
   "oe:player:0e2f0d3ded24c190dd6a4b3d6f89f04": {
    "name": "Shanks",
-   "rating": 1705.39,
+   "rating": 1664.96,
    "role": "mid"
   },
   "oe:player:0e42126e417733263459e2b54ae7e2a": {
@@ -4787,7 +4787,7 @@
   },
   "oe:player:10b86429ce8048aba673d802632e358": {
    "name": "Lucid",
-   "rating": 1729.22,
+   "rating": 1744.45,
    "role": "jng"
   },
   "oe:player:10be1f35d8b5ea6babf916a6e7dd8a4": {
@@ -4942,12 +4942,12 @@
   },
   "oe:player:1213778b5c6d69dcb26aa89f7d0aaa9": {
    "name": "Rookie",
-   "rating": 1642.94,
+   "rating": 1702.84,
    "role": "mid"
   },
   "oe:player:1223a0ed2bfab9b714c72d965df8133": {
    "name": "Supa",
-   "rating": 1665.04,
+   "rating": 1637.7,
    "role": "bot"
   },
   "oe:player:12254c8422c8a9128087cfc7ff25942": {
@@ -5051,7 +5051,7 @@
    "role": "jng"
   },
   "oe:player:1391e73a69a1595f73789cd6768f3aa": {
-   "name": "koisi",
+   "name": "Odessa",
    "rating": 1501.44,
    "role": "bot"
   },
@@ -5122,7 +5122,7 @@
   },
   "oe:player:145201414ecb853de684fbe7d6bb5b6": {
    "name": "Ackerman",
-   "rating": 1775.55,
+   "rating": 1761.46,
    "role": "sup"
   },
   "oe:player:1452b3c7a70d2a7ed97dcf9a5f62c71": {
@@ -6192,7 +6192,7 @@
   },
   "oe:player:1f7d70f56b608b3137df2493949fdd0": {
    "name": "Bie",
-   "rating": 1787.01,
+   "rating": 1737.02,
    "role": "sup"
   },
   "oe:player:1f892f04e94e144dadcc8be197d4f5b": {
@@ -6731,7 +6731,7 @@
    "role": "sup"
   },
   "oe:player:25a928e87c15687fd5f6817d1206f0f": {
-   "name": "Ghost",
+   "name": "MMG",
    "rating": 1505.89,
    "role": "sup"
   },
@@ -7057,7 +7057,7 @@
   },
   "oe:player:28a1925f6c4df972a5ae722c07bb4c4": {
    "name": "Harky",
-   "rating": 1650.81,
+   "rating": 1664.7,
    "role": "bot"
   },
   "oe:player:28c288f70870e8d85a0db92518206aa": {
@@ -7282,7 +7282,7 @@
   },
   "oe:player:2b5fa564a1259b97bc238fbfa719b07": {
    "name": "Teddy",
-   "rating": 1499.87,
+   "rating": 1507.75,
    "role": "bot"
   },
   "oe:player:2b819506567c258f6fffdd4ec78ca0c": {
@@ -7562,8 +7562,8 @@
   },
   "oe:player:2eee04126191d031776009f73ba1eca": {
    "name": "Dumbao",
-   "rating": 1486.56,
-   "role": "top"
+   "rating": 1492.94,
+   "role": "mid"
   },
   "oe:player:2f0b9f7cda18943425d555b51e570e8": {
    "name": "Minous",
@@ -7737,7 +7737,7 @@
   },
   "oe:player:308e48bf56284c09a1a9aadf55bc80c": {
    "name": "kyeahoo",
-   "rating": 1740.14,
+   "rating": 1750.7,
    "role": "mid"
   },
   "oe:player:3095d8f7f9a0e5a05330f99a6530fa7": {
@@ -7906,7 +7906,7 @@
    "role": "bot"
   },
   "oe:player:3272326e34e4ec3dd22f0b564b23afb": {
-   "name": "XGGV",
+   "name": "Gordinho",
    "rating": 1483.43,
    "role": "sup"
   },
@@ -8487,7 +8487,7 @@
   },
   "oe:player:37f20525a39d17ec49fd10294f9c994": {
    "name": "TheShy",
-   "rating": 1698.27,
+   "rating": 1758.17,
    "role": "top"
   },
   "oe:player:380ece00e3a5c3b9c876cbeb0c8a38b": {
@@ -8627,7 +8627,7 @@
   },
   "oe:player:397fee5de074b10600707b618fb1f29": {
    "name": "SiuLoong",
-   "rating": 1584.17,
+   "rating": 1598.06,
    "role": "sup"
   },
   "oe:player:398074139a206bc8bbab0be766c6ffa": {
@@ -8762,8 +8762,8 @@
   },
   "oe:player:3adefe612e008839b4b8876f2583cdf": {
    "name": "TUNDRA",
-   "rating": 1471.5,
-   "role": "mid"
+   "rating": 1479.55,
+   "role": "bot"
   },
   "oe:player:3ae1719a5f52f825be92485ff6c842d": {
    "name": "Derakhil",
@@ -9041,7 +9041,7 @@
    "role": "mid"
   },
   "oe:player:3db6ae5ba47a2ce45b4788135adc8dc": {
-   "name": "mirrored",
+   "name": "PiOk",
    "rating": 1496.38,
    "role": "mid"
   },
@@ -9102,7 +9102,7 @@
   },
   "oe:player:3e722c8ede909c83af9342c41805a16": {
    "name": "Busio",
-   "rating": 1789.39,
+   "rating": 1799.95,
    "role": "sup"
   },
   "oe:player:3e752f4ce84a615efa58e12cd31400e": {
@@ -9307,7 +9307,7 @@
   },
   "oe:player:40704dfd2d966862568d29770de57bd": {
    "name": "Isles",
-   "rating": 1610.01,
+   "rating": 1608.72,
    "role": "sup"
   },
   "oe:player:40767632779d7557c33f7095e29ff42": {
@@ -9457,7 +9457,7 @@
   },
   "oe:player:41deab55354f57a94135989133f9968": {
    "name": "Kanavi",
-   "rating": 1737.2,
+   "rating": 1714.64,
    "role": "jng"
   },
   "oe:player:41e2980a2f1bcdbc20910125be7f939": {
@@ -9492,7 +9492,7 @@
   },
   "oe:player:4203fc46c4c6333e9bfa9d0a8618677": {
    "name": "Yike",
-   "rating": 1756.04,
+   "rating": 1766.6,
    "role": "jng"
   },
   "oe:player:4216885d684c23fd4308a759b435854": {
@@ -9837,7 +9837,7 @@
   },
   "oe:player:460ae5a7af8d68f7831b70307210ab3": {
    "name": "Berserker",
-   "rating": 1637.41,
+   "rating": 1636.12,
    "role": "bot"
   },
   "oe:player:462e832a4b0a4ddd194983a468b01d9": {
@@ -10097,7 +10097,7 @@
   },
   "oe:player:498246d6c44175256a07ed5f322c817": {
    "name": "Karis",
-   "rating": 1534.8,
+   "rating": 1526.92,
    "role": "mid"
   },
   "oe:player:49ad46ff68fb4e6db0043aedc354e3b": {
@@ -10487,7 +10487,7 @@
   },
   "oe:player:4e0619e57cb50c4ab1230c2dd72df1b": {
    "name": "Tactical",
-   "rating": 1706.0,
+   "rating": 1706.01,
    "role": "bot"
   },
   "oe:player:4e07c3a412cda9ddf875cc14c65efc4": {
@@ -10707,8 +10707,8 @@
   },
   "oe:player:5064cc00691ebc4231287c2c7b827e1": {
    "name": "Rando",
-   "rating": 1404.63,
-   "role": "top"
+   "rating": 1378.76,
+   "role": "mid"
   },
   "oe:player:507f3f78d808f42e9865f15d9624066": {
    "name": "Miss",
@@ -10897,7 +10897,7 @@
   },
   "oe:player:52b4f060a577ff87c99118d97fa75f4": {
    "name": "Josedeodo",
-   "rating": 1814.9,
+   "rating": 1796.42,
    "role": "jng"
   },
   "oe:player:52b6d6fc82db6aef110362f4755a1fe": {
@@ -10957,7 +10957,7 @@
   },
   "oe:player:5385f74da3e5deb5b66d9a1ee56cf97": {
    "name": "Dhokla",
-   "rating": 1811.0,
+   "rating": 1809.71,
    "role": "top"
   },
   "oe:player:5399ceb619dbb13525a0d52c97acea5": {
@@ -11137,7 +11137,7 @@
   },
   "oe:player:55276c10d84e1df7713b441e76e141f": {
    "name": "Rest",
-   "rating": 1586.13,
+   "rating": 1572.66,
    "role": "top"
   },
   "oe:player:552b35615b92e7f177e05e65a451e5c": {
@@ -11212,7 +11212,7 @@
   },
   "oe:player:55dd587cdc4a278be6a5c37f9e539de": {
    "name": "Caps",
-   "rating": 1801.08,
+   "rating": 1757.15,
    "role": "mid"
   },
   "oe:player:55e35458830cbecac40b04619bd6029": {
@@ -11367,7 +11367,7 @@
   },
   "oe:player:57acacc1f182893280e7400073a3dd1": {
    "name": "Doran",
-   "rating": 1753.35,
+   "rating": 1782.87,
    "role": "top"
   },
   "oe:player:57bb48fd65bff2e2660a13e58f2fcb2": {
@@ -11666,7 +11666,7 @@
    "role": "top"
   },
   "oe:player:5b16af243fe7c9a3bfd726bdc748752": {
-   "name": "Shimmer",
+   "name": "Will",
    "rating": 1561.56,
    "role": "jng"
   },
@@ -11727,7 +11727,7 @@
   },
   "oe:player:5bbc2b92348d930ebd500cb9ce71bb7": {
    "name": "Peyz",
-   "rating": 1683.69,
+   "rating": 1713.21,
    "role": "bot"
   },
   "oe:player:5bc99370722c5ecbfa9b3c1e17338e6": {
@@ -12112,7 +12112,7 @@
   },
   "oe:player:5f8ff49cd56eae61d635966b183a451": {
    "name": "ShowMaker",
-   "rating": 1712.04,
+   "rating": 1727.27,
    "role": "mid"
   },
   "oe:player:5f956ecb7cfb857cbb1a86804a9405d": {
@@ -12157,7 +12157,7 @@
   },
   "oe:player:605821ebcf6a2e53f03ec6e8e463d1b": {
    "name": "Duro",
-   "rating": 1789.8,
+   "rating": 1811.35,
    "role": "sup"
   },
   "oe:player:6059545b206c4b230b97fd3651b473a": {
@@ -12207,7 +12207,7 @@
   },
   "oe:player:60b1614a632775c97a37a57bda799f2": {
    "name": "GIDEON",
-   "rating": 1502.05,
+   "rating": 1509.93,
    "role": "jng"
   },
   "oe:player:60b3048edebc03e520e775db4cc706f": {
@@ -12336,7 +12336,7 @@
    "role": "top"
   },
   "oe:player:6201e2266991ddc5ba122f699a842a9": {
-   "name": "Phuc1",
+   "name": "Seany",
    "rating": 1476.49,
    "role": "jng"
   },
@@ -12387,7 +12387,7 @@
   },
   "oe:player:62922f2b370657a966de4d84f5586bf": {
    "name": "Tarzan",
-   "rating": 1722.65,
+   "rating": 1682.22,
    "role": "jng"
   },
   "oe:player:62a7101a73b8aef9417fc174467d9fd": {
@@ -12556,7 +12556,7 @@
    "role": "bot"
   },
   "oe:player:65173e58cd68bffc1e113f89ec3e129": {
-   "name": "Cheng9",
+   "name": "Keres",
    "rating": 1471.36,
    "role": "sup"
   },
@@ -12677,7 +12677,7 @@
   },
   "oe:player:6625d682ed10ef5e0e7c6c9e4dd2fc1": {
    "name": "Tatu",
-   "rating": 1771.55,
+   "rating": 1737.41,
    "role": "jng"
   },
   "oe:player:662e402075e397e4afaea9c752cec96": {
@@ -12687,7 +12687,7 @@
   },
   "oe:player:6644a7352d32c9c4443017798130b61": {
    "name": "Pun",
-   "rating": 1676.4,
+   "rating": 1626.41,
    "role": "top"
   },
   "oe:player:6659009ab45223ce2b0c3054f80981a": {
@@ -12701,7 +12701,7 @@
    "role": "jng"
   },
   "oe:player:666ff07cbc14ff49f28d45f52f462cd": {
-   "name": "F3IV",
+   "name": "Wingate",
    "rating": 1446.74,
    "role": "mid"
   },
@@ -13102,8 +13102,8 @@
   },
   "oe:player:6add4da3b26a48ccca716c112c3ff48": {
    "name": "Valiant",
-   "rating": 1395.57,
-   "role": "sup"
+   "rating": 1517.43,
+   "role": "mid"
   },
   "oe:player:6ae6337aeda6fb44f525a370205bfcd": {
    "name": "Sala",
@@ -13191,9 +13191,9 @@
    "role": "sup"
   },
   "oe:player:6ba5b5ef1de6876e74ca64908f72762": {
-   "name": "TF Blade",
-   "rating": 1541.63,
-   "role": "top"
+   "name": "V1per",
+   "rating": 1557.22,
+   "role": "mid"
   },
   "oe:player:6bbf1d98fe965d1b10b829ac9f918ba": {
    "name": "IENCH Taric",
@@ -13477,7 +13477,7 @@
   },
   "oe:player:6e7908512cb309a43388bb464a312a2": {
    "name": "Creme",
-   "rating": 1719.62,
+   "rating": 1743.16,
    "role": "mid"
   },
   "oe:player:6e8aa53c3e352ce9c88200b6d3db9a4": {
@@ -13677,8 +13677,8 @@
   },
   "oe:player:706c37848c31a25cf473ca6f2af51aa": {
    "name": "Godtone",
-   "rating": 1447.82,
-   "role": "sup"
+   "rating": 1432.74,
+   "role": "jng"
   },
   "oe:player:706cf232206925bf8315cfdf4310297": {
    "name": "Buero",
@@ -14066,7 +14066,7 @@
    "role": "mid"
   },
   "oe:player:73d069ab2197bccd6f2b18b2d9c6a63": {
-   "name": "Wingate",
+   "name": "F3IV",
    "rating": 1454.01,
    "role": "top"
   },
@@ -14152,7 +14152,7 @@
   },
   "oe:player:75019a36fdf85666fbd9396ae4fc7ec": {
    "name": "Kratos",
-   "rating": 1458.5,
+   "rating": 1472.39,
    "role": "top"
   },
   "oe:player:7507cb50cf5ce57248038ae0333d337": {
@@ -14212,7 +14212,7 @@
   },
   "oe:player:7577c239c73fa5f3011cd7b5503e75e": {
    "name": "Canna",
-   "rating": 1692.79,
+   "rating": 1703.35,
    "role": "top"
   },
   "oe:player:75807d72812187f72c5892bf7ab25a9": {
@@ -14507,7 +14507,7 @@
   },
   "oe:player:786b5bbf7bbfb7b79379e8589a865c1": {
    "name": "Zest",
-   "rating": 1790.51,
+   "rating": 1776.42,
    "role": "top"
   },
   "oe:player:788fb451a0732c0ce3bec0fbda415a0": {
@@ -14842,7 +14842,7 @@
   },
   "oe:player:7cf68f44e5dc31827b1d3f0a3b4a28e": {
    "name": "Hope",
-   "rating": 1705.39,
+   "rating": 1664.96,
    "role": "bot"
   },
   "oe:player:7d03f933eeb73db3e1b0cb8d74bc7fa": {
@@ -15106,9 +15106,9 @@
    "role": "mid"
   },
   "oe:player:803305691092adbf1de29f27a98d2a6": {
-   "name": "V1per",
-   "rating": 1544.21,
-   "role": "mid"
+   "name": "Cody Sun",
+   "rating": 1541.56,
+   "role": "bot"
   },
   "oe:player:803378d4c7adcb961b3b1cfca703b7f": {
    "name": "Meslo",
@@ -15397,7 +15397,7 @@
   },
   "oe:player:83eb62484689106807fcf5ad55b5479": {
    "name": "Jojopyun",
-   "rating": 1659.15,
+   "rating": 1631.81,
    "role": "mid"
   },
   "oe:player:840cb670271249908dc449829a692c2": {
@@ -15502,7 +15502,7 @@
   },
   "oe:player:84bff3a326833c7c9181c698f676878": {
    "name": "BrokenBlade",
-   "rating": 1801.08,
+   "rating": 1757.15,
    "role": "top"
   },
   "oe:player:84c75890a3edad0bcb2e8b06958d3a5": {
@@ -15667,7 +15667,7 @@
   },
   "oe:player:86a59ad7ba2334ad7505f303d3f2ab6": {
    "name": "Casting",
-   "rating": 1646.9,
+   "rating": 1654.77,
    "role": "top"
   },
   "oe:player:86c749d78595f835316b6531244ac23": {
@@ -15827,8 +15827,8 @@
   },
   "oe:player:8844fc3d069a8511c93cd1894146b37": {
    "name": "MaDe",
-   "rating": 1463.36,
-   "role": "sup"
+   "rating": 1455.58,
+   "role": "mid"
   },
   "oe:player:884550ac73027b92634756c53b4751b": {
    "name": "Maru",
@@ -15847,7 +15847,7 @@
   },
   "oe:player:886e8205ac1b091dbf67dbae83b1544": {
    "name": "Tutsz",
-   "rating": 1620.79,
+   "rating": 1586.65,
    "role": "mid"
   },
   "oe:player:8878e7050143a0fe4020498043fcc0d": {
@@ -16052,7 +16052,7 @@
   },
   "oe:player:8a8f18e4b7d0f30c19c5fb99a526951": {
    "name": "Elyoya",
-   "rating": 1665.04,
+   "rating": 1637.7,
    "role": "jng"
   },
   "oe:player:8ab502bbb3e12f2c4b01463455c6577": {
@@ -16447,7 +16447,7 @@
   },
   "oe:player:8f7f4c1ce7a4f933663d10543562b09": {
    "name": "About",
-   "rating": 1521.37,
+   "rating": 1513.5,
    "role": "bot"
   },
   "oe:player:8f84b3e1ea431d26d9ad272eba9ba8c": {
@@ -16462,7 +16462,7 @@
   },
   "oe:player:8f8eaac8e99c203ee76e57c5c81c91f": {
    "name": "Quid",
-   "rating": 1849.86,
+   "rating": 1831.38,
    "role": "mid"
   },
   "oe:player:8f9e938c7d7a6d4605f289060826d32": {
@@ -16522,7 +16522,7 @@
   },
   "oe:player:90651ebea9a35ec4e018c8157492e17": {
    "name": "ON",
-   "rating": 1769.74,
+   "rating": 1861.25,
    "role": "sup"
   },
   "oe:player:90699d17357a1dfc197c6ee0fce76d7": {
@@ -16697,7 +16697,7 @@
   },
   "oe:player:92544d7a994bd6841cccd9f6e42e3de": {
    "name": "Canyon",
-   "rating": 1890.88,
+   "rating": 1912.43,
    "role": "jng"
   },
   "oe:player:928d683aac82e48252ba7f9a87e0680": {
@@ -16947,7 +16947,7 @@
   },
   "oe:player:95082306f78780da5686f118c993366": {
    "name": "Doggo",
-   "rating": 1590.84,
+   "rating": 1577.37,
    "role": "bot"
   },
   "oe:player:950cae377e70b07c90992065139736d": {
@@ -16997,7 +16997,7 @@
   },
   "oe:player:9573154ad8bc9459b4c0d940315054f": {
    "name": "Viper",
-   "rating": 1790.87,
+   "rating": 1882.38,
    "role": "bot"
   },
   "oe:player:958cbc19bb15e852a32a597f8674e1c": {
@@ -17267,7 +17267,7 @@
   },
   "oe:player:97cae9bbdbfe09bafe83c5a7bda0727": {
    "name": "Namgung",
-   "rating": 1541.73,
+   "rating": 1549.6,
    "role": "sup"
   },
   "oe:player:97dba2c2c17ddf9d63517aee126f58b": {
@@ -17347,7 +17347,7 @@
   },
   "oe:player:98dd15c330fb5abb4508347265a7f76": {
    "name": "Zeus",
-   "rating": 1816.66,
+   "rating": 1794.1,
    "role": "top"
   },
   "oe:player:98f263a1e752d1192225e59207d3081": {
@@ -17462,7 +17462,7 @@
   },
   "oe:player:99e732def3601275db892c84fb85a0c": {
    "name": "Career",
-   "rating": 1697.44,
+   "rating": 1712.67,
    "role": "sup"
   },
   "oe:player:99e8eb67dee858a86b80904675a5739": {
@@ -17717,7 +17717,7 @@
   },
   "oe:player:9c51ed760409db6fa2a02fe8046f110": {
    "name": "Curse",
-   "rating": 1794.29,
+   "rating": 1780.2,
    "role": "jng"
   },
   "oe:player:9c5c646d2acabd84f7067db6f6e1eb6": {
@@ -18307,7 +18307,7 @@
   },
   "oe:player:a23b45071ea855f85e43db4b5a1683d": {
    "name": "Monki",
-   "rating": 1612.81,
+   "rating": 1604.94,
    "role": "jng"
   },
   "oe:player:a2592097e38eeeec92fb042c009147d": {
@@ -18717,8 +18717,8 @@
   },
   "oe:player:a656a100cbe952df8b698018fab5285": {
    "name": "Qingshui",
-   "rating": 1455.07,
-   "role": "top"
+   "rating": 1467.13,
+   "role": "bot"
   },
   "oe:player:a65750c8565d8428d25d9b9ba51cac9": {
    "name": "Trayton",
@@ -18792,7 +18792,7 @@
   },
   "oe:player:a7128975a782c11d8c34525be8e1b6c": {
    "name": "Erha",
-   "rating": 1649.9,
+   "rating": 1642.03,
    "role": "sup"
   },
   "oe:player:a71dc82e13292166548538821543f59": {
@@ -18912,7 +18912,7 @@
   },
   "oe:player:a8307167f3a1c933295bb9e3d43700e": {
    "name": "Inspired",
-   "rating": 1862.28,
+   "rating": 1860.99,
    "role": "jng"
   },
   "oe:player:a837bd982d8c5fc74b36bbd3ce0a9ee": {
@@ -19152,7 +19152,7 @@
   },
   "oe:player:ab15060e5225b51592cd04b3aed1e09": {
    "name": "SkewMond",
-   "rating": 1837.7,
+   "rating": 1793.77,
    "role": "jng"
   },
   "oe:player:ab1dabd5390beb1143d6981529f00d0": {
@@ -19272,7 +19272,7 @@
   },
   "oe:player:acb3a05894b7c57412b2d7e911e17dd": {
    "name": "Kino",
-   "rating": 1686.14,
+   "rating": 1672.67,
    "role": "sup"
   },
   "oe:player:acb52844f996627788836366404a324": {
@@ -19962,7 +19962,7 @@
   },
   "oe:player:b4179fdeda1242fcd94b82a5710dd3e": {
    "name": "Duduhh",
-   "rating": 1678.31,
+   "rating": 1664.22,
    "role": "bot"
   },
   "oe:player:b421aea8df96b9603d4e540ddbbcc11": {
@@ -20187,7 +20187,7 @@
   },
   "oe:player:b61e517b1a6027160aafaf56e9867c0": {
    "name": "Wei",
-   "rating": 1545.52,
+   "rating": 1605.42,
    "role": "jng"
   },
   "oe:player:b62ad612a8ad45faca9f4a6b9ecb31a": {
@@ -20207,7 +20207,7 @@
   },
   "oe:player:b6603b64c5cabad210826735469838b": {
    "name": "Cube",
-   "rating": 1591.13,
+   "rating": 1583.26,
    "role": "top"
   },
   "oe:player:b660ad51a7f76576fbec5fe36b415e8": {
@@ -20307,7 +20307,7 @@
   },
   "oe:player:b7a3b6176406a92dd089fe2f82a1d3f": {
    "name": "Dire",
-   "rating": 1758.88,
+   "rating": 1708.89,
    "role": "mid"
   },
   "oe:player:b7ba183b22675d06d42bd783276a010": {
@@ -20627,7 +20627,7 @@
   },
   "oe:player:bb6ac5763c6576e104a7a2f59eb4ddf": {
    "name": "Labrov",
-   "rating": 1763.39,
+   "rating": 1719.46,
    "role": "sup"
   },
   "oe:player:bb6c89b934042b55ac186eaf2274ba6": {
@@ -20817,7 +20817,7 @@
   },
   "oe:player:bda7cc061d7a1576f1dcad33dd505cd": {
    "name": "Meiko",
-   "rating": 1713.08,
+   "rating": 1772.98,
    "role": "sup"
   },
   "oe:player:bdb90de1ad7c2b7c38ce6f1177c1f62": {
@@ -20831,7 +20831,7 @@
    "role": "mid"
   },
   "oe:player:bdd897c4392cb21ba42dc9c23d7cab7": {
-   "name": "YamatoCannon",
+   "name": "Perkz",
    "rating": 1468.77,
    "role": "top"
   },
@@ -21097,8 +21097,8 @@
   },
   "oe:player:c1353b4e2353fa3dc4e590d580ed9e5": {
    "name": "MKR",
-   "rating": 1463.36,
-   "role": "jng"
+   "rating": 1455.58,
+   "role": "bot"
   },
   "oe:player:c142368a9f94d6334133932a7e5ce0d": {
    "name": "Speedy",
@@ -21267,7 +21267,7 @@
   },
   "oe:player:c332dc879e14f1feb266190c7f396fd": {
    "name": "Shad0w",
-   "rating": 1539.05,
+   "rating": 1525.58,
    "role": "jng"
   },
   "oe:player:c33358ecfdef8fd044777add746b965": {
@@ -21357,7 +21357,7 @@
   },
   "oe:player:c4d64ae9f01ee43ec2367d28eeadbea": {
    "name": "Chika",
-   "rating": 1608.53,
+   "rating": 1622.42,
    "role": "mid"
   },
   "oe:player:c4e4ca0da32c4177a79e06dabce7aa6": {
@@ -21397,7 +21397,7 @@
   },
   "oe:player:c54e1090ef1faa736b12493051c4855": {
    "name": "JackeyLove",
-   "rating": 1705.69,
+   "rating": 1729.23,
    "role": "bot"
   },
   "oe:player:c588a2d07b69ca4ba61c96aebd3f793": {
@@ -21492,7 +21492,7 @@
   },
   "oe:player:c62a5235ad6bc113a1e64eb0e9aa8c8": {
    "name": "Hans Sama",
-   "rating": 1801.08,
+   "rating": 1757.15,
    "role": "bot"
   },
   "oe:player:c62fc8e0de2383c550d5b0ee2b8c49b": {
@@ -21602,7 +21602,7 @@
   },
   "oe:player:c7319736816efe935787b4381c6f321": {
    "name": "Gumayusi",
-   "rating": 1813.68,
+   "rating": 1791.12,
    "role": "bot"
   },
   "oe:player:c732cc226501cc21178b9f413cdf3eb": {
@@ -21846,8 +21846,8 @@
    "role": "sup"
   },
   "oe:player:ca187ee49dd3e9ed20eaacbbf484fdf": {
-   "name": "Pout",
-   "rating": 1586.7,
+   "name": "POUT",
+   "rating": 1573.23,
    "role": "mid"
   },
   "oe:player:ca18f3cf2fd9adb391d4770c33286f0": {
@@ -21942,7 +21942,7 @@
   },
   "oe:player:cb4cd2fd258d5961d2f1c4815b04123": {
    "name": "JoJo",
-   "rating": 1676.51,
+   "rating": 1642.37,
    "role": "sup"
   },
   "oe:player:cb5feb1b7314637725a2e73bdc9f729": {
@@ -22262,8 +22262,8 @@
   },
   "oe:player:cf229be6faa6e913911b7cf03f8d129": {
    "name": "Bisk",
-   "rating": 1569.93,
-   "role": "top"
+   "rating": 1503.42,
+   "role": "bot"
   },
   "oe:player:cf23b9adb391ab50f9f4eb546df3540": {
    "name": "p1ng",
@@ -22517,7 +22517,7 @@
   },
   "oe:player:d1ae0e2f9f3ac1e0e0cdcb86504ca77": {
    "name": "Feisty",
-   "rating": 1881.5,
+   "rating": 1867.41,
    "role": "mid"
   },
   "oe:player:d1c38a09acc34845c6be3a127a5aaca": {
@@ -22587,7 +22587,7 @@
   },
   "oe:player:d24f38ec30ce6f7577066f80e43e4bf": {
    "name": "Kael",
-   "rating": 1705.39,
+   "rating": 1664.96,
    "role": "sup"
   },
   "oe:player:d258f8c326e3532981a60d2393f129a": {
@@ -22877,7 +22877,7 @@
   },
   "oe:player:d61d8a0b25028f787123bfff542d305": {
    "name": "Guigo",
-   "rating": 1686.55,
+   "rating": 1652.41,
    "role": "top"
   },
   "oe:player:d62421836c8b27dc3ffaffa058b8098": {
@@ -23037,7 +23037,7 @@
   },
   "oe:player:d7a904873d10637ef44afa9c1de83b3": {
    "name": "Ayu",
-   "rating": 1620.79,
+   "rating": 1586.65,
    "role": "bot"
   },
   "oe:player:d7d95a15f117f5767aa5090ba021812": {
@@ -23142,7 +23142,7 @@
   },
   "oe:player:d971df9441d60af93a87545e6a8f884": {
    "name": "JiaQi",
-   "rating": 1458.06,
+   "rating": 1517.96,
    "role": "bot"
   },
   "oe:player:d9993db0d276065093b77b8e86996fc": {
@@ -23272,7 +23272,7 @@
   },
   "oe:player:da9f969a7ab3819b9e528072aa4d5e6": {
    "name": "Siwoo",
-   "rating": 1725.42,
+   "rating": 1740.65,
    "role": "top"
   },
   "oe:player:daa3ffb7dd21afdae5da760e746eccd": {
@@ -23362,7 +23362,7 @@
   },
   "oe:player:db79ce6ad35451c938fbe2995dabd37": {
    "name": "Keria",
-   "rating": 1759.0,
+   "rating": 1788.52,
    "role": "sup"
   },
   "oe:player:db7f954b009402a63702b1ce1219116": {
@@ -24027,7 +24027,7 @@
   },
   "oe:player:e1edfc5cea461399a63cb813cf795cc": {
    "name": "Faker",
-   "rating": 1759.0,
+   "rating": 1788.52,
    "role": "mid"
   },
   "oe:player:e20bdf83188f30927af0edcb93dea59": {
@@ -24077,7 +24077,7 @@
   },
   "oe:player:e2af2b779499aa25ab9a9c10c9a5ffd": {
    "name": "Caliste",
-   "rating": 1775.44,
+   "rating": 1786.0,
    "role": "bot"
   },
   "oe:player:e2c655411d8d95ef73d8026704f5e7a": {
@@ -24387,7 +24387,7 @@
   },
   "oe:player:e5f6c83e6e97c74fc9e9760fc8972ae": {
    "name": "Eddie",
-   "rating": 1780.05,
+   "rating": 1730.06,
    "role": "bot"
   },
   "oe:player:e5feef89d633a666eeaaf6392ca2fa9": {
@@ -24507,7 +24507,7 @@
   },
   "oe:player:e78da55d6db43d982f841204a8e51ac": {
    "name": "Zhuo",
-   "rating": 1483.15,
+   "rating": 1506.69,
    "role": "sup"
   },
   "oe:player:e7944c63ac093e200648b5775ace522": {
@@ -24527,8 +24527,8 @@
   },
   "oe:player:e7cdfaa546a85fff82a90fe0bdb0c40": {
    "name": "Apetski",
-   "rating": 1463.36,
-   "role": "mid"
+   "rating": 1455.58,
+   "role": "jng"
   },
   "oe:player:e7d5ebe818956b1bc56353d10ed3f58": {
    "name": "kaiks",
@@ -24752,7 +24752,7 @@
   },
   "oe:player:ea58943d300b14d684bb05b3975fe15": {
    "name": "Roamer",
-   "rating": 1598.61,
+   "rating": 1606.49,
    "role": "mid"
   },
   "oe:player:ea608bd27dd502609288de8c11aeef5": {
@@ -24802,12 +24802,12 @@
   },
   "oe:player:eada4723af6f51cf2391d85b5fde49b": {
    "name": "Ruler",
-   "rating": 1822.4,
+   "rating": 1843.95,
    "role": "bot"
   },
   "oe:player:eaebb7118d7bd83eabac513053e1f6c": {
    "name": "Smash",
-   "rating": 1737.32,
+   "rating": 1752.55,
    "role": "bot"
   },
   "oe:player:eaee5a7ad7c9bc645114d51d039f2fb": {
@@ -25037,7 +25037,7 @@
   },
   "oe:player:ed29043422e3c515e1cb292464b990b": {
    "name": "Knight",
-   "rating": 1814.53,
+   "rating": 1906.04,
    "role": "mid"
   },
   "oe:player:ed2ce922701169a70704f2bf956b828": {
@@ -25072,7 +25072,7 @@
   },
   "oe:player:ede24d5e0911d7a4f6ec514a67802ff": {
    "name": "Myrwn",
-   "rating": 1665.04,
+   "rating": 1637.7,
    "role": "top"
   },
   "oe:player:edf8b064c096691e539b7e2a3e28179": {
@@ -25437,8 +25437,8 @@
   },
   "oe:player:f215802f06094cf00718ad119f279a6": {
    "name": "Fallo",
-   "rating": 1437.23,
-   "role": "mid"
+   "rating": 1453.29,
+   "role": "jng"
   },
   "oe:player:f216690ac90e0a1c2097a616cb4453e": {
    "name": "Sparz",
@@ -25632,7 +25632,7 @@
   },
   "oe:player:f45792335d83b10581da2f0cbdd6e8e": {
    "name": "Saint",
-   "rating": 1719.51,
+   "rating": 1718.22,
    "role": "mid"
   },
   "oe:player:f46684e3ae43b3cf8cae5fb79d27c79": {
@@ -25742,7 +25742,7 @@
   },
   "oe:player:f5bf9bd732b85e4dcab5121e4769ae4": {
    "name": "Alvaro",
-   "rating": 1665.04,
+   "rating": 1637.7,
    "role": "sup"
   },
   "oe:player:f5c849161da2d457e71909e5df88ab0": {
@@ -25822,7 +25822,7 @@
   },
   "oe:player:f6b8af05a5af22004a67a78f3046b92": {
    "name": "Yeon",
-   "rating": 1751.51,
+   "rating": 1733.03,
    "role": "bot"
   },
   "oe:player:f6bc8a833bcb82beb8eba1c57fa0c2a": {
@@ -25882,7 +25882,7 @@
   },
   "oe:player:f73dde2d8c7879ae8d1fcdc03c4ffeb": {
    "name": "Morgan",
-   "rating": 1627.62,
+   "rating": 1609.14,
    "role": "top"
   },
   "oe:player:f7407edad1ded2d8d1e634ed49a9698": {
@@ -26012,7 +26012,7 @@
   },
   "oe:player:f8b68f268106124fc4bc1c946adc9b0": {
    "name": "Oner",
-   "rating": 1763.57,
+   "rating": 1793.09,
    "role": "jng"
   },
   "oe:player:f8be55ccdcf2bfba19954d13ecb3d68": {
@@ -26112,7 +26112,7 @@
   },
   "oe:player:f9cd2ef9afea5cda0eb3263a025cec1": {
    "name": "Zeka",
-   "rating": 1804.61,
+   "rating": 1782.05,
    "role": "mid"
   },
   "oe:player:f9d3720726cfba1f0aa14428d6829e2": {
@@ -26242,12 +26242,12 @@
   },
   "oe:player:fb66ef5885b4be9323905b821dc3a42": {
    "name": "Bin",
-   "rating": 1800.69,
+   "rating": 1892.2,
    "role": "top"
   },
   "oe:player:fb6e61b8acb05df17b7e5ad4ae7c800": {
    "name": "Chovy",
-   "rating": 1902.94,
+   "rating": 1924.49,
    "role": "mid"
   },
   "oe:player:fb6fc095466c769a4c96dfa965c266e": {
@@ -26297,7 +26297,7 @@
   },
   "oe:player:fbdc4428b2d095c83aebeed5da4e4b2": {
    "name": "Xun",
-   "rating": 1723.43,
+   "rating": 1814.94,
    "role": "jng"
   },
   "oe:player:fbeb5032bea4ae4209a51c63fedfb35": {
@@ -26668,8 +26668,8 @@
  },
  "teams": {
   "100 Thieves": {
-   "gap": 81.9,
-   "player_elo": 1644.76,
+   "gap": 77.96,
+   "player_elo": 1640.81,
    "team_elo": 1562.85
   },
   "1TAP Dino": {
@@ -26693,13 +26693,13 @@
    "team_elo": 1372.34
   },
   "3v Team": {
-   "gap": -25.89,
+   "gap": -25.9,
    "player_elo": 1499.04,
    "team_elo": 1524.94
   },
   "4 Employed e 1 Budino": {
    "gap": -22.35,
-   "player_elo": 1536.87,
+   "player_elo": 1536.86,
    "team_elo": 1559.21
   },
   "4 Swines & A Bum": {
@@ -26718,8 +26718,8 @@
    "team_elo": 1498.07
   },
   "6AM": {
-   "gap": -18.53,
-   "player_elo": 1475.94,
+   "gap": -18.54,
+   "player_elo": 1475.93,
    "team_elo": 1494.47
   },
   "7REX": {
@@ -26749,7 +26749,7 @@
   },
   "A One Man Army Prime Academy": {
    "gap": -41.87,
-   "player_elo": 1444.22,
+   "player_elo": 1444.23,
    "team_elo": 1486.1
   },
   "AGALAR": {
@@ -26758,17 +26758,17 @@
    "team_elo": 1494.83
   },
   "AIX eSports": {
-   "gap": -0.23,
+   "gap": -0.22,
    "player_elo": 1482.03,
    "team_elo": 1482.25
   },
   "AKA HERO": {
    "gap": -19.45,
-   "player_elo": 1473.71,
+   "player_elo": 1473.7,
    "team_elo": 1493.15
   },
   "ALMO Players": {
-   "gap": 16.25,
+   "gap": 16.26,
    "player_elo": 1395.64,
    "team_elo": 1379.38
   },
@@ -26779,7 +26779,7 @@
   },
   "AXIZ CREST": {
    "gap": 15.15,
-   "player_elo": 1481.87,
+   "player_elo": 1481.88,
    "team_elo": 1466.73
   },
   "AXIZ CREST Academy": {
@@ -26813,7 +26813,7 @@
    "team_elo": 1473.53
   },
   "Aeterna Esports": {
-   "gap": -77.66,
+   "gap": -77.67,
    "player_elo": 1413.07,
    "team_elo": 1490.74
   },
@@ -26828,12 +26828,12 @@
    "team_elo": 1483.48
   },
   "All Knights": {
-   "gap": 52.92,
+   "gap": 52.93,
    "player_elo": 1545.96,
    "team_elo": 1493.03
   },
   "All for One Gaming": {
-   "gap": 42.77,
+   "gap": 42.76,
    "player_elo": 1485.65,
    "team_elo": 1442.89
   },
@@ -26864,7 +26864,7 @@
   },
   "Anonymo Esports": {
    "gap": 40.52,
-   "player_elo": 1454.72,
+   "player_elo": 1454.71,
    "team_elo": 1414.19
   },
   "Anorthosis Famagusta Esports": {
@@ -26883,12 +26883,12 @@
    "team_elo": 1788.61
   },
   "Anyone's Legend": {
-   "gap": 14.04,
-   "player_elo": 1676.61,
-   "team_elo": 1662.57
+   "gap": 17.38,
+   "player_elo": 1636.18,
+   "team_elo": 1618.8
   },
   "Anyone's Legend.Young": {
-   "gap": 23.7,
+   "gap": 23.71,
    "player_elo": 1523.22,
    "team_elo": 1499.51
   },
@@ -26898,12 +26898,12 @@
    "team_elo": 1351.87
   },
   "Apex Predator": {
-   "gap": -37.07,
+   "gap": -37.08,
    "player_elo": 1496.75,
    "team_elo": 1533.83
   },
   "Arctic Pandas": {
-   "gap": 23.36,
+   "gap": 23.37,
    "player_elo": 1559.77,
    "team_elo": 1536.4
   },
@@ -26913,7 +26913,7 @@
    "team_elo": 1490.05
   },
   "Arneb": {
-   "gap": -17.52,
+   "gap": -17.51,
    "player_elo": 1533.73,
    "team_elo": 1551.24
   },
@@ -26923,7 +26923,7 @@
    "team_elo": 1487.63
   },
   "Athen Warrior": {
-   "gap": -13.44,
+   "gap": -13.43,
    "player_elo": 1471.86,
    "team_elo": 1485.29
   },
@@ -26933,7 +26933,7 @@
    "team_elo": 1523.17
   },
   "Auronin": {
-   "gap": 23.97,
+   "gap": 23.98,
    "player_elo": 1527.74,
    "team_elo": 1503.76
   },
@@ -26944,7 +26944,7 @@
   },
   "Austrian Force willhaben": {
    "gap": 30.15,
-   "player_elo": 1516.85,
+   "player_elo": 1516.84,
    "team_elo": 1486.69
   },
   "AvaTrade PixelPenny": {
@@ -26953,7 +26953,7 @@
    "team_elo": 1488.33
   },
   "Axolotl": {
-   "gap": 6.17,
+   "gap": 6.16,
    "player_elo": 1426.02,
    "team_elo": 1419.86
   },
@@ -26993,18 +26993,18 @@
    "team_elo": 1483.03
   },
   "BK ROG Esports": {
-   "gap": 118.24,
+   "gap": 118.25,
    "player_elo": 1661.62,
    "team_elo": 1543.37
   },
   "BNK FEARX": {
-   "gap": 44.31,
-   "player_elo": 1631.03,
+   "gap": 44.32,
+   "player_elo": 1631.04,
    "team_elo": 1586.72
   },
   "BNK FEARX Academy": {
    "gap": 20.86,
-   "player_elo": 1498.78,
+   "player_elo": 1498.79,
    "team_elo": 1477.93
   },
   "BNK FEARX Youth": {
@@ -27018,7 +27018,7 @@
    "team_elo": 1355.21
   },
   "BWE Esports": {
-   "gap": 25.2,
+   "gap": 25.19,
    "player_elo": 1482.71,
    "team_elo": 1457.52
   },
@@ -27033,12 +27033,12 @@
    "team_elo": 1493.45
   },
   "Bamboo Juice": {
-   "gap": -2.34,
+   "gap": -2.33,
    "player_elo": 1408.65,
    "team_elo": 1410.98
   },
   "Banshee": {
-   "gap": -6.46,
+   "gap": -6.45,
    "player_elo": 1491.68,
    "team_elo": 1498.13
   },
@@ -27093,9 +27093,9 @@
    "team_elo": 1530.71
   },
   "Bilibili Gaming": {
-   "gap": 39.93,
-   "player_elo": 1779.85,
-   "team_elo": 1739.93
+   "gap": 54.66,
+   "player_elo": 1871.37,
+   "team_elo": 1816.71
   },
   "Bilibili Gaming Junior": {
    "gap": -22.56,
@@ -27118,7 +27118,7 @@
    "team_elo": 1486.1
   },
   "Black Rock Esports": {
-   "gap": -1.13,
+   "gap": -1.12,
    "player_elo": 1489.07,
    "team_elo": 1490.19
   },
@@ -27138,7 +27138,7 @@
    "team_elo": 1467.01
   },
   "Bohemian Guardians": {
-   "gap": 23.48,
+   "gap": 23.47,
    "player_elo": 1393.42,
    "team_elo": 1369.95
   },
@@ -27158,7 +27158,7 @@
    "team_elo": 1483.77
   },
   "BraVeLY": {
-   "gap": -10.8,
+   "gap": -10.79,
    "player_elo": 1391.64,
    "team_elo": 1402.43
   },
@@ -27208,17 +27208,17 @@
    "team_elo": 1512.22
   },
   "CERBERUS Esports": {
-   "gap": 57.89,
-   "player_elo": 1522.4,
+   "gap": 47.9,
+   "player_elo": 1512.41,
    "team_elo": 1464.51
   },
   "CGN Esports": {
    "gap": 11.38,
-   "player_elo": 1586.59,
+   "player_elo": 1586.58,
    "team_elo": 1575.2
   },
   "CIS Falling Stars": {
-   "gap": -0.73,
+   "gap": -0.74,
    "player_elo": 1490.33,
    "team_elo": 1491.07
   },
@@ -27243,9 +27243,9 @@
    "team_elo": 1462.42
   },
   "CTBC Flying Oyster": {
-   "gap": 23.65,
-   "player_elo": 1597.77,
-   "team_elo": 1574.13
+   "gap": 28.48,
+   "player_elo": 1584.3,
+   "team_elo": 1555.82
   },
   "CTBC Flying Oyster Academy": {
    "gap": -23.88,
@@ -27264,12 +27264,12 @@
   },
   "Case Esports": {
    "gap": 53.1,
-   "player_elo": 1574.83,
+   "player_elo": 1574.84,
    "team_elo": 1521.74
   },
   "Castle Berry": {
    "gap": -10.02,
-   "player_elo": 1488.51,
+   "player_elo": 1488.52,
    "team_elo": 1498.54
   },
   "Ceuta Guardians": {
@@ -27299,13 +27299,13 @@
   },
   "Citadel Gaming": {
    "gap": -27.52,
-   "player_elo": 1445.17,
+   "player_elo": 1445.18,
    "team_elo": 1472.7
   },
   "Cloud9": {
    "gap": 51.31,
    "player_elo": 1619.49,
-   "team_elo": 1568.19
+   "team_elo": 1568.18
   },
   "Coinflip to Victory": {
    "gap": -3.98,
@@ -27313,8 +27313,8 @@
    "team_elo": 1495.93
   },
   "Colossal Gaming": {
-   "gap": -13.91,
-   "player_elo": 1521.21,
+   "gap": -13.92,
+   "player_elo": 1521.2,
    "team_elo": 1535.12
   },
   "Comanchero Gaming": {
@@ -27349,7 +27349,7 @@
   },
   "Coven": {
    "gap": 3.27,
-   "player_elo": 1495.12,
+   "player_elo": 1495.11,
    "team_elo": 1491.84
   },
   "Croatian Flair": {
@@ -27368,7 +27368,7 @@
    "team_elo": 1463.8
   },
   "Crystal Rose": {
-   "gap": 92.23,
+   "gap": 92.22,
    "player_elo": 1438.41,
    "team_elo": 1346.19
   },
@@ -27378,8 +27378,8 @@
    "team_elo": 1487.98
   },
   "Cupid Esports": {
-   "gap": -2.6,
-   "player_elo": 1605.3,
+   "gap": -2.61,
+   "player_elo": 1605.29,
    "team_elo": 1607.9
   },
   "Cusprills": {
@@ -27408,17 +27408,17 @@
    "team_elo": 1529.28
   },
   "DELTALAND": {
-   "gap": -22.52,
+   "gap": -22.53,
    "player_elo": 1466.06,
    "team_elo": 1488.59
   },
   "DIA Ozarox Esports": {
-   "gap": -12.14,
+   "gap": -12.13,
    "player_elo": 1463.01,
    "team_elo": 1475.14
   },
   "DKB XPERION NXT": {
-   "gap": 41.86,
+   "gap": 41.87,
    "player_elo": 1521.28,
    "team_elo": 1479.41
   },
@@ -27443,7 +27443,7 @@
    "team_elo": 1572.65
   },
   "DN SOOPers Challengers": {
-   "gap": -59.46,
+   "gap": -59.47,
    "player_elo": 1574.69,
    "team_elo": 1634.16
   },
@@ -27459,7 +27459,7 @@
   },
   "DSC3V": {
    "gap": -43.58,
-   "player_elo": 1428.0,
+   "player_elo": 1427.99,
    "team_elo": 1471.57
   },
   "DSYRE": {
@@ -27483,7 +27483,7 @@
    "team_elo": 1485.85
   },
   "DarkZero Dragonsteel": {
-   "gap": 64.99,
+   "gap": 64.98,
    "player_elo": 1606.82,
    "team_elo": 1541.84
   },
@@ -27508,7 +27508,7 @@
    "team_elo": 1519.19
   },
   "Deer Gaming": {
-   "gap": -5.42,
+   "gap": -5.43,
    "player_elo": 1546.07,
    "team_elo": 1551.5
   },
@@ -27544,7 +27544,7 @@
   },
   "Dignitas": {
    "gap": 95.17,
-   "player_elo": 1385.55,
+   "player_elo": 1385.56,
    "team_elo": 1290.39
   },
   "Dire Wolves": {
@@ -27563,7 +27563,7 @@
    "team_elo": 1532.14
   },
   "Disruptors": {
-   "gap": 51.8,
+   "gap": 51.81,
    "player_elo": 1472.5,
    "team_elo": 1420.69
   },
@@ -27598,7 +27598,7 @@
    "team_elo": 1504.03
   },
   "Dopamina E-Sport": {
-   "gap": 27.9,
+   "gap": 27.91,
    "player_elo": 1531.41,
    "team_elo": 1503.5
   },
@@ -27608,9 +27608,9 @@
    "team_elo": 1441.73
   },
   "Dplus Kia": {
-   "gap": 84.08,
-   "player_elo": 1720.29,
-   "team_elo": 1636.21
+   "gap": 78.02,
+   "player_elo": 1735.52,
+   "team_elo": 1657.5
   },
   "Dplus Kia Academy": {
    "gap": -54.85,
@@ -27618,8 +27618,8 @@
    "team_elo": 1713.05
   },
   "Dplus Kia Challengers": {
-   "gap": -61.21,
-   "player_elo": 1629.76,
+   "gap": -61.2,
+   "player_elo": 1629.77,
    "team_elo": 1690.97
   },
   "Dragons Esports": {
@@ -27628,7 +27628,7 @@
    "team_elo": 1557.35
   },
   "Dragonsteel": {
-   "gap": 31.36,
+   "gap": 31.37,
    "player_elo": 1598.38,
    "team_elo": 1567.01
   },
@@ -27658,7 +27658,7 @@
    "team_elo": 1529.12
   },
   "Dusty": {
-   "gap": -1.8,
+   "gap": -1.81,
    "player_elo": 1484.2,
    "team_elo": 1486.01
   },
@@ -27678,7 +27678,7 @@
    "team_elo": 1469.98
   },
   "Dynasty": {
-   "gap": 44.62,
+   "gap": 44.61,
    "player_elo": 1506.02,
    "team_elo": 1461.41
   },
@@ -27693,12 +27693,12 @@
    "team_elo": 1553.48
   },
   "EDward Gaming": {
-   "gap": 32.01,
+   "gap": 32.02,
    "player_elo": 1441.59,
    "team_elo": 1409.57
   },
   "EGN Esports": {
-   "gap": -34.27,
+   "gap": -34.28,
    "player_elo": 1499.16,
    "team_elo": 1533.44
   },
@@ -27723,12 +27723,12 @@
    "team_elo": 1493.96
   },
   "ESEV Zephyr Ares": {
-   "gap": 0.11,
+   "gap": 0.1,
    "player_elo": 1483.42,
    "team_elo": 1483.32
   },
   "EXILE esports": {
-   "gap": 32.75,
+   "gap": 32.74,
    "player_elo": 1482.02,
    "team_elo": 1449.28
   },
@@ -27739,7 +27739,7 @@
   },
   "EXSAD Gaming": {
    "gap": -30.16,
-   "player_elo": 1424.01,
+   "player_elo": 1424.0,
    "team_elo": 1454.16
   },
   "Easier to Run": {
@@ -27783,7 +27783,7 @@
    "team_elo": 1487.35
   },
   "Entropiq": {
-   "gap": 90.14,
+   "gap": 90.15,
    "player_elo": 1647.02,
    "team_elo": 1556.87
   },
@@ -27793,7 +27793,7 @@
    "team_elo": 1486.1
   },
   "Epic Avalanche": {
-   "gap": -9.41,
+   "gap": -9.42,
    "player_elo": 1427.6,
    "team_elo": 1437.02
   },
@@ -27803,7 +27803,7 @@
    "team_elo": 1476.83
   },
   "Epitomy Esports": {
-   "gap": -49.36,
+   "gap": -49.35,
    "player_elo": 1458.0,
    "team_elo": 1507.35
   },
@@ -27813,7 +27813,7 @@
    "team_elo": 1493.66
   },
   "Epitomy Warriors": {
-   "gap": -6.51,
+   "gap": -6.52,
    "player_elo": 1470.31,
    "team_elo": 1476.83
   },
@@ -27823,8 +27823,8 @@
    "team_elo": 1458.01
   },
   "Erfolg Esports": {
-   "gap": -29.71,
-   "player_elo": 1508.42,
+   "gap": -29.7,
+   "player_elo": 1508.43,
    "team_elo": 1538.13
   },
   "Esport STUBA": {
@@ -27853,7 +27853,7 @@
    "team_elo": 1497.4
   },
   "Ethereal Enigmas": {
-   "gap": -10.19,
+   "gap": -10.2,
    "player_elo": 1629.17,
    "team_elo": 1639.37
   },
@@ -27863,18 +27863,18 @@
    "team_elo": 1276.62
   },
   "Europe Saviors Club": {
-   "gap": -27.85,
-   "player_elo": 1456.1,
+   "gap": -27.84,
+   "player_elo": 1456.11,
    "team_elo": 1483.95
   },
   "Evil genius": {
-   "gap": 29.41,
+   "gap": 29.4,
    "player_elo": 1507.71,
    "team_elo": 1478.31
   },
   "Evolve eSports": {
-   "gap": 2.76,
-   "player_elo": 1470.69,
+   "gap": 2.77,
+   "player_elo": 1470.7,
    "team_elo": 1467.93
   },
   "FC Schalke 04 Esports": {
@@ -27889,11 +27889,11 @@
   },
   "FLY5": {
    "gap": -51.87,
-   "player_elo": 1459.43,
+   "player_elo": 1459.42,
    "team_elo": 1511.29
   },
   "FN Esports": {
-   "gap": -22.99,
+   "gap": -22.98,
    "player_elo": 1568.91,
    "team_elo": 1591.89
   },
@@ -27903,9 +27903,9 @@
    "team_elo": 1480.19
   },
   "FURIA": {
-   "gap": 53.16,
-   "player_elo": 1675.24,
-   "team_elo": 1622.08
+   "gap": 51.3,
+   "player_elo": 1641.09,
+   "team_elo": 1589.79
   },
   "FURIA Youth": {
    "gap": -29.98,
@@ -27918,7 +27918,7 @@
    "team_elo": 1468.13
   },
   "FUSE": {
-   "gap": 4.03,
+   "gap": 4.04,
    "player_elo": 1464.45,
    "team_elo": 1460.41
   },
@@ -27943,17 +27943,17 @@
    "team_elo": 1501.35
   },
   "Farenvehn": {
-   "gap": -50.72,
-   "player_elo": 1500.96,
+   "gap": -50.73,
+   "player_elo": 1500.95,
    "team_elo": 1551.68
   },
   "Fast8": {
    "gap": -13.74,
-   "player_elo": 1454.57,
+   "player_elo": 1454.58,
    "team_elo": 1468.32
   },
   "Fear x Starforge": {
-   "gap": -34.6,
+   "gap": -34.59,
    "player_elo": 1521.69,
    "team_elo": 1556.28
   },
@@ -27968,7 +27968,7 @@
    "team_elo": 1584.52
   },
   "Flamengo Academy": {
-   "gap": -56.49,
+   "gap": -56.5,
    "player_elo": 1440.8,
    "team_elo": 1497.3
   },
@@ -27999,7 +27999,7 @@
   },
   "FlyQuest NZXT": {
    "gap": -24.9,
-   "player_elo": 1513.43,
+   "player_elo": 1513.44,
    "team_elo": 1538.34
   },
   "Fnatic": {
@@ -28023,7 +28023,7 @@
    "team_elo": 1509.48
   },
   "Forsaken": {
-   "gap": 5.49,
+   "gap": 5.5,
    "player_elo": 1542.1,
    "team_elo": 1536.6
   },
@@ -28088,23 +28088,23 @@
    "team_elo": 1753.2
   },
   "Frontier x Veni": {
-   "gap": -5.02,
+   "gap": -5.01,
    "player_elo": 1498.07,
    "team_elo": 1503.08
   },
   "Fuego": {
    "gap": -57.92,
-   "player_elo": 1556.98,
+   "player_elo": 1556.97,
    "team_elo": 1614.89
   },
   "Fukuoka SoftBank HAWKS gaming": {
-   "gap": 32.78,
+   "gap": 32.77,
    "player_elo": 1456.92,
    "team_elo": 1424.15
   },
   "FunPlus Phoenix": {
-   "gap": 44.64,
-   "player_elo": 1486.48,
+   "gap": 56.61,
+   "player_elo": 1498.45,
    "team_elo": 1441.84
   },
   "FunPlus Phoenix Blaze": {
@@ -28118,9 +28118,9 @@
    "team_elo": 1496.27
   },
   "G2 Esports": {
-   "gap": 51.64,
-   "player_elo": 1800.87,
-   "team_elo": 1749.23
+   "gap": 54.55,
+   "player_elo": 1756.94,
+   "team_elo": 1702.39
   },
   "G2 Hel": {
    "gap": -14.67,
@@ -28128,17 +28128,17 @@
    "team_elo": 1507.14
   },
   "G2 NORD": {
-   "gap": 6.29,
+   "gap": 6.3,
    "player_elo": 1776.92,
    "team_elo": 1770.62
   },
   "G3V E-sports": {
-   "gap": 18.39,
+   "gap": 18.38,
    "player_elo": 1555.0,
    "team_elo": 1536.62
   },
   "GAM Esports": {
-   "gap": 12.14,
+   "gap": 12.15,
    "player_elo": 1469.48,
    "team_elo": 1457.33
   },
@@ -28168,13 +28168,13 @@
    "team_elo": 1583.23
   },
   "GRP Esports": {
-   "gap": -16.15,
-   "player_elo": 1462.16,
+   "gap": -16.16,
+   "player_elo": 1462.15,
    "team_elo": 1478.31
   },
   "GTZ Esports": {
-   "gap": 17.6,
-   "player_elo": 1465.56,
+   "gap": 17.61,
+   "player_elo": 1465.57,
    "team_elo": 1447.96
   },
   "Galakticos": {
@@ -28208,12 +28208,12 @@
    "team_elo": 1529.4
   },
   "Gaming Barcelona": {
-   "gap": -4.74,
+   "gap": -4.73,
    "player_elo": 1435.62,
    "team_elo": 1440.35
   },
   "Garden Gaming": {
-   "gap": 11.05,
+   "gap": 11.04,
    "player_elo": 1506.78,
    "team_elo": 1495.74
   },
@@ -28223,9 +28223,9 @@
    "team_elo": 1688.79
   },
   "Gen.G": {
-   "gap": 85.87,
-   "player_elo": 1857.3,
-   "team_elo": 1771.44
+   "gap": 71.61,
+   "player_elo": 1878.85,
+   "team_elo": 1807.25
   },
   "Gen.G Global Academy": {
    "gap": -35.27,
@@ -28268,7 +28268,7 @@
    "team_elo": 1458.59
   },
   "GnG Amazigh": {
-   "gap": 43.11,
+   "gap": 43.12,
    "player_elo": 1437.16,
    "team_elo": 1394.04
   },
@@ -28308,8 +28308,8 @@
    "team_elo": 1497.92
   },
   "Guasones": {
-   "gap": 87.72,
-   "player_elo": 1555.06,
+   "gap": 87.71,
+   "player_elo": 1555.05,
    "team_elo": 1467.34
   },
   "Guinea Pink": {
@@ -28324,7 +28324,7 @@
   },
   "H3ARTS": {
    "gap": -24.71,
-   "player_elo": 1462.18,
+   "player_elo": 1462.19,
    "team_elo": 1486.9
   },
   "HANGMEN": {
@@ -28333,9 +28333,9 @@
    "team_elo": 1522.87
   },
   "HANJIN BRION": {
-   "gap": 38.35,
-   "player_elo": 1557.83,
-   "team_elo": 1519.48
+   "gap": 41.42,
+   "player_elo": 1565.71,
+   "team_elo": 1524.29
   },
   "HANJIN BRION Academy": {
    "gap": -32.59,
@@ -28343,8 +28343,8 @@
    "team_elo": 1532.59
   },
   "HANJIN BRION Challengers": {
-   "gap": -20.89,
-   "player_elo": 1407.5,
+   "gap": -20.88,
+   "player_elo": 1407.51,
    "team_elo": 1428.39
   },
   "HELL PIGS": {
@@ -28358,8 +28358,8 @@
    "team_elo": 1496.92
   },
   "HMBLE": {
-   "gap": -25.19,
-   "player_elo": 1666.71,
+   "gap": -25.2,
+   "player_elo": 1666.7,
    "team_elo": 1691.9
   },
   "HST": {
@@ -28368,12 +28368,12 @@
    "team_elo": 1469.97
   },
   "HUGE Esport": {
-   "gap": -2.29,
+   "gap": -2.28,
    "player_elo": 1488.88,
    "team_elo": 1491.16
   },
   "HUTECH CHICKEN": {
-   "gap": -1.48,
+   "gap": -1.49,
    "player_elo": 1476.53,
    "team_elo": 1478.02
   },
@@ -28383,8 +28383,8 @@
    "team_elo": 1404.75
   },
   "Hannover Esports e.V.": {
-   "gap": -10.63,
-   "player_elo": 1476.09,
+   "gap": -10.64,
+   "player_elo": 1476.08,
    "team_elo": 1486.72
   },
   "Hanoi Rookies Esports": {
@@ -28393,9 +28393,9 @@
    "team_elo": 1471.22
   },
   "Hanwha Life Esports": {
-   "gap": 96.96,
-   "player_elo": 1795.14,
-   "team_elo": 1698.18
+   "gap": 86.56,
+   "player_elo": 1772.58,
+   "team_elo": 1686.02
   },
   "Hanwha Life Esports Academy": {
    "gap": -4.45,
@@ -28408,7 +28408,7 @@
    "team_elo": 1365.63
   },
   "Hazing Chase": {
-   "gap": 26.85,
+   "gap": 26.86,
    "player_elo": 1530.12,
    "team_elo": 1503.26
   },
@@ -28423,7 +28423,7 @@
    "team_elo": 1447.06
   },
   "Howl Esports": {
-   "gap": -34.69,
+   "gap": -34.7,
    "player_elo": 1396.44,
    "team_elo": 1431.14
   },
@@ -28448,8 +28448,8 @@
    "team_elo": 1491.42
   },
   "Hyper Vortex Esports": {
-   "gap": 67.02,
-   "player_elo": 1617.23,
+   "gap": 57.03,
+   "player_elo": 1607.24,
    "team_elo": 1550.21
   },
   "Hyperion (Portuguese Team)": {
@@ -28493,7 +28493,7 @@
    "team_elo": 1554.07
   },
   "Ici Japon Corp. Esport": {
-   "gap": 38.13,
+   "gap": 38.12,
    "player_elo": 1568.86,
    "team_elo": 1530.74
   },
@@ -28543,14 +28543,14 @@
    "team_elo": 1476.29
   },
   "International Esports Industry Center": {
-   "gap": -0.0,
+   "gap": 0.0,
    "player_elo": 1494.84,
    "team_elo": 1494.84
   },
   "Invictus Gaming": {
-   "gap": 17.26,
-   "player_elo": 1611.57,
-   "team_elo": 1594.32
+   "gap": 29.54,
+   "player_elo": 1671.47,
+   "team_elo": 1641.94
   },
   "Invictus Gaming Young": {
    "gap": 6.74,
@@ -28558,13 +28558,13 @@
    "team_elo": 1541.65
   },
   "Invokers": {
-   "gap": -37.21,
-   "player_elo": 1520.17,
+   "gap": -37.22,
+   "player_elo": 1520.16,
    "team_elo": 1557.38
   },
   "Ionikos Nikaias Esports": {
-   "gap": -32.84,
-   "player_elo": 1460.4,
+   "gap": -32.83,
+   "player_elo": 1460.41,
    "team_elo": 1493.24
   },
   "Iron Wolves": {
@@ -28573,17 +28573,17 @@
    "team_elo": 1452.29
   },
   "Isurus": {
-   "gap": 75.21,
-   "player_elo": 1617.84,
+   "gap": 68.7,
+   "player_elo": 1611.32,
    "team_elo": 1542.62
   },
   "Isurus Estral": {
-   "gap": 92.78,
-   "player_elo": 1613.43,
+   "gap": 86.27,
+   "player_elo": 1606.92,
    "team_elo": 1520.65
   },
   "Izanagi Ignis": {
-   "gap": 7.31,
+   "gap": 7.3,
    "player_elo": 1484.0,
    "team_elo": 1476.7
   },
@@ -28613,12 +28613,12 @@
    "team_elo": 1485.61
   },
   "Janus Panter": {
-   "gap": -13.18,
+   "gap": -13.19,
    "player_elo": 1451.29,
    "team_elo": 1464.48
   },
   "Japan (National Team)": {
-   "gap": 35.03,
+   "gap": 35.04,
    "player_elo": 1517.28,
    "team_elo": 1482.24
   },
@@ -28638,13 +28638,13 @@
    "team_elo": 1501.5
   },
   "Jolly Rogers": {
-   "gap": -73.09,
+   "gap": -73.1,
    "player_elo": 1418.42,
    "team_elo": 1491.52
   },
   "Joy Dream": {
-   "gap": -2.67,
-   "player_elo": 1511.1,
+   "gap": -2.66,
+   "player_elo": 1511.11,
    "team_elo": 1513.77
   },
   "Juicy Ballers": {
@@ -28653,7 +28653,7 @@
    "team_elo": 1493.22
   },
   "J\u00f6rmungang": {
-   "gap": -13.69,
+   "gap": -13.7,
    "player_elo": 1472.63,
    "team_elo": 1486.33
   },
@@ -28664,16 +28664,16 @@
   },
   "KAOS e-sport": {
    "gap": 14.01,
-   "player_elo": 1449.44,
+   "player_elo": 1449.45,
    "team_elo": 1435.44
   },
   "KIA.eSuba Academy": {
-   "gap": -39.72,
+   "gap": -39.73,
    "player_elo": 1535.44,
    "team_elo": 1575.17
   },
   "KRC Genk Esports": {
-   "gap": -14.9,
+   "gap": -14.91,
    "player_elo": 1446.04,
    "team_elo": 1460.95
   },
@@ -28683,8 +28683,8 @@
    "team_elo": 1574.32
   },
   "KT Rolster Academy": {
-   "gap": -31.0,
-   "player_elo": 1530.51,
+   "gap": -30.99,
+   "player_elo": 1530.52,
    "team_elo": 1561.51
   },
   "KT Rolster Challengers": {
@@ -28693,8 +28693,8 @@
    "team_elo": 1680.53
   },
   "KaBuM! Academy": {
-   "gap": -22.85,
-   "player_elo": 1492.07,
+   "gap": -22.86,
+   "player_elo": 1492.06,
    "team_elo": 1514.92
   },
   "KaBuM! Esports": {
@@ -28723,7 +28723,7 @@
    "team_elo": 1447.49
   },
   "Karam El Sham": {
-   "gap": -0.99,
+   "gap": -1.0,
    "player_elo": 1476.73,
    "team_elo": 1477.73
   },
@@ -28738,9 +28738,9 @@
    "team_elo": 1441.66
   },
   "Karmine Corp": {
-   "gap": 51.25,
-   "player_elo": 1750.76,
-   "team_elo": 1699.51
+   "gap": 53.45,
+   "player_elo": 1761.32,
+   "team_elo": 1707.87
   },
   "Karmine Corp Blue": {
    "gap": 8.63,
@@ -28748,8 +28748,8 @@
    "team_elo": 1722.58
   },
   "Karmine Corp Blue Stars": {
-   "gap": 24.06,
-   "player_elo": 1711.94,
+   "gap": 24.07,
+   "player_elo": 1711.95,
    "team_elo": 1687.88
   },
   "Kaufland Hangry Knights": {
@@ -28758,7 +28758,7 @@
    "team_elo": 1644.43
   },
   "Kawaii Kiwis": {
-   "gap": -29.53,
+   "gap": -29.54,
    "player_elo": 1497.92,
    "team_elo": 1527.46
   },
@@ -28768,7 +28768,7 @@
    "team_elo": 1458.09
   },
   "Kiedy\u015b Mia\u0142em Fun": {
-   "gap": 38.53,
+   "gap": 38.52,
    "player_elo": 1615.22,
    "team_elo": 1576.7
   },
@@ -28778,8 +28778,8 @@
    "team_elo": 1512.8
   },
   "Kiwoom DRX": {
-   "gap": 64.44,
-   "player_elo": 1464.07,
+   "gap": 64.43,
+   "player_elo": 1464.06,
    "team_elo": 1399.63
   },
   "Kiwoom DRX Academy": {
@@ -28798,7 +28798,7 @@
    "team_elo": 1480.05
   },
   "Kleyton Rhasta": {
-   "gap": -7.55,
+   "gap": -7.56,
    "player_elo": 1469.27,
    "team_elo": 1476.83
   },
@@ -28833,7 +28833,7 @@
    "team_elo": 1486.59
   },
   "LGD Gaming": {
-   "gap": 18.66,
+   "gap": 18.65,
    "player_elo": 1549.58,
    "team_elo": 1530.93
   },
@@ -28843,8 +28843,8 @@
    "team_elo": 1565.6
   },
   "LNG Academy": {
-   "gap": 16.0,
-   "player_elo": 1530.05,
+   "gap": 16.01,
+   "player_elo": 1530.06,
    "team_elo": 1514.05
   },
   "LNG Esports": {
@@ -28853,12 +28853,12 @@
    "team_elo": 1430.76
   },
   "LODIS": {
-   "gap": 72.27,
+   "gap": 72.26,
    "player_elo": 1615.35,
    "team_elo": 1543.09
   },
   "LOUD": {
-   "gap": 75.83,
+   "gap": 75.84,
    "player_elo": 1646.37,
    "team_elo": 1570.53
   },
@@ -28873,9 +28873,9 @@
    "team_elo": 1467.52
   },
   "LYON": {
-   "gap": 47.82,
-   "player_elo": 1728.04,
-   "team_elo": 1680.22
+   "gap": 49.63,
+   "player_elo": 1726.76,
+   "team_elo": 1677.13
   },
   "LYON Academy": {
    "gap": -1.7,
@@ -28893,7 +28893,7 @@
    "team_elo": 1448.64
   },
   "Laffson's gang": {
-   "gap": 13.75,
+   "gap": 13.76,
    "player_elo": 1521.79,
    "team_elo": 1508.03
   },
@@ -28908,7 +28908,7 @@
    "team_elo": 1393.42
   },
   "Lazy In Life": {
-   "gap": 5.4,
+   "gap": 5.39,
    "player_elo": 1510.22,
    "team_elo": 1504.83
   },
@@ -28923,17 +28923,17 @@
    "team_elo": 1479.08
   },
   "Lechuga Gaming": {
-   "gap": -3.13,
+   "gap": -3.14,
    "player_elo": 1496.0,
    "team_elo": 1499.14
   },
   "Lenovo Legion Honv\u00e9d": {
-   "gap": -6.3,
+   "gap": -6.31,
    "player_elo": 1471.34,
    "team_elo": 1477.65
   },
   "Leviatan": {
-   "gap": 128.09,
+   "gap": 128.08,
    "player_elo": 1437.92,
    "team_elo": 1309.84
   },
@@ -28953,8 +28953,8 @@
    "team_elo": 1462.87
   },
   "Liberty Academy": {
-   "gap": 6.73,
-   "player_elo": 1484.18,
+   "gap": 6.74,
+   "player_elo": 1484.19,
    "team_elo": 1477.45
   },
   "Ligre Gaming": {
@@ -28963,8 +28963,8 @@
    "team_elo": 1479.23
   },
   "Lille Esport": {
-   "gap": 31.46,
-   "player_elo": 1470.66,
+   "gap": 31.45,
+   "player_elo": 1470.65,
    "team_elo": 1439.2
   },
   "Lionscreed": {
@@ -28973,7 +28973,7 @@
    "team_elo": 1520.86
   },
   "LittleSans": {
-   "gap": -19.59,
+   "gap": -19.6,
    "player_elo": 1471.59,
    "team_elo": 1491.19
   },
@@ -28993,7 +28993,7 @@
    "team_elo": 1472.61
   },
   "Lotus Knights": {
-   "gap": 6.65,
+   "gap": 6.64,
    "player_elo": 1500.37,
    "team_elo": 1493.73
   },
@@ -29018,18 +29018,18 @@
    "team_elo": 1397.66
   },
   "Lynch Esports": {
-   "gap": -17.43,
+   "gap": -17.42,
    "player_elo": 1440.57,
    "team_elo": 1457.99
   },
   "L\u00d8S": {
-   "gap": 37.83,
-   "player_elo": 1784.03,
-   "team_elo": 1746.21
+   "gap": 39.14,
+   "player_elo": 1769.94,
+   "team_elo": 1730.81
   },
   "L\u00d8S Academy": {
-   "gap": 25.45,
-   "player_elo": 1485.53,
+   "gap": 22.63,
+   "player_elo": 1482.71,
    "team_elo": 1460.08
   },
   "L\u2019art de la Guerre": {
@@ -29038,8 +29038,8 @@
    "team_elo": 1491.13
   },
   "MAD Lions KOI": {
-   "gap": 172.37,
-   "player_elo": 1691.83,
+   "gap": 150.49,
+   "player_elo": 1669.95,
    "team_elo": 1519.46
   },
   "MAMMOTH": {
@@ -29058,18 +29058,18 @@
    "team_elo": 1487.0
   },
   "MGN Vikings Academy": {
-   "gap": 56.28,
-   "player_elo": 1536.53,
+   "gap": 56.27,
+   "player_elo": 1536.52,
    "team_elo": 1480.25
   },
   "MGN Vikings Esports": {
-   "gap": 1.94,
-   "player_elo": 1518.57,
+   "gap": 10.27,
+   "player_elo": 1526.9,
    "team_elo": 1516.63
   },
   "MHSC Esport": {
-   "gap": -50.16,
-   "player_elo": 1471.02,
+   "gap": -50.15,
+   "player_elo": 1471.03,
    "team_elo": 1521.18
   },
   "MIBR": {
@@ -29083,12 +29083,12 @@
    "team_elo": 1458.89
   },
   "MVK Esports": {
-   "gap": 34.8,
-   "player_elo": 1564.67,
-   "team_elo": 1529.87
+   "gap": 40.51,
+   "player_elo": 1581.47,
+   "team_elo": 1540.96
   },
   "MVK Esports Academy": {
-   "gap": -3.47,
+   "gap": -3.48,
    "player_elo": 1589.65,
    "team_elo": 1593.13
   },
@@ -29108,7 +29108,7 @@
    "team_elo": 1605.05
   },
   "Macko Invictus": {
-   "gap": -12.56,
+   "gap": -12.57,
    "player_elo": 1458.76,
    "team_elo": 1471.33
   },
@@ -29123,7 +29123,7 @@
    "team_elo": 1594.33
   },
   "Magyar Gamer Sz\u00f6vets\u00e8g": {
-   "gap": -24.94,
+   "gap": -24.93,
    "player_elo": 1444.05,
    "team_elo": 1468.98
   },
@@ -29134,16 +29134,16 @@
   },
   "Malvinas Gaming EU": {
    "gap": -19.88,
-   "player_elo": 1462.15,
+   "player_elo": 1462.16,
    "team_elo": 1482.04
   },
   "Maryville University": {
-   "gap": -1.98,
-   "player_elo": 1582.32,
+   "gap": -1.97,
+   "player_elo": 1582.33,
    "team_elo": 1584.3
   },
   "Maverix": {
-   "gap": -32.28,
+   "gap": -32.29,
    "player_elo": 1484.33,
    "team_elo": 1516.62
   },
@@ -29178,28 +29178,28 @@
    "team_elo": 1486.5
   },
   "MiaoJing (\u5999\u7ade)": {
-   "gap": -2.03,
-   "player_elo": 1431.85,
+   "gap": -2.02,
+   "player_elo": 1431.86,
    "team_elo": 1433.88
   },
   "Mighty Eagles": {
    "gap": -35.39,
-   "player_elo": 1447.46,
+   "player_elo": 1447.47,
    "team_elo": 1482.86
   },
   "Mila Gaming": {
-   "gap": 6.91,
-   "player_elo": 1501.32,
+   "gap": 6.9,
+   "player_elo": 1501.31,
    "team_elo": 1494.41
   },
   "Mind Blue Futures": {
    "gap": -7.5,
-   "player_elo": 1475.51,
+   "player_elo": 1475.52,
    "team_elo": 1483.02
   },
   "Mind Blue eSports": {
-   "gap": -7.9,
-   "player_elo": 1484.58,
+   "gap": -7.91,
+   "player_elo": 1484.57,
    "team_elo": 1492.48
   },
   "Mirage Alliance": {
@@ -29218,14 +29218,14 @@
    "team_elo": 1476.83
   },
   "Monta Club": {
-   "gap": 3.67,
-   "player_elo": 1449.26,
+   "gap": 3.66,
+   "player_elo": 1449.25,
    "team_elo": 1445.59
   },
   "Movistar KOI": {
-   "gap": 55.66,
-   "player_elo": 1663.86,
-   "team_elo": 1608.21
+   "gap": 57.76,
+   "player_elo": 1636.52,
+   "team_elo": 1578.76
   },
   "Movistar KOI F\u00e9nix": {
    "gap": -15.99,
@@ -29233,37 +29233,37 @@
    "team_elo": 1783.69
   },
   "Movistar R7": {
-   "gap": -2.2,
+   "gap": -2.19,
    "player_elo": 1547.77,
    "team_elo": 1549.96
   },
   "Myth Esports": {
-   "gap": 52.18,
+   "gap": 52.19,
    "player_elo": 1477.7,
    "team_elo": 1425.51
   },
   "M\u00fcnster Esports - Golden Goats": {
-   "gap": 1.25,
+   "gap": 1.24,
    "player_elo": 1486.85,
    "team_elo": 1485.61
   },
   "NASR eSports Turkey": {
    "gap": 44.92,
-   "player_elo": 1532.49,
+   "player_elo": 1532.48,
    "team_elo": 1487.56
   },
   "NCG Esports": {
-   "gap": -22.38,
+   "gap": -22.37,
    "player_elo": 1479.0,
    "team_elo": 1501.37
   },
   "NEO ZEPHYR": {
-   "gap": 3.36,
+   "gap": 3.35,
    "player_elo": 1493.28,
    "team_elo": 1489.93
   },
   "NGU eSports": {
-   "gap": -19.49,
+   "gap": -19.5,
    "player_elo": 1497.09,
    "team_elo": 1516.59
   },
@@ -29273,7 +29273,7 @@
    "team_elo": 1564.06
   },
   "NONAME": {
-   "gap": 6.91,
+   "gap": 6.92,
    "player_elo": 1517.64,
    "team_elo": 1510.72
   },
@@ -29284,11 +29284,11 @@
   },
   "NORD Esports": {
    "gap": -18.63,
-   "player_elo": 1569.09,
+   "player_elo": 1569.1,
    "team_elo": 1587.73
   },
   "NORTHERNGRADE ESPORTS": {
-   "gap": -56.05,
+   "gap": -56.04,
    "player_elo": 1433.12,
    "team_elo": 1489.16
   },
@@ -29298,8 +29298,8 @@
    "team_elo": 1476.59
   },
   "NOVEX": {
-   "gap": -38.64,
-   "player_elo": 1474.65,
+   "gap": -38.65,
+   "player_elo": 1474.64,
    "team_elo": 1513.29
   },
   "NRG": {
@@ -29318,7 +29318,7 @@
    "team_elo": 1480.24
   },
   "Natus Vincere": {
-   "gap": 46.4,
+   "gap": 46.39,
    "player_elo": 1567.87,
    "team_elo": 1521.48
   },
@@ -29388,7 +29388,7 @@
    "team_elo": 1438.83
   },
   "Nine Lives Esports": {
-   "gap": -9.73,
+   "gap": -9.74,
    "player_elo": 1445.25,
    "team_elo": 1454.99
   },
@@ -29423,7 +29423,7 @@
    "team_elo": 1441.94
   },
   "Nugget enterprises": {
-   "gap": -32.51,
+   "gap": -32.5,
    "player_elo": 1442.78,
    "team_elo": 1475.28
   },
@@ -29433,7 +29433,7 @@
    "team_elo": 1428.18
   },
   "OGC Esports": {
-   "gap": -2.93,
+   "gap": -2.92,
    "player_elo": 1474.43,
    "team_elo": 1477.35
   },
@@ -29468,13 +29468,13 @@
    "team_elo": 1377.56
   },
   "Oh My God Academy": {
-   "gap": -9.44,
+   "gap": -9.43,
    "player_elo": 1510.62,
    "team_elo": 1520.05
   },
   "Once Upon A Team": {
-   "gap": 31.04,
-   "player_elo": 1439.92,
+   "gap": 31.03,
+   "player_elo": 1439.91,
    "team_elo": 1408.88
   },
   "One More Esports": {
@@ -29493,7 +29493,7 @@
    "team_elo": 1511.71
   },
   "Onion Team": {
-   "gap": 75.08,
+   "gap": 75.07,
    "player_elo": 1432.75,
    "team_elo": 1357.68
   },
@@ -29523,7 +29523,7 @@
    "team_elo": 1599.32
   },
   "Ovos Moles eSports": {
-   "gap": -0.68,
+   "gap": -0.67,
    "player_elo": 1476.42,
    "team_elo": 1477.09
   },
@@ -29548,8 +29548,8 @@
    "team_elo": 1484.23
   },
   "PCIFIC Esports": {
-   "gap": 23.0,
-   "player_elo": 1611.8,
+   "gap": 23.01,
+   "player_elo": 1611.81,
    "team_elo": 1588.8
   },
   "PREDIQT": {
@@ -29608,8 +29608,8 @@
    "team_elo": 1516.2
   },
   "Papo Secos": {
-   "gap": 0.9,
-   "player_elo": 1490.86,
+   "gap": 0.91,
+   "player_elo": 1490.87,
    "team_elo": 1489.96
   },
   "Paputs Gaming": {
@@ -29634,7 +29634,7 @@
   },
   "Partizan Sangal": {
    "gap": 34.89,
-   "player_elo": 1776.61,
+   "player_elo": 1776.6,
    "team_elo": 1741.71
   },
   "Pee N W's": {
@@ -29683,12 +29683,12 @@
    "team_elo": 1337.34
   },
   "Priority": {
-   "gap": -48.03,
+   "gap": -48.04,
    "player_elo": 1473.91,
    "team_elo": 1521.95
   },
   "Project Conquerors": {
-   "gap": 31.95,
+   "gap": 31.96,
    "player_elo": 1572.84,
    "team_elo": 1540.88
   },
@@ -29723,7 +29723,7 @@
    "team_elo": 1416.33
   },
   "RAMPAGE": {
-   "gap": -49.57,
+   "gap": -49.56,
    "player_elo": 1434.33,
    "team_elo": 1483.89
   },
@@ -29743,7 +29743,7 @@
    "team_elo": 1440.59
   },
   "RED Canids": {
-   "gap": 0.79,
+   "gap": 0.8,
    "player_elo": 1472.25,
    "team_elo": 1471.45
   },
@@ -29764,7 +29764,7 @@
   },
   "RIP MAMBERROI": {
    "gap": 5.26,
-   "player_elo": 1497.99,
+   "player_elo": 1498.0,
    "team_elo": 1492.74
   },
   "RLX Esports": {
@@ -29788,8 +29788,8 @@
    "team_elo": 1500.41
   },
   "RQS Esports": {
-   "gap": 8.37,
-   "player_elo": 1514.33,
+   "gap": 8.38,
+   "player_elo": 1514.34,
    "team_elo": 1505.96
   },
   "Radical Pop Gaming": {
@@ -29804,7 +29804,7 @@
   },
   "Rainbow Warriors": {
    "gap": 8.8,
-   "player_elo": 1436.55,
+   "player_elo": 1436.56,
    "team_elo": 1427.76
   },
   "Ramboot Club": {
@@ -29833,7 +29833,7 @@
    "team_elo": 1511.29
   },
   "Reignfall": {
-   "gap": -30.42,
+   "gap": -30.43,
    "player_elo": 1451.59,
    "team_elo": 1482.02
   },
@@ -29848,12 +29848,12 @@
    "team_elo": 1491.87
   },
   "Revolution Victory X": {
-   "gap": -41.58,
+   "gap": -41.57,
    "player_elo": 1347.09,
    "team_elo": 1388.66
   },
   "Rich Gang": {
-   "gap": -34.94,
+   "gap": -34.93,
    "player_elo": 1412.4,
    "team_elo": 1447.33
   },
@@ -29889,17 +29889,17 @@
   },
   "Ronaldo Team": {
    "gap": 1.77,
-   "player_elo": 1490.64,
+   "player_elo": 1490.65,
    "team_elo": 1488.88
   },
   "Royal Club": {
-   "gap": -4.36,
+   "gap": -4.35,
    "player_elo": 1515.22,
    "team_elo": 1519.57
   },
   "Royal Never Give Up": {
-   "gap": 50.84,
-   "player_elo": 1453.87,
+   "gap": 62.82,
+   "player_elo": 1465.85,
    "team_elo": 1403.03
   },
   "Ruddy Corporation": {
@@ -29918,12 +29918,12 @@
    "team_elo": 1476.83
   },
   "Ruzeh Esports": {
-   "gap": -0.09,
+   "gap": -0.1,
    "player_elo": 1488.03,
    "team_elo": 1488.13
   },
   "S2G Esports": {
-   "gap": 3.58,
+   "gap": 3.59,
    "player_elo": 1618.54,
    "team_elo": 1614.95
   },
@@ -29934,11 +29934,11 @@
   },
   "SAW": {
    "gap": 8.52,
-   "player_elo": 1538.27,
+   "player_elo": 1538.28,
    "team_elo": 1529.76
   },
   "SDM Tigres": {
-   "gap": -25.47,
+   "gap": -25.46,
    "player_elo": 1466.03,
    "team_elo": 1491.49
   },
@@ -29953,18 +29953,18 @@
    "team_elo": 1416.12
   },
   "SK Gaming Avarosa": {
-   "gap": -14.46,
+   "gap": -14.45,
    "player_elo": 1475.05,
    "team_elo": 1489.5
   },
   "SK Gaming Prime": {
-   "gap": -28.64,
+   "gap": -28.63,
    "player_elo": 1506.15,
    "team_elo": 1534.78
   },
   "SN CyberCore Esports": {
-   "gap": 57.51,
-   "player_elo": 1528.32,
+   "gap": 57.52,
+   "player_elo": 1528.33,
    "team_elo": 1470.81
   },
   "SNOOZE Esports": {
@@ -29973,18 +29973,18 @@
    "team_elo": 1494.65
   },
   "SPAXFAMILY": {
-   "gap": -15.23,
+   "gap": -15.24,
    "player_elo": 1432.42,
    "team_elo": 1447.66
   },
   "SPIKE Syndicate": {
-   "gap": -9.68,
+   "gap": -9.67,
    "player_elo": 1415.47,
    "team_elo": 1425.14
   },
   "STAINED": {
-   "gap": -14.08,
-   "player_elo": 1451.44,
+   "gap": -14.09,
+   "player_elo": 1451.43,
    "team_elo": 1465.52
   },
   "SU Esports": {
@@ -29993,13 +29993,13 @@
    "team_elo": 1555.13
   },
   "SabOOr T1": {
-   "gap": -40.19,
+   "gap": -40.2,
    "player_elo": 1436.63,
    "team_elo": 1476.83
   },
   "Saigon Secret": {
-   "gap": 26.93,
-   "player_elo": 1505.69,
+   "gap": 29.71,
+   "player_elo": 1508.47,
    "team_elo": 1478.76
   },
   "Saigon Warriors": {
@@ -30013,13 +30013,13 @@
    "team_elo": 1485.67
   },
   "Sengoku Gaming Academy": {
-   "gap": 19.43,
+   "gap": 19.42,
    "player_elo": 1495.78,
    "team_elo": 1476.36
   },
   "Senshi eSports": {
-   "gap": 1.21,
-   "player_elo": 1568.53,
+   "gap": 1.22,
+   "player_elo": 1568.54,
    "team_elo": 1567.32
   },
   "Sentinels": {
@@ -30033,7 +30033,7 @@
    "team_elo": 1387.85
   },
   "Shadow Keepers Esports": {
-   "gap": -1.81,
+   "gap": -1.8,
    "player_elo": 1518.45,
    "team_elo": 1520.25
   },
@@ -30063,12 +30063,12 @@
    "team_elo": 1473.28
   },
   "SillySilly Gaming": {
-   "gap": -35.22,
+   "gap": -35.23,
    "player_elo": 1569.51,
    "team_elo": 1604.74
   },
   "Six Karma": {
-   "gap": 5.39,
+   "gap": 5.4,
    "player_elo": 1431.2,
    "team_elo": 1425.8
   },
@@ -30088,7 +30088,7 @@
    "team_elo": 1480.99
   },
   "Spartans EU": {
-   "gap": 5.95,
+   "gap": 5.96,
    "player_elo": 1460.15,
    "team_elo": 1454.19
   },
@@ -30123,13 +30123,13 @@
    "team_elo": 1516.87
   },
   "StoneHenge Esports": {
-   "gap": 27.95,
+   "gap": 27.94,
    "player_elo": 1435.44,
    "team_elo": 1407.5
   },
   "StoneHenge Esports Academy": {
-   "gap": -51.07,
-   "player_elo": 1402.12,
+   "gap": -51.08,
+   "player_elo": 1402.11,
    "team_elo": 1453.19
   },
   "StormMedia Fajnie Mie\u0107 Sk\u0142ad": {
@@ -30138,7 +30138,7 @@
    "team_elo": 1565.45
   },
   "Stormbringers": {
-   "gap": -12.24,
+   "gap": -12.23,
    "player_elo": 1476.83,
    "team_elo": 1489.06
   },
@@ -30153,12 +30153,12 @@
    "team_elo": 1496.7
   },
   "Super Stars": {
-   "gap": 6.52,
+   "gap": 6.51,
    "player_elo": 1522.39,
    "team_elo": 1515.88
   },
   "Supernova": {
-   "gap": 10.25,
+   "gap": 10.24,
    "player_elo": 1543.05,
    "team_elo": 1532.81
   },
@@ -30168,9 +30168,9 @@
    "team_elo": 1435.98
   },
   "T1": {
-   "gap": 97.66,
-   "player_elo": 1743.72,
-   "team_elo": 1646.06
+   "gap": 80.76,
+   "player_elo": 1773.24,
+   "team_elo": 1692.48
   },
   "T1 Esports Academy": {
    "gap": -36.71,
@@ -30183,7 +30183,7 @@
    "team_elo": 1778.87
   },
   "TIGROTS": {
-   "gap": -62.47,
+   "gap": -62.48,
    "player_elo": 1428.45,
    "team_elo": 1490.93
   },
@@ -30198,8 +30198,8 @@
    "team_elo": 1714.43
   },
   "TNU Eagle (\u6771\u5357\u98db\u9df9)": {
-   "gap": -5.02,
-   "player_elo": 1494.68,
+   "gap": -5.03,
+   "player_elo": 1494.67,
    "team_elo": 1499.7
   },
   "TQ DURPA KASHLQ": {
@@ -30223,12 +30223,12 @@
    "team_elo": 1512.67
   },
   "Team Anomaly Breaker": {
-   "gap": -11.69,
-   "player_elo": 1497.3,
+   "gap": -11.7,
+   "player_elo": 1497.29,
    "team_elo": 1508.99
   },
   "Team Aqua ASD": {
-   "gap": -13.0,
+   "gap": -12.99,
    "player_elo": 1448.78,
    "team_elo": 1461.77
   },
@@ -30259,7 +30259,7 @@
   },
   "Team DX": {
    "gap": -42.36,
-   "player_elo": 1452.36,
+   "player_elo": 1452.35,
    "team_elo": 1494.71
   },
   "Team ESCA Gaming": {
@@ -30268,13 +30268,13 @@
    "team_elo": 1457.65
   },
   "Team Evermeet": {
-   "gap": -10.96,
+   "gap": -10.95,
    "player_elo": 1433.48,
    "team_elo": 1444.43
   },
   "Team Flash": {
-   "gap": 49.37,
-   "player_elo": 1567.36,
+   "gap": 39.37,
+   "player_elo": 1557.36,
    "team_elo": 1517.99
   },
   "Team GMask": {
@@ -30288,7 +30288,7 @@
    "team_elo": 1554.9
   },
   "Team Heretics": {
-   "gap": 161.62,
+   "gap": 161.63,
    "player_elo": 1475.93,
    "team_elo": 1314.3
   },
@@ -30313,13 +30313,13 @@
    "team_elo": 1485.29
   },
   "Team Liquid": {
-   "gap": 36.96,
-   "player_elo": 1759.08,
-   "team_elo": 1722.12
+   "gap": 35.7,
+   "player_elo": 1740.6,
+   "team_elo": 1704.9
   },
   "Team Liquid Challengers": {
-   "gap": 31.74,
-   "player_elo": 1515.61,
+   "gap": 33.31,
+   "player_elo": 1517.18,
    "team_elo": 1483.87
   },
   "Team Meliora": {
@@ -30338,8 +30338,8 @@
    "team_elo": 1492.28
   },
   "Team Phantasma": {
-   "gap": -0.79,
-   "player_elo": 1587.6,
+   "gap": -0.78,
+   "player_elo": 1587.61,
    "team_elo": 1588.39
   },
   "Team Phoenix": {
@@ -30348,7 +30348,7 @@
    "team_elo": 1371.41
   },
   "Team Refuse": {
-   "gap": -19.78,
+   "gap": -19.77,
    "player_elo": 1413.14,
    "team_elo": 1432.91
   },
@@ -30358,14 +30358,14 @@
    "team_elo": 1492.8
   },
   "Team Secret": {
-   "gap": 219.98,
-   "player_elo": 1752.24,
+   "gap": 170.0,
+   "player_elo": 1702.26,
    "team_elo": 1532.26
   },
   "Team Secret Whales": {
-   "gap": 13.65,
-   "player_elo": 1752.24,
-   "team_elo": 1738.59
+   "gap": 16.61,
+   "player_elo": 1702.26,
+   "team_elo": 1685.65
   },
   "Team Shrimp": {
    "gap": -76.73,
@@ -30408,9 +30408,9 @@
    "team_elo": 1567.64
   },
   "Team WE": {
-   "gap": 23.89,
-   "player_elo": 1582.0,
-   "team_elo": 1558.11
+   "gap": 20.82,
+   "player_elo": 1574.13,
+   "team_elo": 1553.31
   },
   "Team WE Academy": {
    "gap": -20.31,
@@ -30418,8 +30418,8 @@
    "team_elo": 1518.92
   },
   "Team Whales": {
-   "gap": 10.22,
-   "player_elo": 1501.7,
+   "gap": 13.0,
+   "player_elo": 1504.48,
    "team_elo": 1491.48
   },
   "Team du Sud": {
@@ -30453,7 +30453,7 @@
    "team_elo": 1523.39
   },
   "The Forbidden Five": {
-   "gap": -0.21,
+   "gap": -0.22,
    "player_elo": 1429.98,
    "team_elo": 1430.2
   },
@@ -30483,7 +30483,7 @@
    "team_elo": 1391.62
   },
   "ThunderTalk Gaming Young": {
-   "gap": -53.2,
+   "gap": -53.21,
    "player_elo": 1452.28,
    "team_elo": 1505.49
   },
@@ -30493,7 +30493,7 @@
    "team_elo": 1469.25
   },
   "Tomorrow Esports": {
-   "gap": 24.42,
+   "gap": 24.41,
    "player_elo": 1529.54,
    "team_elo": 1505.13
   },
@@ -30503,9 +30503,9 @@
    "team_elo": 1507.3
   },
   "Top Esports": {
-   "gap": 13.77,
-   "player_elo": 1609.32,
-   "team_elo": 1595.55
+   "gap": 37.57,
+   "player_elo": 1657.22,
+   "team_elo": 1619.65
   },
   "Top Esports Challenger": {
    "gap": -7.16,
@@ -30528,7 +30528,7 @@
    "team_elo": 1385.4
   },
   "Tung Tung Bogi": {
-   "gap": -36.47,
+   "gap": -36.46,
    "player_elo": 1454.76,
    "team_elo": 1491.22
   },
@@ -30538,7 +30538,7 @@
    "team_elo": 1494.8
   },
   "Twisted Minds": {
-   "gap": 7.74,
+   "gap": 7.75,
    "player_elo": 1527.27,
    "team_elo": 1519.52
   },
@@ -30573,18 +30573,18 @@
    "team_elo": 1523.24
   },
   "UP2UMEDIA Cebulaki": {
-   "gap": 0.89,
+   "gap": 0.9,
    "player_elo": 1408.0,
    "team_elo": 1407.1
   },
   "UTeSports": {
-   "gap": -6.27,
+   "gap": -6.28,
    "player_elo": 1384.89,
    "team_elo": 1391.17
   },
   "Ukrainian Glory Team": {
-   "gap": -15.45,
-   "player_elo": 1472.46,
+   "gap": -15.44,
+   "player_elo": 1472.47,
    "team_elo": 1487.91
   },
   "Ultra Prime": {
@@ -30593,8 +30593,8 @@
    "team_elo": 1407.41
   },
   "Ultra Prime Academy": {
-   "gap": -12.09,
-   "player_elo": 1459.88,
+   "gap": -13.67,
+   "player_elo": 1458.3,
    "team_elo": 1471.97
   },
   "Undead Gaming": {
@@ -30608,7 +30608,7 @@
    "team_elo": 1488.85
   },
   "UniQ Esports Club": {
-   "gap": -37.78,
+   "gap": -37.79,
    "player_elo": 1470.41,
    "team_elo": 1508.2
   },
@@ -30618,13 +30618,13 @@
    "team_elo": 1653.03
   },
   "Universae Instituto FP": {
-   "gap": -54.86,
+   "gap": -54.87,
    "player_elo": 1438.09,
    "team_elo": 1492.96
   },
   "University of Mississippi": {
-   "gap": 7.03,
-   "player_elo": 1449.58,
+   "gap": 7.04,
+   "player_elo": 1449.59,
    "team_elo": 1442.55
   },
   "UnlockTan'i": {
@@ -30633,8 +30633,8 @@
    "team_elo": 1492.17
   },
   "Uwinks": {
-   "gap": -30.81,
-   "player_elo": 1495.88,
+   "gap": -30.82,
+   "player_elo": 1495.87,
    "team_elo": 1526.69
   },
   "V3 Esports": {
@@ -30653,7 +30653,7 @@
    "team_elo": 1548.93
   },
   "VENOM Titans": {
-   "gap": -14.23,
+   "gap": -14.24,
    "player_elo": 1441.16,
    "team_elo": 1455.4
   },
@@ -30668,7 +30668,7 @@
    "team_elo": 1671.77
   },
   "Vancouver Impact": {
-   "gap": -21.39,
+   "gap": -21.4,
    "player_elo": 1418.42,
    "team_elo": 1439.82
   },
@@ -30683,12 +30683,12 @@
    "team_elo": 1537.65
   },
   "VeLocitY (Japanese Team)": {
-   "gap": 0.52,
-   "player_elo": 1440.07,
+   "gap": 0.51,
+   "player_elo": 1440.06,
    "team_elo": 1439.55
   },
   "VelbeliKaizokudan": {
-   "gap": 40.09,
+   "gap": 40.1,
    "player_elo": 1420.4,
    "team_elo": 1380.3
   },
@@ -30698,7 +30698,7 @@
    "team_elo": 1532.72
   },
   "Venomcrest Esports": {
-   "gap": -7.85,
+   "gap": -7.84,
    "player_elo": 1452.47,
    "team_elo": 1460.31
   },
@@ -30713,7 +30713,7 @@
    "team_elo": 1513.74
   },
   "Verdant": {
-   "gap": 7.74,
+   "gap": 7.73,
    "player_elo": 1658.16,
    "team_elo": 1650.43
   },
@@ -30723,13 +30723,13 @@
    "team_elo": 1393.74
   },
   "Vietnam (National Team)": {
-   "gap": 30.93,
-   "player_elo": 1524.92,
+   "gap": 39.26,
+   "player_elo": 1533.25,
    "team_elo": 1493.99
   },
   "Viper Night Raider": {
    "gap": -31.51,
-   "player_elo": 1454.6,
+   "player_elo": 1454.59,
    "team_elo": 1486.1
   },
   "Vitality Rising Bees": {
@@ -30833,7 +30833,7 @@
    "team_elo": 1512.69
   },
   "West Point Esports Academy": {
-   "gap": 4.07,
+   "gap": 4.06,
    "player_elo": 1507.89,
    "team_elo": 1503.83
   },
@@ -30848,27 +30848,27 @@
    "team_elo": 1445.01
   },
   "Wildcard Gaming": {
-   "gap": 18.25,
+   "gap": 18.26,
    "player_elo": 1501.39,
    "team_elo": 1483.13
   },
   "Winter (Brazilian Team)": {
-   "gap": -0.59,
-   "player_elo": 1491.76,
+   "gap": -0.6,
+   "player_elo": 1491.75,
    "team_elo": 1492.35
   },
   "Winthrop University": {
-   "gap": -25.48,
+   "gap": -25.49,
    "player_elo": 1528.22,
    "team_elo": 1553.71
   },
   "Witchcraft": {
-   "gap": 131.95,
+   "gap": 131.96,
    "player_elo": 1676.61,
    "team_elo": 1544.65
   },
   "Wstyd Easta": {
-   "gap": -7.37,
+   "gap": -7.36,
    "player_elo": 1494.62,
    "team_elo": 1501.98
   },
@@ -30883,7 +30883,7 @@
    "team_elo": 1467.48
   },
   "Xu Ji Basalt": {
-   "gap": -23.97,
+   "gap": -23.96,
    "player_elo": 1435.91,
    "team_elo": 1459.87
   },
@@ -30928,13 +30928,13 @@
    "team_elo": 1455.71
   },
   "Zena Esports": {
-   "gap": -15.08,
+   "gap": -15.07,
    "player_elo": 1501.8,
    "team_elo": 1516.87
   },
   "ZennIT": {
    "gap": 41.16,
-   "player_elo": 1480.77,
+   "player_elo": 1480.76,
    "team_elo": 1439.6
   },
   "Zennox Gaming": {
@@ -30958,7 +30958,7 @@
    "team_elo": 1469.56
   },
   "Zerance": {
-   "gap": 70.22,
+   "gap": 70.21,
    "player_elo": 1513.03,
    "team_elo": 1442.82
   },
@@ -30978,12 +30978,12 @@
    "team_elo": 1303.4
   },
   "Zeu5 Esports": {
-   "gap": -37.12,
-   "player_elo": 1550.24,
+   "gap": -37.11,
+   "player_elo": 1550.25,
    "team_elo": 1587.36
   },
   "aNc Legends": {
-   "gap": 25.89,
+   "gap": 25.9,
    "player_elo": 1457.42,
    "team_elo": 1431.52
   },
@@ -31003,8 +31003,8 @@
    "team_elo": 1487.23
   },
   "eQuizers": {
-   "gap": -31.75,
-   "player_elo": 1498.29,
+   "gap": -31.76,
+   "player_elo": 1498.28,
    "team_elo": 1530.04
   },
   "eSports Cologne e.V.": {
@@ -31023,7 +31023,7 @@
    "team_elo": 1483.35
   },
   "emBRAZA! Esports": {
-   "gap": -54.86,
+   "gap": -54.87,
    "player_elo": 1454.99,
    "team_elo": 1509.86
   },
@@ -31048,18 +31048,18 @@
    "team_elo": 1464.19
   },
   "paiN Gaming": {
-   "gap": 55.99,
+   "gap": 56.0,
    "player_elo": 1478.22,
    "team_elo": 1422.22
   },
   "paiN Gaming Academy": {
-   "gap": -38.28,
-   "player_elo": 1488.51,
+   "gap": -38.27,
+   "player_elo": 1488.52,
    "team_elo": 1526.79
   },
   "regnum4games": {
-   "gap": -22.2,
-   "player_elo": 1472.29,
+   "gap": -22.21,
+   "player_elo": 1472.28,
    "team_elo": 1494.49
   },
   "wangting": {
