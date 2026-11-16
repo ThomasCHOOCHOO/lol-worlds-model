@@ -37,6 +37,16 @@ BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ELO_INIT = 1500.0
 K = 24.0
 KEEP = 0.6  # 40% regression toward 1500 each new calendar year
+# Season-start prior (SHIPPED 2026-11-15, Thomas's call; see
+# reports/season_start_prior_test.md): at a team's first game of a new
+# calendar year, its starting team Elo is set to the player aggregate of
+# that game's lineup (w=1.0), computed from the prior year-end player
+# ratings after the standard 40% regression. After that first game, team
+# Elo updates per game exactly as before (K=24), with no further player
+# input. Same rule as src/player_elo.py (SEASON_START_PRIOR_W) and
+# src/build_features.py; the three must agree, or the sidecar / features
+# consistency checks fail. The per-game tier-conditional blend stays OFF.
+SEASON_START_PRIOR_W = 1.0
 
 
 def elo_exp(diff):
@@ -44,6 +54,15 @@ def elo_exp(diff):
 
 
 def main():
+    import argparse
+    ap = argparse.ArgumentParser(description="Build model/player_ratings.json")
+    ap.add_argument("--season-start-prior-w", type=float,
+                    default=SEASON_START_PRIOR_W,
+                    help="weight of the player aggregate in a team's "
+                         "season-start Elo (default 1.0, shipped; 0.0 "
+                         "reproduces the pre-prior baseline)")
+    args = ap.parse_args()
+    w_prior = args.season_start_prior_w
     cols = ["gameid", "date", "league", "side", "position", "playername",
             "playerid", "teamname", "result"]
     raw = pd.concat(
@@ -69,6 +88,7 @@ def main():
     pregame = []         # validation records (Play-In gap check)
 
     cur_year = None
+    seen_this_year = set()  # teams whose season-start prior was applied
     for gid in game_ids:
         grp = by_game[gid]
         t = grp["date"].iloc[0]
@@ -80,6 +100,7 @@ def main():
             for key in list(player_rating.keys()):
                 player_rating[key] = ELO_INIT + KEEP * (player_rating[key] - ELO_INIT)
             cur_year = t.year
+            seen_this_year = set()
 
         blue_rows = grp[grp["side"] == "Blue"]
         red_rows = grp[grp["side"] == "Red"]
@@ -103,6 +124,14 @@ def main():
         red_keys, red_pre = side_pre(red_rows)
         agg_b = sum(blue_pre) / 5.0
         agg_r = sum(red_pre) / 5.0
+
+        # ---- season-start prior (see SEASON_START_PRIOR_W) ----
+        if w_prior:
+            for team, agg in ((blue_team, agg_b), (red_team, agg_r)):
+                if team not in seen_this_year:
+                    seen_this_year.add(team)
+                    team_elo[team] = ((1.0 - w_prior) * team_elo[team]
+                                      + w_prior * agg)
 
         eb, er = team_elo[blue_team], team_elo[red_team]
         exp_team = elo_exp(eb - er)

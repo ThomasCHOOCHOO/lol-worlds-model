@@ -1,0 +1,1182 @@
+{
+ "design": {
+  "K": 24.0,
+  "boundary": "2025->2026",
+  "gate": "diff > 0.002 AND 95% CI excludes 0",
+  "primary_window": "both teams within first 10 games of 2026",
+  "prior": "starting Elo = (1-w)*regressed team Elo + w*player aggregate at first 2026 game (actual lineup, no full-year roster use)",
+  "w_grid": [
+   0.0,
+   0.25,
+   0.5,
+   0.75,
+   1.0
+  ]
+ },
+ "turnover_split": {
+  "high_turnover_either": {
+   "ci_cal": [
+    0.0006690844844690196,
+    0.02349104133269191
+   ],
+   "ci_raw": [
+    0.001505511458846408,
+    0.023048136247700076
+   ],
+   "diff_cal": 0.01188763787407361,
+   "diff_raw": 0.01205689152221256,
+   "ll_cal_w": 0.6570175319541647,
+   "ll_cal_w0": 0.6689051698282383,
+   "ll_raw_w": 0.6510507664991306,
+   "ll_raw_w0": 0.6631076580213431,
+   "n": 187,
+   "w": 0.5
+  },
+  "low_turnover_both": {
+   "ci_cal": [
+    0.003921728773349748,
+    0.012533496638784634
+   ],
+   "ci_raw": [
+    0.005267924616145655,
+    0.013074033725595218
+   ],
+   "diff_cal": 0.008156487111926921,
+   "diff_raw": 0.00911292430377164,
+   "ll_cal_w": 0.6415662733135548,
+   "ll_cal_w0": 0.6497227604254817,
+   "ll_raw_w": 0.6388005819501253,
+   "ll_raw_w0": 0.647913506253897,
+   "n": 1247,
+   "w": 0.5
+  }
+ },
+ "validation": {
+  "caveat": "model fit/calibration windows cover early 2026, so absolute log-loss is in-sample for the model; paired diffs vs w=0 are the valid quantity.",
+  "max_pf_vs_features_elo_diff": 6.856737400084967e-13,
+  "model": "shipped model.joblib model_nodraft (LR coef [0.5694, 0.2598, 0.0128] on [elo_diff_adj, eg_gold_diff, blue_edge], scaler_nodraft, isotonic cal; fit_end 2026-07-01, cal_end 2026-10-01)",
+  "n_2026_games": 9694,
+  "n_high_turnover_teams": 32,
+  "n_teams_2026": 415,
+  "roster_strength_comparator": "skipped: delta_2026 uses full-year 2026 rosters (leakage); a clean version would need re-deriving adjustments from first-game lineups, a different formula/test.",
+  "turnover": {
+   "1TAP Dino": 0.0,
+   "2 Massive": 0.0,
+   "3BL Esports": 0.4,
+   "3v Team": 0.0,
+   "4 Employed e 1 Budino": 0.0,
+   "4 Swines & A Bum": 0.0,
+   "7REX": 0.4,
+   "9Gaming Esports": 0.0,
+   "9z Globant": 0.0,
+   "A One Man Army": 0.0,
+   "A One Man Army Prime": 0.0,
+   "ALMO Players": 0.0,
+   "Absolved": 0.0,
+   "Aeterna Esports": 0.0,
+   "All for One Gaming": 0.4,
+   "Ancient Ones": 0.0,
+   "Andromeda Gaming": 0.4,
+   "Anonymo Esports": 0.0,
+   "Anubis Gaming": 0.0,
+   "Anyone's Legend": 0.0,
+   "Apex Mission Impossible": 0.2,
+   "Arctic Pandas": 0.0,
+   "Arneb": 0.0,
+   "Axolotl": 0.0,
+   "B2U": 0.4,
+   "BAAM Esports": 0.0,
+   "BDL Esports": 0.0,
+   "BK ROG Esports": 0.0,
+   "BNK FEARX": 0.0,
+   "BNK FEARX Youth": 0.0,
+   "BRUTE": 0.0,
+   "Bamboo Juice": 0.4,
+   "Barcz\u0105ca Esports by Yumisu": 0.2,
+   "Barulhinhos": 0.0,
+   "Bar\u00e7a eSports": 0.0,
+   "BeFive": 0.0,
+   "Berlin International Gaming": 0.0,
+   "Bilibili Gaming": 0.0,
+   "Bilibili Gaming Junior": 0.0,
+   "Blue Otter": 0.0,
+   "Bohemian Guardians": 0.0,
+   "Bomba Team": 0.0,
+   "BoostGate Esports": 0.0,
+   "Brod n Friends": 0.0,
+   "Bubliki": 0.0,
+   "Bulldog Esports": 0.0,
+   "Bushido Wildcats": 0.2,
+   "CAG OSAKA": 0.0,
+   "CCG Esports": 0.2,
+   "CGN Esports": 0.2,
+   "CITA Kaizen": 0.0,
+   "CITA Kaizen Academy": 0.0,
+   "CTBC Flying Oyster": 0.0,
+   "CTBC Flying Oyster Academy": 0.0,
+   "Caldya Esport": 0.4,
+   "Capybara Esports": 0.0,
+   "Citadel Gaming": 0.4,
+   "Cloud9": 0.0,
+   "Colossal Gaming": 0.2,
+   "Contingent Esports": 0.4,
+   "Conviction": 0.0,
+   "Croatian Flair": 0.0,
+   "Crusaders": 0.0,
+   "Crvena zvezda Esports": 0.0,
+   "Crystal Rose": 0.0,
+   "Cuban Raft Raiders": 0.0,
+   "Cupid Esports": 0.0,
+   "C\u00e3es de \u00c1gua": 0.0,
+   "DECOY 21": 0.0,
+   "DIA Ozarox Esports": 0.0,
+   "DMG Esports": 0.0,
+   "DN SOOPers": 0.0,
+   "DN SOOPers Academy": 0.2,
+   "DN SOOPers Challengers": 0.0,
+   "DOCISK": 0.2,
+   "Dark Passage": 0.0,
+   "Deacoy": 0.0,
+   "DeathMark E-Sports": 0.0,
+   "Deep Cross Gaming": 0.0,
+   "Deer Gaming": 0.0,
+   "Definitely not washed up": 0.0,
+   "DetonatioN FocusMe": 0.2,
+   "DetonatioN FocusMe Academy": 0.2,
+   "Dignitas": 0.0,
+   "Disguised": 0.0,
+   "Disruptors": 0.0,
+   "Divernex": 0.4,
+   "Diversion Gaming": 0.0,
+   "Docta Esports": 0.0,
+   "Dominion Goblins": 0.0,
+   "Dorado Gaming": 0.4,
+   "Dplus Kia": 0.0,
+   "Dplus Kia Academy": 0.0,
+   "Dplus Kia Challengers": 0.0,
+   "Dragons Esports": 0.0,
+   "Dream Esports": 0.0,
+   "Dynasty": 0.0,
+   "E WIE EINFACH E-SPORTS": 0.0,
+   "EDG Youth Team": 0.0,
+   "EDward Gaming": 0.0,
+   "EKO Esports": 0.0,
+   "EKSI EPTA": 0.0,
+   "EXILE esports": 0.0,
+   "EXILE esports Academy": 0.4,
+   "EXSAD Gaming": 0.0,
+   "Ei Nerd Esports": 0.0,
+   "Eintracht Frankfurt": 0.2,
+   "Eintracht Spandau": 0.0,
+   "Elegance": 0.0,
+   "Embrace Whatever Happens": 0.0,
+   "Epic Avalanche": 0.0,
+   "Epitomy Crash": 0.0,
+   "Epitomy Esports": 0.0,
+   "Epitomy Masters": 0.0,
+   "Epitomy Warriors": 0.0,
+   "Equinox Core": 0.0,
+   "Esprit Sh\u014dnen": 0.0,
+   "Estral Esports": 0.2,
+   "Ethereal Enigmas": 0.0,
+   "Eunpyeong Meditech High School": 0.0,
+   "FENNEL": 0.0,
+   "FN Esports": 0.4,
+   "FURIA": 0.0,
+   "FUSE": 0.0,
+   "Falke Esports": 0.0,
+   "Fast8": 0.0,
+   "Fluxo W7M": 0.2,
+   "FlyQuest": 0.2,
+   "Fnatic": 0.2,
+   "Forsaken": 0.0,
+   "Fortress Esports": 0.4,
+   "Francesinhas": 0.0,
+   "Frank Esports": 0.0,
+   "French Flair": 0.0,
+   "Frites Esports Club": 0.0,
+   "Fuego": 0.2,
+   "Fukuoka SoftBank HAWKS gaming": 0.0,
+   "G2 Esports": 0.0,
+   "G2 NORD": 0.0,
+   "G3V E-sports": 0.0,
+   "GAM Esports": 0.2,
+   "GD Esports": 0.0,
+   "GIANTX iTero": 0.2,
+   "GLORE": 0.0,
+   "GMBLERS Esports": 0.0,
+   "GOAL": 0.0,
+   "GTZ Esports": 0.0,
+   "Galions": 0.4,
+   "Galions Sharks": 0.0,
+   "Gamespace Mediterranean College Esports": 0.0,
+   "Gen.G": 0.0,
+   "Gen.G Global Academy": 0.0,
+   "Gen.G Scholars": 0.0,
+   "GiantX": 0.0,
+   "Gity Meavedronu": 0.0,
+   "GnG Amazigh": 0.0,
+   "Golden Lions": 0.0,
+   "Ground Zero Academy": 0.0,
+   "Ground Zero Gaming": 0.0,
+   "Guinea Pink": 0.0,
+   "HANGMEN": 0.0,
+   "HANJIN BRION": 0.0,
+   "HANJIN BRION Academy": 0.0,
+   "HANJIN BRION Challengers": 0.0,
+   "HEMLOCK Titans": 0.0,
+   "HMBLE": 0.0,
+   "Hanwha Life Esports": 0.0,
+   "Hanwha Life Esports Academy": 0.0,
+   "Hanwha Life Esports Challengers": 0.2,
+   "Hooligans": 0.0,
+   "Howl Esports": 0.2,
+   "Huskies Esports": 0.0,
+   "Hyperion (Portuguese Team)": 0.0,
+   "INTZ": 0.2,
+   "ITU Rangers": 0.0,
+   "Ici Japon Corp. Esport": 0.0,
+   "Icon Esports": 0.0,
+   "Inferno Drive Tokyo": 0.0,
+   "Inside Games": 0.0,
+   "Instituto Polit\u00e9cnico de Santar\u00e9m": 0.0,
+   "Invictus Gaming": 0.0,
+   "Invokers": 0.0,
+   "JD Gaming": 0.0,
+   "JSK Esports": 0.0,
+   "Joblife": 0.0,
+   "KIA.eSuba Academy": 0.0,
+   "KT Rolster": 0.0,
+   "KT Rolster Academy": 0.2,
+   "KT Rolster Challengers": 0.0,
+   "KaBuM! Ilha das Lendas": 0.2,
+   "Karmine Corp": 0.0,
+   "Karmine Corp Blue": 0.2,
+   "Karmine Corp Blue Stars": 0.4,
+   "Kaufland Hangry Knights": 0.0,
+   "Kawaii Kiwis": 0.0,
+   "Keypulse Esports": 0.0,
+   "Kits Esports": 0.0,
+   "Kiwoom DRX": 0.0,
+   "Kiwoom DRX Academy": 0.0,
+   "Kiwoom DRX Challengers": 0.0,
+   "Kleyton Rhasta": 0.0,
+   "Kuma e-Sports": 0.0,
+   "L Guide Gaming": 0.0,
+   "LGD Gaming": 0.0,
+   "LNG Esports": 0.0,
+   "LODIS": 0.0,
+   "LOUD": 0.2,
+   "LUA Gaming": 0.0,
+   "LYON": 0.2,
+   "LYON Academy": 0.2,
+   "La BOMBAS": 0.0,
+   "Lausanne-Sport Esports": 0.0,
+   "Le ZOO Esport": 0.0,
+   "Lenovo Legion Honv\u00e9d": 0.2,
+   "Leviatan": 0.0,
+   "Lille Esport": 0.0,
+   "Los Goccioles": 0.0,
+   "Los Ratones": 0.0,
+   "Lotus": 0.4,
+   "Lund Esports Organization": 0.2,
+   "Lundqvist Lightside": 0.0,
+   "Lupus Esports": 0.0,
+   "L\u00d8S": 0.2,
+   "MVK Esports": 0.0,
+   "MVK Esports Academy": 0.0,
+   "Macko Academy": 0.0,
+   "Macko Invictus": 0.0,
+   "Magaza Esports": 0.2,
+   "Magyar Gamer Sz\u00f6vets\u00e8g": 0.0,
+   "Malvinas Gaming": 0.2,
+   "Maryville University": 0.2,
+   "Maze Gaming": 0.4,
+   "Meavedron": 0.0,
+   "Mighty Eagles": 0.4,
+   "Misa Esports": 0.0,
+   "Mi\u00f0gar\u00f0 Esports": 0.0,
+   "Movistar KOI": 0.0,
+   "Movistar KOI F\u00e9nix": 0.0,
+   "Myth Esports": 0.0,
+   "NCG Esports": 0.0,
+   "NORTHERNGRADE ESPORTS": 0.0,
+   "NOVEX": 0.0,
+   "NRG": 0.4,
+   "Natus Vincere": 0.4,
+   "Nerd's Gangster's Carecas": 0.0,
+   "New Meta": 0.0,
+   "NextGeneration Esports": 0.4,
+   "Ng\u1ef1a H\u00ed Esports": 0.0,
+   "Nightbirds": 0.4,
+   "Nine Lives Esports": 0.0,
+   "Ninjas in Pyjamas": 0.0,
+   "Nongshim Esports Academy": 0.0,
+   "Nongshim RedForce": 0.0,
+   "Nongshim RedForce Academy": 0.0,
+   "Nugget enterprises": 0.0,
+   "Observant Force": 0.0,
+   "Obsidian Oath": 0.0,
+   "Ocean & Kimi Tournament Alliance": 0.0,
+   "Oh My God": 0.0,
+   "Once Upon A Team": 0.0,
+   "One More Esports": 0.0,
+   "One Round Specialists": 0.0,
+   "Onion Team": 0.0,
+   "Only The Family": 0.0,
+   "Otter Side": 0.4,
+   "Ovos Moles eSports": 0.0,
+   "Ozarox Esports": 0.0,
+   "P11 Esports": 0.0,
+   "PCIFIC Esports": 0.0,
+   "PREDIQT": 0.0,
+   "Pandinhas": 0.0,
+   "Panel\u00e3o LHC": 0.0,
+   "Paranormal Invaders": 0.4,
+   "Partizan Sangal": 0.2,
+   "Periquitos Zangados Gaming": 0.0,
+   "Polar Squad Esports": 0.0,
+   "Priority": 0.2,
+   "Project Conquerors": 0.0,
+   "Pyramid IV Esports": 0.0,
+   "RAMPAGE": 0.0,
+   "RAYN Clocks": 0.2,
+   "RED Academy": 0.0,
+   "RED Canids": 0.0,
+   "REDPack Esports": 0.4,
+   "RLX Esports": 0.0,
+   "RMD Gaming": 0.0,
+   "ROSSMANN Centaurs": 0.2,
+   "Rage Bait e-Sports": 0.2,
+   "Reignfall": 0.0,
+   "Revolution Victory X": 0.0,
+   "Rich Gang": 0.0,
+   "Rising Gaming": 0.0,
+   "RogerSaMa": 0.0,
+   "Role Swappers": 0.0,
+   "Ronaldo Team": 0.0,
+   "Ruddy Corporation": 0.0,
+   "Rugby Club Hav\u00ed\u0159ov": 0.0,
+   "Rumble Victory eSports": 0.0,
+   "S2G Esports": 0.0,
+   "SDM Tigres": 0.0,
+   "SK Gaming": 0.0,
+   "SN CyberCore Esports": 0.2,
+   "SNOOZE Esports": 0.2,
+   "SPAXFAMILY": 0.0,
+   "SPIKE Syndicate": 0.0,
+   "STAINED": 0.0,
+   "SU Esports": 0.0,
+   "SabOOr T1": 0.0,
+   "Saigon Warriors": 0.0,
+   "Senshi eSports": 0.0,
+   "Sentinels": 0.0,
+   "Seven Dark": 0.0,
+   "Shadow Keepers Esports": 0.0,
+   "Shark Attack": 0.0,
+   "Shifters": 0.0,
+   "Shopify Rebellion": 0.0,
+   "SillySilly Gaming": 0.0,
+   "Skillcamp": 0.0,
+   "Solary": 0.2,
+   "Spartans EU": 0.4,
+   "Sponge Gaming": 0.4,
+   "StoneHenge Esports": 0.0,
+   "StoneHenge Esports Academy": 0.0,
+   "Super Stars": 0.0,
+   "Supernova": 0.0,
+   "S\u00f8rby eSport": 0.0,
+   "T1": 0.0,
+   "T1 Esports Academy": 0.0,
+   "T1 Esports Academy Rookies": 0.0,
+   "TIGROTS": 0.0,
+   "TITANS": 0.0,
+   "TLN Pirates": 0.0,
+   "TQ DURPA KASHLQ": 0.0,
+   "Team Aqua ASD": 0.0,
+   "Team Heretics": 0.2,
+   "Team Heretics Academy": 0.0,
+   "Team High Ground": 0.4,
+   "Team Insidious": 0.0,
+   "Team Liquid": 0.0,
+   "Team Phantasma": 0.0,
+   "Team Phoenix": 0.0,
+   "Team Secret": 0.2,
+   "Team Secret Whales": 0.0,
+   "Team Solid": 0.0,
+   "Team Solo Chauve": 0.0,
+   "Team Spawn Peek": 0.0,
+   "Team Vitality": 0.0,
+   "Team WE": 0.0,
+   "TeamOrangeGaming": 0.0,
+   "The AstroDucks": 0.0,
+   "The Bandits": 0.0,
+   "The New Kings": 0.0,
+   "The ParadOx Invaders": 0.0,
+   "The Secret Club": 0.0,
+   "ThunderTalk Gaming": 0.0,
+   "Top Esports": 0.0,
+   "Top Esports Challenger": 0.0,
+   "Trupe dos Falange": 0.0,
+   "Tu Pap\u00e1 Esports": 0.0,
+   "Tung Tung Bogi": 0.0,
+   "UB Alma Mater": 0.0,
+   "UCAM Esports": 0.0,
+   "UEC eSports PlusPlus": 0.0,
+   "UP2UMEDIA Cebulaki": 0.0,
+   "UTeSports": 0.0,
+   "Ultra Prime": 0.0,
+   "Unicorns of Love Sexy Edition": 0.0,
+   "University of Mississippi": 0.4,
+   "Uwinks": 0.0,
+   "V3 Esports": 0.0,
+   "VARREL YOUTH": 0.4,
+   "VENOM Titans": 0.0,
+   "Valerion": 0.0,
+   "Vantex Esports": 0.0,
+   "Vasco E-Sports": 0.0,
+   "VelbeliKaizokudan": 0.0,
+   "Veni Vidi Vici": 0.0,
+   "Verdant": 0.0,
+   "VfB eSports": 0.2,
+   "Viper Night Raider": 0.0,
+   "Vitality Rising Bees": 0.0,
+   "Vitality.Bee": 0.2,
+   "Vivo Keyd Stars": 0.0,
+   "Vivo Keyd Stars Academy": 0.0,
+   "Volda E-Sport": 0.0,
+   "Volticons": 0.0,
+   "WLGaming Esports": 0.0,
+   "Washed Gaming": 0.0,
+   "Way Gaming Esports": 0.0,
+   "Weibo Gaming": 0.0,
+   "Weibo Gaming Youth Team": 0.0,
+   "White Dragons": 0.0,
+   "Winthrop University": 0.0,
+   "Witchcraft": 0.0,
+   "Xu Ji Basalt": 0.0,
+   "Yang Yang Gaming": 0.2,
+   "Yumeea": 0.0,
+   "ZEN Esports": 0.0,
+   "ZSK": 0.0,
+   "ZYB Esport": 0.0,
+   "Zena Esports": 0.0,
+   "ZennIT": 0.0,
+   "Zephyr Esport": 0.0,
+   "ZeroZone Gaming": 0.0,
+   "Zerolag Esports": 0.0,
+   "Zeu5 Esports": 0.2,
+   "devils.one inStreamly": 0.0,
+   "eSuba": 0.0,
+   "emBRAZA! Esports": 0.0,
+   "mCon esports": 0.0,
+   "paiN Gaming": 0.2,
+   "paiN Gaming Academy": 0.4,
+   "wangting": 0.0,
+   "\u5c0f\u722c\u866b": 0.0,
+   "\u6211\u8d85\u5a01": 0.0
+  },
+  "w0_reproduces_replay_team_elo": true
+ },
+ "windows": {
+  "all_2026": {
+   "minors": {
+    "0.0": {
+     "acc_cal": 0.6539577289680896,
+     "acc_raw": 0.6523000414421881,
+     "ll_cal": 0.6239271862829887,
+     "ll_raw": 0.624269571289012,
+     "n": 7239
+    },
+    "0.25": {
+     "acc_cal": 0.6561679790026247,
+     "acc_raw": 0.6536814477137726,
+     "ci_cal": [
+      -8.201812530506361e-05,
+      0.0013502700885841717
+     ],
+     "ci_raw": [
+      0.0009768015671597814,
+      0.001904646039274776
+     ],
+     "diff_cal_vs_w0": 0.0006304235353978829,
+     "diff_raw_vs_w0": 0.0014379593087008573,
+     "ll_cal": 0.6232967627475909,
+     "ll_raw": 0.6228316119803111,
+     "n": 7239
+    },
+    "0.5": {
+     "acc_cal": 0.6586545102914767,
+     "acc_raw": 0.654095869595248,
+     "ci_cal": [
+      5.8845009315662563e-05,
+      0.0023732279732586875
+     ],
+     "ci_raw": [
+      0.0015578518341397814,
+      0.003398590574726683
+     ],
+     "diff_cal_vs_w0": 0.0012251559857133097,
+     "diff_raw_vs_w0": 0.002466102329926617,
+     "ll_cal": 0.6227020302972753,
+     "ll_raw": 0.6218034689590853,
+     "n": 7239
+    },
+    "0.75": {
+     "acc_cal": 0.6610029009531704,
+     "acc_raw": 0.6574112446470507,
+     "ci_cal": [
+      -3.0055713537823607e-05,
+      0.0031882179216269086
+     ],
+     "ci_raw": [
+      0.0017219322292893987,
+      0.004458732542065293
+     ],
+     "diff_cal_vs_w0": 0.0015758293897612731,
+     "diff_raw_vs_w0": 0.0030851010566197807,
+     "ll_cal": 0.6223513568932275,
+     "ll_raw": 0.6211844702323921,
+     "n": 7239
+    },
+    "1.0": {
+     "acc_cal": 0.6619698853432795,
+     "acc_raw": 0.6612791822074873,
+     "ci_cal": [
+      -0.00014694399946146858,
+      0.003979587045337114
+     ],
+     "ci_raw": [
+      0.0014627420193394083,
+      0.0051538189587259815
+     ],
+     "diff_cal_vs_w0": 0.0019236657660682414,
+     "diff_raw_vs_w0": 0.003291042100953963,
+     "ll_cal": 0.6220035205169205,
+     "ll_raw": 0.620978529188058,
+     "n": 7239
+    }
+   },
+   "overall": {
+    "0.0": {
+     "acc_cal": 0.6450381679389313,
+     "acc_raw": 0.6440066020218692,
+     "ll_cal": 0.6300008441488113,
+     "ll_raw": 0.6309467937328954,
+     "n": 9694
+    },
+    "0.25": {
+     "acc_cal": 0.6466886734062307,
+     "acc_raw": 0.6457602640808747,
+     "ci_cal": [
+      7.496763662048547e-05,
+      0.0012975854328739365
+     ],
+     "ci_raw": [
+      0.0009994441966084942,
+      0.001807614708624486
+     ],
+     "diff_cal_vs_w0": 0.0006840657713941663,
+     "diff_raw_vs_w0": 0.0014026101416065246,
+     "ll_cal": 0.6293167783774172,
+     "ll_raw": 0.629544183591289,
+     "n": 9694
+    },
+    "0.5": {
+     "acc_cal": 0.6489581184237673,
+     "acc_raw": 0.6455539508974624,
+     "ci_cal": [
+      0.00023426132997582557,
+      0.0022133072512938606
+     ],
+     "ci_raw": [
+      0.0016100203759077812,
+      0.003205556717056122
+     ],
+     "diff_cal_vs_w0": 0.0012235408071485522,
+     "diff_raw_vs_w0": 0.0024125239396465144,
+     "ll_cal": 0.6287773033416627,
+     "ll_raw": 0.628534269793249,
+     "n": 9694
+    },
+    "0.75": {
+     "acc_cal": 0.6497833711574169,
+     "acc_raw": 0.6480297090984114,
+     "ci_cal": [
+      0.0001409226402740695,
+      0.0028687970266016234
+     ],
+     "ci_raw": [
+      0.0018445971063570407,
+      0.004213209210696532
+     ],
+     "diff_cal_vs_w0": 0.0014944138013443485,
+     "diff_raw_vs_w0": 0.0030311893558452683,
+     "ll_cal": 0.628506430347467,
+     "ll_raw": 0.6279156043770502,
+     "n": 9694
+    },
+    "1.0": {
+     "acc_cal": 0.6509180936661852,
+     "acc_raw": 0.6515370332164225,
+     "ci_cal": [
+      2.1298774414561278e-05,
+      0.0035001851422003212
+     ],
+     "ci_raw": [
+      0.001688950164441272,
+      0.004835090552799196
+     ],
+     "diff_cal_vs_w0": 0.0017611355481170032,
+     "diff_raw_vs_w0": 0.003256451374047495,
+     "ll_cal": 0.6282397086006943,
+     "ll_raw": 0.627690342358848,
+     "n": 9694
+    }
+   },
+   "tier1_intl": {
+    "0.0": {
+     "acc_cal": 0.6187372708757638,
+     "acc_raw": 0.6195519348268839,
+     "ll_cal": 0.6479100943690514,
+     "ll_raw": 0.6506357604421716,
+     "n": 2455
+    },
+    "0.25": {
+     "acc_cal": 0.6187372708757638,
+     "acc_raw": 0.6224032586558045,
+     "ci_cal": [
+      -0.0002872079900780063,
+      0.001984435536642355
+     ],
+     "ci_raw": [
+      0.0004943995271962225,
+      0.0021598984993025623
+     ],
+     "diff_cal_vs_w0": 0.0008422393544398256,
+     "diff_raw_vs_w0": 0.0012983768949279616,
+     "ll_cal": 0.6470678550146116,
+     "ll_raw": 0.6493373835472437,
+     "n": 2455
+    },
+    "0.5": {
+     "acc_cal": 0.620366598778004,
+     "acc_raw": 0.620366598778004,
+     "ci_cal": [
+      -0.0006515900109295257,
+      0.0031039727538126824
+     ],
+     "ci_raw": [
+      0.0006372652963545606,
+      0.0039184336801551655
+     ],
+     "diff_cal_vs_w0": 0.0012187781686026128,
+     "diff_raw_vs_w0": 0.002254538616942782,
+     "ll_cal": 0.6466913162004488,
+     "ll_raw": 0.6483812218252288,
+     "n": 2455
+    },
+    "0.75": {
+     "acc_cal": 0.6167006109979634,
+     "acc_raw": 0.620366598778004,
+     "ci_cal": [
+      -0.00127588835804089,
+      0.00381278816977644
+     ],
+     "ci_raw": [
+      0.0005192416742077999,
+      0.005258889899277819
+     ],
+     "diff_cal_vs_w0": 0.0012543455958249508,
+     "diff_raw_vs_w0": 0.002872221208429101,
+     "ll_cal": 0.6466557487732264,
+     "ll_raw": 0.6477635392337425,
+     "n": 2455
+    },
+    "1.0": {
+     "acc_cal": 0.6183299389002037,
+     "acc_raw": 0.6228105906313646,
+     "ci_cal": [
+      -0.0020080037265757193,
+      0.004584982800553464
+     ],
+     "ci_raw": [
+      0.00011680426603215525,
+      0.006293568754277342
+     ],
+     "diff_cal_vs_w0": 0.0012818865673638392,
+     "diff_raw_vs_w0": 0.0031544545218780756,
+     "ll_cal": 0.6466282078016876,
+     "ll_raw": 0.6474813059202935,
+     "n": 2455
+    }
+   }
+  },
+  "first10_both": {
+   "minors": {
+    "0.0": {
+     "acc_cal": 0.6373534338358459,
+     "acc_raw": 0.6340033500837521,
+     "ll_cal": 0.6425934420415935,
+     "ll_raw": 0.6397071884051178,
+     "n": 1194
+    },
+    "0.25": {
+     "acc_cal": 0.6365159128978225,
+     "acc_raw": 0.6390284757118928,
+     "ci_cal": [
+      0.0022229748585661253,
+      0.007201207123827232
+     ],
+     "ci_raw": [
+      0.0024776617829131396,
+      0.0061356605754255686
+     ],
+     "diff_cal_vs_w0": 0.00466908626628542,
+     "diff_raw_vs_w0": 0.0043059457062328225,
+     "ll_cal": 0.6379243557753081,
+     "ll_raw": 0.6354012426988849,
+     "n": 1194
+    },
+    "0.5": {
+     "acc_cal": 0.6457286432160804,
+     "acc_raw": 0.6415410385259631,
+     "ci_cal": [
+      0.0025157732444828483,
+      0.010715174432941513
+     ],
+     "ci_raw": [
+      0.004028485342325379,
+      0.011208374502071825
+     ],
+     "diff_cal_vs_w0": 0.006594458577528591,
+     "diff_raw_vs_w0": 0.007594040869715051,
+     "ll_cal": 0.635998983464065,
+     "ll_raw": 0.6321131475354027,
+     "n": 1194
+    },
+    "0.75": {
+     "acc_cal": 0.6557788944723618,
+     "acc_raw": 0.6482412060301508,
+     "ci_cal": [
+      0.004611174764947372,
+      0.016299462350364797
+     ],
+     "ci_raw": [
+      0.004488855780929785,
+      0.015273805141567278
+     ],
+     "diff_cal_vs_w0": 0.0104528094047309,
+     "diff_raw_vs_w0": 0.00986061547877454,
+     "ll_cal": 0.6321406326368627,
+     "ll_raw": 0.6298465729263433,
+     "n": 1194
+    },
+    "1.0": {
+     "acc_cal": 0.661641541038526,
+     "acc_raw": 0.6557788944723618,
+     "ci_cal": [
+      0.004686708314232539,
+      0.02022535037041483
+     ],
+     "ci_raw": [
+      0.003959629886383381,
+      0.018173632701871955
+     ],
+     "diff_cal_vs_w0": 0.012492783940696849,
+     "diff_raw_vs_w0": 0.011103999720699358,
+     "ll_cal": 0.6301006581008968,
+     "ll_raw": 0.6286031886844184,
+     "n": 1194
+    }
+   },
+   "overall": {
+    "0.0": {
+     "acc_cal": 0.6269177126917713,
+     "acc_raw": 0.6220362622036262,
+     "ll_cal": 0.6522242322234701,
+     "ll_raw": 0.6498948914564858,
+     "n": 1434
+    },
+    "0.25": {
+     "acc_cal": 0.6248256624825662,
+     "acc_raw": 0.6276150627615062,
+     "ci_cal": [
+      0.003168789236931336,
+      0.008076666890201645
+     ],
+     "ci_raw": [
+      0.0034704604121327093,
+      0.007209761691123484
+     ],
+     "diff_cal_vs_w0": 0.0056212994148131645,
+     "diff_raw_vs_w0": 0.0053311066455964855,
+     "ll_cal": 0.6466029328086571,
+     "ll_raw": 0.6445637848108894,
+     "n": 1434
+    },
+    "0.5": {
+     "acc_cal": 0.6366806136680614,
+     "acc_raw": 0.6262203626220363,
+     "ci_cal": [
+      0.004748669880961343,
+      0.01262710608109611
+     ],
+     "ci_raw": [
+      0.005870352776468199,
+      0.013192417359556764
+     ],
+     "diff_cal_vs_w0": 0.008643045823587612,
+     "diff_raw_vs_w0": 0.009496830768101103,
+     "ll_cal": 0.6435811863998825,
+     "ll_raw": 0.6403980606883848,
+     "n": 1434
+    },
+    "0.75": {
+     "acc_cal": 0.6422594142259415,
+     "acc_raw": 0.6311018131101813,
+     "ci_cal": [
+      0.006758690992334725,
+      0.018262696501519817
+     ],
+     "ci_raw": [
+      0.0070825722784705475,
+      0.018009130488262852
+     ],
+     "diff_cal_vs_w0": 0.01251080255319398,
+     "diff_raw_vs_w0": 0.012495471338586176,
+     "ll_cal": 0.6397134296702762,
+     "ll_raw": 0.6373994201178997,
+     "n": 1434
+    },
+    "1.0": {
+     "acc_cal": 0.6485355648535565,
+     "acc_raw": 0.6401673640167364,
+     "ci_cal": [
+      0.008102668646849104,
+      0.02336784241124923
+     ],
+     "ci_raw": [
+      0.007228436017173153,
+      0.021482427310603954
+     ],
+     "diff_cal_vs_w0": 0.015749955280508418,
+     "diff_raw_vs_w0": 0.014330513163205555,
+     "ll_cal": 0.6364742769429618,
+     "ll_raw": 0.6355643782932803,
+     "n": 1434
+    }
+   },
+   "tier1_intl": {
+    "0.0": {
+     "acc_cal": 0.575,
+     "acc_raw": 0.5625,
+     "ll_cal": 0.7001374133783063,
+     "ll_raw": 0.7005787141370423,
+     "n": 240
+    },
+    "0.25": {
+     "acc_cal": 0.5666666666666667,
+     "acc_raw": 0.5708333333333333,
+     "ci_cal": [
+      0.0028540974699948723,
+      0.018383617910531908
+     ],
+     "ci_raw": [
+      0.004213571021223506,
+      0.01715825699541988
+     ],
+     "diff_cal_vs_w0": 0.010358559828738696,
+     "diff_raw_vs_w0": 0.010431282318930708,
+     "ll_cal": 0.6897788535495676,
+     "ll_raw": 0.6901474318181116,
+     "n": 240
+    },
+    "0.5": {
+     "acc_cal": 0.5916666666666667,
+     "acc_raw": 0.55,
+     "ci_cal": [
+      0.006696588941439561,
+      0.03168037672421975
+     ],
+     "ci_raw": [
+      0.006950082107631929,
+      0.03188834780152979
+     ],
+     "diff_cal_vs_w0": 0.018834767372731247,
+     "diff_raw_vs_w0": 0.018963210512571712,
+     "ll_cal": 0.6813026460055751,
+     "ll_raw": 0.6816155036244705,
+     "n": 240
+    },
+    "0.75": {
+     "acc_cal": 0.575,
+     "acc_raw": 0.5458333333333333,
+     "ci_cal": [
+      0.005117137104203789,
+      0.04062123856744238
+     ],
+     "ci_raw": [
+      0.007960884576291483,
+      0.04458980224398747
+     ],
+     "diff_cal_vs_w0": 0.02274931846679781,
+     "diff_raw_vs_w0": 0.025603879241149055,
+     "ll_cal": 0.6773880949115085,
+     "ll_raw": 0.6749748348958932,
+     "n": 240
+    },
+    "1.0": {
+     "acc_cal": 0.5833333333333334,
+     "acc_raw": 0.5625,
+     "ci_cal": [
+      0.00882374183981643,
+      0.05570548149760989
+     ],
+     "ci_raw": [
+      0.00711687448014554,
+      0.05486422109428123
+     ],
+     "diff_cal_vs_w0": 0.03195438269607097,
+     "diff_raw_vs_w0": 0.03038241753967389,
+     "ll_cal": 0.6681830306822353,
+     "ll_raw": 0.6701962965973685,
+     "n": 240
+    }
+   }
+  },
+  "jan_mar_2026": {
+   "minors": {
+    "0.0": {
+     "acc_cal": 0.6428571428571429,
+     "acc_raw": 0.6445182724252492,
+     "ll_cal": 0.6339871419460513,
+     "ll_raw": 0.631698213406775,
+     "n": 1806
+    },
+    "0.25": {
+     "acc_cal": 0.6511627906976745,
+     "acc_raw": 0.6506090808416389,
+     "ci_cal": [
+      0.0017379863333693577,
+      0.0057103902729188066
+     ],
+     "ci_raw": [
+      0.0017671261200615067,
+      0.004551624629419904
+     ],
+     "diff_cal_vs_w0": 0.0036892597094668146,
+     "diff_raw_vs_w0": 0.0031331993848664466,
+     "ll_cal": 0.6302978822365846,
+     "ll_raw": 0.6285650140219086,
+     "n": 1806
+    },
+    "0.5": {
+     "acc_cal": 0.659468438538206,
+     "acc_raw": 0.6550387596899225,
+     "ci_cal": [
+      0.002870138558672117,
+      0.009112733790621693
+     ],
+     "ci_raw": [
+      0.0026662137858576283,
+      0.008131161192247226
+     ],
+     "diff_cal_vs_w0": 0.005988181401244684,
+     "diff_raw_vs_w0": 0.005379948552333765,
+     "ll_cal": 0.6279989605448066,
+     "ll_raw": 0.6263182648544412,
+     "n": 1806
+    },
+    "0.75": {
+     "acc_cal": 0.6694352159468439,
+     "acc_raw": 0.6600221483942414,
+     "ci_cal": [
+      0.004511417630988504,
+      0.013399351062702559
+     ],
+     "ci_raw": [
+      0.002677186961629727,
+      0.010838164506267197
+     ],
+     "diff_cal_vs_w0": 0.00896403014220439,
+     "diff_raw_vs_w0": 0.006739824580187586,
+     "ll_cal": 0.625023111803847,
+     "ll_raw": 0.6249583888265875,
+     "n": 1806
+    },
+    "1.0": {
+     "acc_cal": 0.6705426356589147,
+     "acc_raw": 0.6688815060908084,
+     "ci_cal": [
+      0.0038250979059110545,
+      0.0157294201978689
+     ],
+     "ci_raw": [
+      0.0018438151768105687,
+      0.012576584734701444
+     ],
+     "diff_cal_vs_w0": 0.009722001304005636,
+     "diff_raw_vs_w0": 0.0072064476463889965,
+     "ll_cal": 0.6242651406420456,
+     "ll_raw": 0.624491765760386,
+     "n": 1806
+    }
+   },
+   "overall": {
+    "0.0": {
+     "acc_cal": 0.6271604938271605,
+     "acc_raw": 0.6296296296296297,
+     "ll_cal": 0.6453125867456663,
+     "ll_raw": 0.6436921592088387,
+     "n": 2430
+    },
+    "0.25": {
+     "acc_cal": 0.6320987654320988,
+     "acc_raw": 0.6349794238683127,
+     "ci_cal": [
+      0.0019516765230763163,
+      0.005386222145595449
+     ],
+     "ci_raw": [
+      0.0023414029635909924,
+      0.004858051205965848
+     ],
+     "diff_cal_vs_w0": 0.003685998052042761,
+     "diff_raw_vs_w0": 0.003596224053648184,
+     "ll_cal": 0.6416265886936235,
+     "ll_raw": 0.6400959351551906,
+     "n": 2430
+    },
+    "0.5": {
+     "acc_cal": 0.6407407407407407,
+     "acc_raw": 0.6337448559670782,
+     "ci_cal": [
+      0.00366959023760612,
+      0.009225290749799412
+     ],
+     "ci_raw": [
+      0.0037851067307554044,
+      0.008796273739282184
+     ],
+     "diff_cal_vs_w0": 0.006440534547190829,
+     "diff_raw_vs_w0": 0.006275201706184772,
+     "ll_cal": 0.6388720521984754,
+     "ll_raw": 0.637416957502654,
+     "n": 2430
+    },
+    "0.75": {
+     "acc_cal": 0.6460905349794238,
+     "acc_raw": 0.6378600823045267,
+     "ci_cal": [
+      0.004959693316531119,
+      0.012855111703766017
+     ],
+     "ci_raw": [
+      0.0043390868969424975,
+      0.011691135016236014
+     ],
+     "diff_cal_vs_w0": 0.008905988820462658,
+     "diff_raw_vs_w0": 0.008038997853663079,
+     "ll_cal": 0.6364065979252036,
+     "ll_raw": 0.6356531613551756,
+     "n": 2430
+    },
+    "1.0": {
+     "acc_cal": 0.648559670781893,
+     "acc_raw": 0.6469135802469136,
+     "ci_cal": [
+      0.005102225904276378,
+      0.015465417670727373
+     ],
+     "ci_raw": [
+      0.004103691873078934,
+      0.01373020407830544
+     ],
+     "diff_cal_vs_w0": 0.010293310133064865,
+     "diff_raw_vs_w0": 0.008885735986296751,
+     "ll_cal": 0.6350192766126014,
+     "ll_raw": 0.634806423222542,
+     "n": 2430
+    }
+   },
+   "tier1_intl": {
+    "0.0": {
+     "acc_cal": 0.5817307692307693,
+     "acc_raw": 0.5865384615384616,
+     "ll_cal": 0.6780910375599362,
+     "ll_raw": 0.678405406193658,
+     "n": 624
+    },
+    "0.25": {
+     "acc_cal": 0.5769230769230769,
+     "acc_raw": 0.5897435897435898,
+     "ci_cal": [
+      0.0001912753189747195,
+      0.007308031417662047
+     ],
+     "ci_raw": [
+      0.0021624382449308113,
+      0.007818049004027248
+     ],
+     "diff_cal_vs_w0": 0.003676558062767372,
+     "diff_raw_vs_w0": 0.004936324296949173,
+     "ll_cal": 0.6744144794971688,
+     "ll_raw": 0.6734690818967088,
+     "n": 624
+    },
+    "0.5": {
+     "acc_cal": 0.5865384615384616,
+     "acc_raw": 0.5721153846153846,
+     "ci_cal": [
+      0.0018116720719710253,
+      0.013795107014426329
+     ],
+     "ci_raw": [
+      0.0034287935433089693,
+      0.014563602730560702
+     ],
+     "diff_cal_vs_w0": 0.007749748940746497,
+     "diff_raw_vs_w0": 0.00886627093031124,
+     "ll_cal": 0.6703412886191896,
+     "ll_raw": 0.6695391352633467,
+     "n": 624
+    },
+    "0.75": {
+     "acc_cal": 0.5785256410256411,
+     "acc_raw": 0.5737179487179487,
+     "ci_cal": [
+      0.0004989653169620923,
+      0.017193034154707378
+     ],
+     "ci_raw": [
+      0.0037479202998862812,
+      0.020008193969703266
+     ],
+     "diff_cal_vs_w0": 0.008738003841190917,
+     "diff_raw_vs_w0": 0.011799105116318112,
+     "ll_cal": 0.6693530337187453,
+     "ll_raw": 0.6666063010773399,
+     "n": 624
+    },
+    "1.0": {
+     "acc_cal": 0.5849358974358975,
+     "acc_raw": 0.5833333333333334,
+     "ci_cal": [
+      0.0011680716772166698,
+      0.023096229518606827
+     ],
+     "ci_raw": [
+      0.0033475006769164532,
+      0.024541100308093023
+     ],
+     "diff_cal_vs_w0": 0.011946809724861281,
+     "diff_raw_vs_w0": 0.013745983970068237,
+     "ll_cal": 0.666144227835075,
+     "ll_raw": 0.6646594222235898,
+     "n": 624
+    }
+   }
+  }
+ }
+}

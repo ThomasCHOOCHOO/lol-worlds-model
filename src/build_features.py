@@ -3,7 +3,11 @@
 Every trailing stat for a game at datetime t uses only games with datetime < t.
 
 Features (blue-side perspective):
-  elo_diff   - Elo(blue) - Elo(red); Elo init 1500, K=24, 40% regression to 1500 each new year
+  elo_diff   - Elo(blue) - Elo(red); Elo init 1500, K=24, 40% regression to 1500 each new year,
+               plus the season-start prior (SEASON_START_PRIOR_W): at a
+               team's first game of a new year its Elo is set to the player
+               aggregate of that game's lineup (see
+               reports/season_start_prior_test.md)
   elo_diff_adj - elo_diff adjusted by region-strength offsets
                (src/region_offsets.py): elo_diff + off[region_blue] -
                off[region_red]. Corrects weak-region Elo inflation (LCK
@@ -65,6 +69,18 @@ MODEL_DIR = os.path.join(BASE, "model")
 ELO_K = 24
 ELO_INIT = 1500.0
 YEAR_KEEP = 0.6  # 40% regression toward 1500 each new calendar year
+# Season-start prior (SHIPPED 2026-11-15, Thomas's call; see
+# reports/season_start_prior_test.md): at a team's first game of a new
+# calendar year, its starting team Elo is set to the player aggregate of
+# that game's lineup (w=1.0), computed from the prior year-end player
+# ratings after the standard 40% regression. The aggregates come from a
+# src/player_elo.py replay run in-process (same rule, same constant).
+# After that first game, team Elo updates per game exactly as before
+# (K=24), with no further player input. w=0.0 reproduces the pre-prior
+# baseline (and skips the player replay). The per-game tier-conditional
+# blend stays OFF. This takes effect at the next season boundary
+# (2027); it does not change the current v1.3.8 ratings.
+SEASON_START_PRIOR_W = 1.0
 FORM_N = 20
 FORM_PSEUDO = 8
 BLUE_PSEUDO = 10
@@ -164,6 +180,12 @@ def main():
                     help="also merge the player-Elo + instability sidecar "
                          "(src/build_player_features.py) into features.csv; "
                          "default OFF -- the refresh pipeline runs without it")
+    ap.add_argument("--season-start-prior-w", type=float,
+                    default=SEASON_START_PRIOR_W,
+                    help="weight of the player aggregate in a team's "
+                         "season-start Elo (default 1.0, shipped; 0.0 "
+                         "reproduces the pre-prior baseline and skips the "
+                         "player replay)")
     args = ap.parse_args()
 
     os.makedirs(PROC_DIR, exist_ok=True)
@@ -206,6 +228,24 @@ def main():
 
     game_ids = sorted(game_date.index, key=lambda g: game_date[g])
     print(f"  processing {len(game_ids)} games chronologically...")
+
+    # ---- season-start prior: per-game player aggregates ----
+    # One player_elo.replay pass over the same CSVs gives, for every game,
+    # the mean pre-game player rating per side (player_elo_blue/red).
+    # Those aggregates are invariant to the prior itself (player updates
+    # use only player aggregates and results), so the same replay serves
+    # both the w=1.0 and w=0.0 runs. Skipped when w == 0 (baseline).
+    player_aggs = {}
+    if args.season_start_prior_w:
+        from player_elo import load_player_rows, replay as player_replay
+        print("  computing player aggregates for the season-start prior...")
+        _pf_df = load_player_rows()
+        _per_game, _, _ = player_replay(
+            _pf_df, season_start_prior_w=args.season_start_prior_w)
+        player_aggs = dict(zip(
+            _per_game["gameid"],
+            zip(_per_game["player_elo_blue"], _per_game["player_elo_red"])))
+        print(f"  player aggregates for {len(player_aggs)} games")
 
     elo = defaultdict(lambda: ELO_INIT)
     form = defaultdict(deque)          # team -> deque(maxlen=FORM_N) of 1/0
@@ -261,6 +301,7 @@ def main():
 
     rows = []
     cur_year = None
+    seen_this_year = set()  # teams whose season-start prior was applied
     for i, gid in enumerate(game_ids):
         t = game_date[gid]
         if cur_year is None:
@@ -270,6 +311,7 @@ def main():
             for team in list(elo.keys()):
                 elo[team] = ELO_INIT + YEAR_KEEP * (elo[team] - ELO_INIT)
             cur_year = t.year
+            seen_this_year = set()
 
         try:
             blue = side_team[(gid, "Blue")]
@@ -277,6 +319,20 @@ def main():
         except KeyError:
             continue
         blue_win = 1 if side_won[(gid, "Blue")] == 1 else 0
+
+        # ---- season-start prior (see SEASON_START_PRIOR_W) ----
+        # At a team's first game of the year, its starting Elo is the
+        # player aggregate of that game's lineup (known at game time, so
+        # clean). Applies once per team per year; the K=24 update below
+        # then takes over. Games with no player aggregate (replay skipped
+        # them) keep the regressed team Elo.
+        if args.season_start_prior_w and gid in player_aggs:
+            agg_b, agg_r = player_aggs[gid]
+            for team, agg in ((blue, agg_b), (red, agg_r)):
+                if team not in seen_this_year:
+                    seen_this_year.add(team)
+                    elo[team] = ((1.0 - args.season_start_prior_w) * elo[team]
+                                 + args.season_start_prior_w * agg)
 
         eb, er = elo[blue], elo[red]
         fb, fr = form_rate(blue), form_rate(red)

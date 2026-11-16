@@ -17,7 +17,16 @@ tier_conditional_blend.md):
   appearance wins, then player key). Overlap compares PLAYER keys, not
   (player, role) keys: a role swap by the same five humans is not a lineup
   change for the purpose of "does team Elo still describe these five?".
+
 - instability = 1 - |today's 5 players ∩ modal 5| / 5.
+
+Season-start prior (SHIPPED 2026-11-15, w=1.0; see
+reports/season_start_prior_test.md): at a team's first game of a new
+calendar year, its team Elo is set to the player aggregate of that game's
+lineup (SEASON_START_PRIOR_W). After that game, team Elo updates per game
+as before with no further player input. The per-game tier-conditional
+blend stays OFF (it failed its gate); this is a different, once-per-season
+mechanism.
 - Fallbacks: if fewer than 5 distinct players appear in the trailing-30-day
   window, compare against the team's most recent lineup instead; if the
   team has no prior game at all, instability = 0 (nothing to compare --
@@ -45,6 +54,19 @@ MODEL_DIR = os.path.join(BASE, "model")
 ELO_INIT = 1500.0
 K = 24.0
 KEEP = 0.6  # 40% regression toward 1500 each new calendar year
+# Season-start prior (SHIPPED 2026-11-15, Thomas's call; see
+# reports/season_start_prior_test.md): at a team's first game of a new
+# calendar year, its starting team Elo is set to the player aggregate of
+# that game's lineup (mean of the 5 pre-game player ratings, themselves
+# 40%-regressed end-of-prior-year ratings), with weight
+# SEASON_START_PRIOR_W. w=1.0 passed the shipping gate on the 2025->2026
+# boundary: raw log-loss gain +0.0143 on first-10-games, 95% CI
+# [+0.0072, +0.0215], n=1,434. After that first game, team Elo updates
+# per game exactly as before (K=24) with no further player input. The
+# per-game tier-conditional blend stays OFF (it failed its gate on
+# corrected Worlds data); this prior is a different, once-per-season
+# mechanism. Set to 0.0 to reproduce the pre-prior baseline.
+SEASON_START_PRIOR_W = 1.0
 WINDOW_DAYS = 30
 POSITION_ORDER = ["top", "jng", "mid", "bot", "sup"]
 
@@ -100,11 +122,17 @@ def _modal_lineup(window):
     return ranked[:5], len(ranked)
 
 
-def replay(df):
+def replay(df, season_start_prior_w=SEASON_START_PRIOR_W):
     """Walk-forward player-Elo + team-Elo replay.
 
     Returns (per_game DataFrame, snapshot dict). Per-game rows carry
     pre-game ratings only (no leakage: state updates after the row is built).
+
+    Season-start prior: at a team's first game of a new calendar year its
+    team Elo is set to (1-w) * regressed team Elo + w * player aggregate
+    of that game's lineup (see SEASON_START_PRIOR_W). The row's
+    team_elo_* are the post-prior values, i.e. the starting Elo for the
+    game; the expected score and the K=24 update use them.
     """
     players = df.copy()
     gdate = players.groupby("gameid")["date"].first()
@@ -120,6 +148,7 @@ def replay(df):
     rows = []
 
     cur_year = None
+    seen_this_year = set()  # teams whose season-start prior was applied
     skipped = 0
     for gid in game_ids:
         grp = by_game[gid]
@@ -132,6 +161,7 @@ def replay(df):
             for key in list(player_rating.keys()):
                 player_rating[key] = ELO_INIT + KEEP * (player_rating[key] - ELO_INIT)
             cur_year = t.year
+            seen_this_year = set()
 
         blue_rows = grp[grp["side"] == "Blue"]
         red_rows = grp[grp["side"] == "Red"]
@@ -181,6 +211,17 @@ def replay(df):
         red_keys, red_pre, inst_r, modal_r = side_pre(red_team, red_rows)
         agg_b = sum(blue_pre) / 5.0
         agg_r = sum(red_pre) / 5.0
+        # ---- season-start prior (see SEASON_START_PRIOR_W) ----
+        # At a team's first game of the year, its starting team Elo is the
+        # player aggregate of that game's lineup. The lineup is known at
+        # game time, so this is clean (no full-year roster use). Applies
+        # once per team per year; the K=24 update below then takes over.
+        if season_start_prior_w:
+            for team, agg in ((blue_team, agg_b), (red_team, agg_r)):
+                if team not in seen_this_year:
+                    seen_this_year.add(team)
+                    team_elo[team] = ((1.0 - season_start_prior_w) * team_elo[team]
+                                      + season_start_prior_w * agg)
         eb, er = team_elo[blue_team], team_elo[red_team]
         exp_team = elo_exp(eb - er)
         exp_player = elo_exp(agg_b - agg_r)
